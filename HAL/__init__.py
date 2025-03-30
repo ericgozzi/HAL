@@ -1,4 +1,6 @@
-from HAL.picture import *
-from HAL.color import *
-from HAL.video import *
+from .data import *
+from .pixels import *
+from .AI import *
 
+__version__ = '1.0.0'
+__author__ = 'Eric Gozzi'
