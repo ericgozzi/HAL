@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+<meta name="generator" content="pdoc3 0.11.6">
+<title>HAL.data.files API documentation</title>
+<meta name="description" content="">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/13.0.0/sanitize.min.css" integrity="sha512-y1dtMcuvtTMJc1yPgEqF0ZjQbhnc/bFhyvIyVNb9Zk5mIGtqVaAB1Ttl28su8AvFMOY0EwRbAe+HCLqj6W7/KA==" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/13.0.0/typography.min.css" integrity="sha512-Y1DYSb995BAfxobCkKepB1BqJJTPrOp3zPL74AWFugHHmmdcvO+C48WLrUOlhGMc0QG7AE3f7gmvvcrmX2fDoA==" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css" crossorigin>
+<style>:root{--highlight-color:#fe9}.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:1.5em;overflow:hidden}#sidebar > *:last-child{margin-bottom:2cm}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:2em 0 .50em 0}h3{font-size:1.4em;margin:1.6em 0 .7em 0}h4{margin:0;font-size:105%}h1:target,h2:target,h3:target,h4:target,h5:target,h6:target{background:var(--highlight-color);padding:.2em 0}a{color:#058;text-decoration:none;transition:color .2s ease-in-out}a:visited{color:#503}a:hover{color:#b62}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900;font-weight:bold}pre code{font-size:.8em;line-height:1.4em;padding:1em;display:block}code{background:#f3f3f3;font-family:"DejaVu Sans Mono",monospace;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{margin-top:.6em;font-weight:bold}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}dt:target .name{background:var(--highlight-color)}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source > summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible;min-width:max-content}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}td{padding:0 .5em}.admonition{padding:.1em 1em;margin:1em 0}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%;height:100vh;overflow:auto;position:sticky;top:0}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul ul{padding-left:1em}.toc > ul > li{margin-top:.5em}}</style>
+<style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js" integrity="sha512-D9gUyxqja7hBtkWpPWGt9wfbfaMGVt9gnyCvYa+jojwwPHLCzUm5i8rpk7vD7wNee9bA35eYIjobYPaQuKS1MQ==" crossorigin></script>
+<script>window.addEventListener('DOMContentLoaded', () => {
+hljs.configure({languages: ['bash', 'css', 'diff', 'graphql', 'ini', 'javascript', 'json', 'plaintext', 'python', 'python-repl', 'rust', 'shell', 'sql', 'typescript', 'xml', 'yaml']});
+hljs.highlightAll();
+/* Collapse source docstrings */
+setTimeout(() => {
+[...document.querySelectorAll('.hljs.language-python > .hljs-string')]
+.filter(el => el.innerHTML.length > 200 && ['"""', "'''"].includes(el.innerHTML.substring(0, 3)))
+.forEach(el => {
+let d = document.createElement('details');
+d.classList.add('hljs-string');
+d.innerHTML = '<summary>"""</summary>' + el.innerHTML.substring(3);
+el.replaceWith(d);
+});
+}, 100);
+})</script>
+</head>
+<body>
+<main>
+<article id="content">
+<header>
+<h1 class="title">Module <code>HAL.data.files</code></h1>
+</header>
+<section id="section-intro">
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+<h2 class="section-title" id="header-functions">Functions</h2>
+<dl>
+<dt id="HAL.data.files.append_to_file"><code class="name flex">
+<span>def <span class="ident">append_to_file</span></span>(<span>file_path: str, content: <built-in function any>) ‑> None</span>
+</code></dt>
+<dd>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def append_to_file(file_path: str, content: any) -&gt; None:
+    &#34;&#34;&#34;
+    This function appends the specified content to a file at the given path. If the file does not exist,
+    it will be created.
+
+    Args:
+        file_path (str): The path of the file to which content will be appended.
+        content (any): The content to be appended to the file. This can be a string, list, or any other type.
+                       It will be converted to a string before being written to the file.
+
+    Returns:
+        None
+
+    &#34;&#34;&#34;
+    with open(file_path, &#34;a&#34;) as file:
+        file.write(content)</code></pre>
+</details>
+<div class="desc"><p>This function appends the specified content to a file at the given path. If the file does not exist,
+it will be created.</p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>file_path</code></strong> :&ensp;<code>str</code></dt>
+<dd>The path of the file to which content will be appended.</dd>
+<dt><strong><code>content</code></strong> :&ensp;<code>any</code></dt>
+<dd>The content to be appended to the file. This can be a string, list, or any other type.
+It will be converted to a string before being written to the file.</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<p>None</p></div>
+</dd>
+<dt id="HAL.data.files.create_folder"><code class="name flex">
+<span>def <span class="ident">create_folder</span></span>(<span>folder_name: str) ‑> None</span>
+</code></dt>
+<dd>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def create_folder(folder_name: str) -&gt; None:
+    &#34;&#34;&#34;
+    Create a new folder.
+
+    Args:
+        folder_path (str): Name of the folder to create.
+    
+    Returns:
+        None
+    &#34;&#34;&#34;
+    try:
+        os.makedirs(folder_name, exist_ok=False)
+        print(f&#39;Folder {folder_name} created succesfully.&#39;)
+    except:
+        print(f&#39;Folder {folder_name} already exists.&#39;)</code></pre>
+</details>
+<div class="desc"><p>Create a new folder.</p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>folder_path</code></strong> :&ensp;<code>str</code></dt>
+<dd>Name of the folder to create.</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<p>None</p></div>
+</dd>
+<dt id="HAL.data.files.delete_file"><code class="name flex">
+<span>def <span class="ident">delete_file</span></span>(<span>file_path: str) ‑> None</span>
+</code></dt>
+<dd>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def delete_file(file_path: str) -&gt; None:
+    &#34;&#34;&#34;
+    Deletes a file if it exists.
+    
+    Args:
+        file_path (str): File to delete.
+    
+    Returns
+        None
+    &#34;&#34;&#34;
+    try:
+        os.remove(file_path)
+        print(f&#34;File &#39;{file_path}&#39; deleted successfully.&#34;)
+    except FileNotFoundError:
+        print(f&#34;Error: File &#39;{file_path}&#39; not found.&#34;)
+    except PermissionError:
+        print(f&#34;Error: Permission denied for &#39;{file_path}&#39;.&#34;)</code></pre>
+</details>
+<div class="desc"><p>Deletes a file if it exists.</p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>file_path</code></strong> :&ensp;<code>str</code></dt>
+<dd>File to delete.</dd>
+</dl>
+<p>Returns
+None</p></div>
+</dd>
+<dt id="HAL.data.files.delete_folder"><code class="name flex">
+<span>def <span class="ident">delete_folder</span></span>(<span>folder_path: str) ‑> None</span>
+</code></dt>
+<dd>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def delete_folder(folder_path: str) -&gt; None:
+    &#34;&#34;&#34;
+    Deletes an empty folder.
+    
+    Args:
+        folder_path (str): Folder to delete.
+
+    Returns:
+        None
+    &#34;&#34;&#34;
+    try:
+        os.rmdir(folder_path)
+        print(f&#34;Folder &#39;{folder_path}&#39; deleted successfully.&#34;)
+    except FileNotFoundError:
+        print(f&#34;Error: Folder &#39;{folder_path}&#39; not found.&#34;)
+    except OSError:
+        print(f&#34;Error: Folder &#39;{folder_path}&#39; is not empty.&#34;)</code></pre>
+</details>
+<div class="desc"><p>Deletes an empty folder.</p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>folder_path</code></strong> :&ensp;<code>str</code></dt>
+<dd>Folder to delete.</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<p>None</p></div>
+</dd>
+<dt id="HAL.data.files.read_file"><code class="name flex">
+<span>def <span class="ident">read_file</span></span>(<span>file_path: str) ‑> str</span>
+</code></dt>
+<dd>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def read_file(file_path: str) -&gt; str:
+    &#34;&#34;&#34;
+    This function reads the content of a file specified by the given path and returns it as a string.
+
+    Args:
+        file_path (str): The path to the file from which content will be read.
+
+    Returns:
+        str: The content of the file as a string.
+
+    Example:
+        &gt;&gt;&gt; content = read_file(&#34;example.txt&#34;)
+        &gt;&gt;&gt; print(content)
+        This will read the content of &#34;example.txt&#34; and print it.
+
+    Raises:
+        FileNotFoundError: If the specified file does not exist.
+        IOError: If there is an issue opening or reading from the file.
+    
+    &#34;&#34;&#34;
+    with open(file_path, &#39;r&#39;) as file:
+        content = file.read()
+        return content</code></pre>
+</details>
+<div class="desc"><p>This function reads the content of a file specified by the given path and returns it as a string.</p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>file_path</code></strong> :&ensp;<code>str</code></dt>
+<dd>The path to the file from which content will be read.</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>str</code></dt>
+<dd>The content of the file as a string.</dd>
+</dl>
+<h2 id="example">Example</h2>
+<pre><code class="language-python-repl">&gt;&gt;&gt; content = read_file(&quot;example.txt&quot;)
+&gt;&gt;&gt; print(content)
+This will read the content of &quot;example.txt&quot; and print it.
+</code></pre>
+<h2 id="raises">Raises</h2>
+<dl>
+<dt><code>FileNotFoundError</code></dt>
+<dd>If the specified file does not exist.</dd>
+<dt><code>IOError</code></dt>
+<dd>If there is an issue opening or reading from the file.</dd>
+</dl></div>
+</dd>
+<dt id="HAL.data.files.rename_files"><code class="name flex">
+<span>def <span class="ident">rename_files</span></span>(<span>folder_path: str, prefix='', start_index=0) ‑> None</span>
+</code></dt>
+<dd>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def rename_files(folder_path: str, prefix=&#34;&#34;, start_index=0) -&gt; None:
+    &#34;&#34;&#34;
+    Renames all files in the given folder with a specified prefix and index.
+
+    Args:
+        folder_path (str): Folder to renamen.
+        prefix (str): Prefix of the new files name. Default is `&#34;&#34;`.
+        start_index (int): Start index for renaming the files. Default is `0`
+
+    Returns:
+        None
+
+    &#34;&#34;&#34;
+    if not os.path.isdir(folder_path):
+        print(f&#34;Error: {folder_path} is not a valid directory.&#34;)
+        return
+
+    files = sorted(os.listdir(folder_path))  # Sort to maintain order
+    dash = &#39;_&#39; if prefix != &#39;&#39; else &#39;&#39;
+    for index, filename in enumerate(files, start=start_index):
+        old_path = os.path.join(folder_path, filename)
+        
+        if os.path.isfile(old_path):  # Ensure it&#39;s a file, not a folder
+            extension = os.path.splitext(filename)[1]  # Keep the original file extension
+            new_name = f&#34;{prefix}{dash}{index}{extension}&#34;
+            new_path = os.path.join(folder_path, new_name)
+            
+            os.rename(old_path, new_path)
+            print(f&#34;Renamed: {filename} → {new_name}&#34;)</code></pre>
+</details>
+<div class="desc"><p>Renames all files in the given folder with a specified prefix and index.</p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>folder_path</code></strong> :&ensp;<code>str</code></dt>
+<dd>Folder to renamen.</dd>
+<dt><strong><code>prefix</code></strong> :&ensp;<code>str</code></dt>
+<dd>Prefix of the new files name. Default is <code>""</code>.</dd>
+<dt><strong><code>start_index</code></strong> :&ensp;<code>int</code></dt>
+<dd>Start index for renaming the files. Default is <code>0</code></dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<p>None</p></div>
+</dd>
+<dt id="HAL.data.files.write_file"><code class="name flex">
+<span>def <span class="ident">write_file</span></span>(<span>file_path: str, content: <built-in function any>) ‑> None</span>
+</code></dt>
+<dd>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def write_file(file_path: str, content: any) -&gt; None:
+    &#34;&#34;&#34;
+    This function writes the specified content to a file at the given path. If the file already exists, 
+    it will be overwritten with the new content. If the file does not exist, it will be created.
+
+    Args:
+        file_path (str): The path of the file where content will be written.
+        content (any): The content to write to the file. This can be a string, list, or any other type.
+                       It will be converted to a string before being written to the file.
+
+    Returns:
+        None: This function does not return any value.
+
+    Example:
+        &gt;&gt;&gt; write_file(&#34;output.txt&#34;, &#34;This is the content of the file.&#34;)
+        This writes the string &#34;This is the content of the file.&#34; to the &#34;output.txt&#34; file.
+
+    Raises:
+        IOError: If there is an issue opening or writing to the file.
+    
+    &#34;&#34;&#34;
+    with open(file_path, &#39;w&#39;) as file:
+        file.write(content)</code></pre>
+</details>
+<div class="desc"><p>This function writes the specified content to a file at the given path. If the file already exists,
+it will be overwritten with the new content. If the file does not exist, it will be created.</p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>file_path</code></strong> :&ensp;<code>str</code></dt>
+<dd>The path of the file where content will be written.</dd>
+<dt><strong><code>content</code></strong> :&ensp;<code>any</code></dt>
+<dd>The content to write to the file. This can be a string, list, or any other type.
+It will be converted to a string before being written to the file.</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>None</code></dt>
+<dd>This function does not return any value.</dd>
+</dl>
+<h2 id="example">Example</h2>
+<pre><code class="language-python-repl">&gt;&gt;&gt; write_file(&quot;output.txt&quot;, &quot;This is the content of the file.&quot;)
+This writes the string &quot;This is the content of the file.&quot; to the &quot;output.txt&quot; file.
+</code></pre>
+<h2 id="raises">Raises</h2>
+<dl>
+<dt><code>IOError</code></dt>
+<dd>If there is an issue opening or writing to the file.</dd>
+</dl></div>
+</dd>
+</dl>
+</section>
+<section>
+</section>
+</article>
+<nav id="sidebar">
+<div class="toc">
+<ul></ul>
+</div>
+<ul id="index">
+<li><h3>Super-module</h3>
+<ul>
+<li><code><a title="HAL.data" href="index.html">HAL.data</a></code></li>
+</ul>
+</li>
+<li><h3><a href="#header-functions">Functions</a></h3>
+<ul class="two-column">
+<li><code><a title="HAL.data.files.append_to_file" href="#HAL.data.files.append_to_file">append_to_file</a></code></li>
+<li><code><a title="HAL.data.files.create_folder" href="#HAL.data.files.create_folder">create_folder</a></code></li>
+<li><code><a title="HAL.data.files.delete_file" href="#HAL.data.files.delete_file">delete_file</a></code></li>
+<li><code><a title="HAL.data.files.delete_folder" href="#HAL.data.files.delete_folder">delete_folder</a></code></li>
+<li><code><a title="HAL.data.files.read_file" href="#HAL.data.files.read_file">read_file</a></code></li>
+<li><code><a title="HAL.data.files.rename_files" href="#HAL.data.files.rename_files">rename_files</a></code></li>
+<li><code><a title="HAL.data.files.write_file" href="#HAL.data.files.write_file">write_file</a></code></li>
+</ul>
+</li>
+</ul>
+</nav>
+</main>
+<footer id="footer">
+<p>Generated by <a href="https://pdoc3.github.io/pdoc" title="pdoc: Python API documentation generator"><cite>pdoc</cite> 0.11.6</a>.</p>
+</footer>
+</body>
+</html>
