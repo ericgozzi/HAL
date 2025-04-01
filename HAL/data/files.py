@@ -184,3 +184,27 @@ def delete_folder(folder_path: str) -> None:
         print(f"Error: Folder '{folder_path}' not found.")
     except OSError:
         print(f"Error: Folder '{folder_path}' is not empty.")
+
+
+
+
+
+
+
+
+def get_files_all_files_name(folder_path):
+    """
+    Get a list of all file names in the specified folder, excluding `.DS_Store`.
+
+    Args:
+        folder_path (str): The path to the folder.
+
+    Returns:
+        list[str]: A list of file names.
+    
+    Example:
+        >>> get_files_all_files_name("path/to/folder")
+        ['file1.txt', 'image.png', 'document.pdf']
+    """
+    return [f for f in os.listdir(folder_path) 
+            if os.path.isfile(os.path.join(folder_path, f)) and f != ".DS_Store"]
