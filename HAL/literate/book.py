@@ -5,6 +5,9 @@ from collections import Counter
 
 from ..data import read_file
 from ..data import export_json
+from ..data import read_json
+
+from ..data import Graph
 
 
 
@@ -29,22 +32,80 @@ class Book:
         self.title = title.lower()
 
 
+
     def __str__(self):
         return f'Book: author: {self.author.upper()}, title: {self.title}'
+    
 
+
+
+
+    def export_metadata(self, file_path):
+        concatenation_of_words = self.get_concatenation_of_words()
+        graph = Graph()
+        graph.add_edges_from_connections(concatenation_of_words)
+
+        data = {
+            'author' : self.author,
+            'title' : self.title,
+
+            'content' : self.content,
+
+            'words' : self.get_words(),
+            'sentences' : self.get_sentences(),
+
+            'words count' : self.get_words_count(),
+
+            'eigenvector' : graph.eigenvector_centrality
+        }
+        export_json(data, file_path)
+        
+        self.has_json = True
+        self.json_path = file_path
+
+
+    def read_content(self) -> str:
+        data = read_json(self.json_path)
+        content = data['content']
+
+    def read_words(self) -> str:
+        data = read_json(self.json_path)
+        words = data['words']
+        return words
+    
+    def read_sentences(self) -> str:
+        data = read_json(self.json_path)
+        sentences = data['sentences']
+        return sentences
+    
+    def read_word_count(self) -> str:
+        data = read_json(self.json_path)
+        word_count = data['word count']
+        return word_count
+    
+    def read_eigenvector(self) -> str:
+        data = read_json(self.json_path)
+        eigenvector = data['eigenvector']
+        return eigenvector
 
 
 
 
     def from_author_title_and_content(author: str, title: str, file_content: str):
-        raise NotImplementedError
+        book = Book(author, title)
+        book.set_content(file_content)
+        return book
     
 
 
 
 
     def from_json_file(file_path: str):
-        raise NotImplementedError
+        data = read_json(file_path)
+        book = Book(data['author'], data['title'])
+        book.content = data['content']
+        book.has_json = True
+        book.json_path(file_path)
 
 
 
@@ -101,16 +162,25 @@ class Book:
     def get_words(self, store_as_variable=False) -> list:
         
         # Download WordNet data needed for Lemmatization
-        nltk.download('wordnet')
-        nltk.download('omw-1.4')
+        try:
+            nltk.data.find("corpora/wordnet")
+        except LookupError:
+            nltk.download("wordnet")
+
+        try:
+            nltk.data.find("corpora/omw-1.4")
+        except LookupError:
+            nltk.download("omw-1.4")
 
         #Download stopwords
-        from nltk.corpus import stopwords
-        nltk.download('stopwords')
+        try:
+            nltk.data.find("corpora/stopwords")
+        except LookupError:
+            nltk.download("stopwords")
         
         lemmatizer = WordNetLemmatizer()
 
-        all_words = re.findall(r'\b\w+\b', self.text.lower())
+        all_words = re.findall(r'\b\w+\b', self.content.lower())
 
         words = []
         stop_words = set(stopwords.words("english"))
@@ -123,12 +193,55 @@ class Book:
         return words
     
 
+    def get_top_10_words(word_list: list) -> list:
+        """
+        Returns the top 10 most common words from a given list.
+
+        Args:
+            word_list (list): A list of words (strings).
+
+        Returns:
+            list: A list of tuples containing the top 10 words and their counts.
+        """
+        word_counts = Counter(word_list)  # Count occurrences
+        return word_counts.most_common(10)
+    
+
+
+    def get_top_100_words(word_list: list) -> list:
+        """
+        Returns the top 100 most common words from a given list.
+
+        Args:
+            word_list (list): A list of words (strings).
+
+        Returns:
+            list: A list of tuples containing the top 10 words and their counts.
+        """
+        word_counts = Counter(word_list)  # Count occurrences
+        return word_counts.most_common(100) 
+    
+
+    def get_top_n_words(word_list: list, n: int) -> list:
+        """
+        Returns the top n most common words from a given list.
+
+        Args:
+            word_list (list): A list of words (strings).
+
+        Returns:
+            list: A list of tuples containing the top 10 words and their counts.
+        """
+        word_counts = Counter(word_list)  # Count occurrences
+        return word_counts.most_common(n) 
+
+
 
 
 
     def get_sentences(self) -> list:
 
-        all_sentences = self.text.split(". ")
+        all_sentences = self.content.split(". ")
         sentences = []
         for sentence in all_sentences:
             if len(sentence) > 3:
@@ -170,20 +283,9 @@ class Book:
 
 
     
-    
 
-    def export_as_json(self, file_path):
-        data = {
-            'author' : self.author,
-            'title' : self.title,
 
-            'content' : self.content,
 
-            'words' : self.get_words(),
-            'sentences' : self.get_sentences(),
-
-            'words count' : self.get_words_count()
-        }
-        export_json(data, file_path)
 
     
+

@@ -14,7 +14,7 @@ class Graph:
 
 
 
-    def add_edges_from_connections(self, connections: list[tuple]):
+    def add_edges_from_connections(self, connections: list[tuple]) -> None:
         for item1, item2 in connections:
             self.graph.add_edge(item1, item2)
 

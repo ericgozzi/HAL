@@ -224,9 +224,6 @@ def export_json(data, file_path):
     Returns:
         None
     """
-    # Ensure the directory exists
-    os.makedirs(os.path.dirname(file_path), exist_ok=True)
-    
     # Write data to the file
     with open(file_path, "w") as file:
         json.dump(data, file, indent=4)
