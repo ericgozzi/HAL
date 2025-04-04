@@ -1,0 +1,238 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2709
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fmodern\fcharset0 Courier;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs26 \cf0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Philosophica 74 (2004) pp. 123-138\
+\
+WHERE MATHEMATICS BECOMES POLITICAL. REPRESENTING (NON-)HUMANS\
+\
+Karen Frangois & Laurent De SutterJ\
+\
+1.	Introduction\
+\
+At the dawn of Modern Science - roughly the beginning of the 17th century - it was not only Galileo who thought that \'93the book of nature is written in the language of mathematics\'94. Descartes also saw mathematics both as the language in and the method through which our knowledge about nature is best expressed. This philosophical idea became the core of the modem conception of science and was further generalized from then. Moreover, the idea of the mathematisation of the world, i.e., to grasp it with absolute certainty and hence to the highest degree of objectivity, became a goal not only for the so called \'91hard sciences\'92 but also for humanities and social (\'91soft\'92) sciences. The story of present-day sciences still seems to be one of neutrality. However, opting for a method that is thought to guarantee the highest degree of certainty and objectivity inevitably brings with it constraints on the objects of knowledge. If indeed this is so, if the method influences the objects that are knowable, if perhaps in a way it even actually \'91produces\'92 these objects, then we could go on to claim that it might very well produce objective knowledge, but definitely not neutral knowledge. It is not neutral in a first sense that sciences (even mathematics) are embedded in the social. Moreover, it is not neutral in a second sense. The way in which we epistemize the world is always one with a perspective, even if it is that\
+\
+1	Research for this paper was done within the framework of the Inter University Attraction Poles (IUAP) program (phase V), granted by the Belgian Federal Science Policy.\
+\page 124\
+\
+K. Francois & L. De Sutter\
+\
+particular one that tries to grasp the world with absolute certainty and objectivity. Using whatever method involves a choice for a specific method. Hence it always has a social dimension and therefore we can indeed call such a choice a political act (in a sufficiently broad meaning of the term).\
+\
+In this paper we sketch a philosophical approach to the problem of the use of mathematics as the most certain method available to represent nature, in order to grasp its logjco-mathematical truths. This is the outline of the paper. We explain the difference between two ways in which mathematics can be understood as political. In the first case (section 2) we explain how mathematics is embedded in the social, and hence when mathematics becomes politics, in particular circumstances and in particular applications. In the second case (section 3) we focus on the essential political aspect of mathematics, i.e., where mathematics becomes political. Therefore we elaborate on the political aspect of Galileo\'92s idea to \'91write the book of nature in the language of mathematics\'92 (3.1.) and on the impact of Descartes\'92 rules of \'93Regulae Ad Directionem Ingenii\'94. We pinpoint the difference between logico-mathematical truth and topical truth, and claim that, given our analysis, the choice to seek for the logico-mathematical truth which gives us the highest degree of certainty and objectivity, is definitely not a neutral one. In section 4, we elaborate on the topic of representation. In (4.1.) we explain how both humans and non-humans are interrelated. We start with the representation of humans -the political discourse - (4.2.), then deal with the representation of non-humans -the scientific discourse - (4.3.), and bridges between both (4.4.), where the construction of objectivity and neutrality enters into the picture. 2\
+\
+2.	Mathematics as embedded in the social\
+\
+We make a fundamental difference between the essential political aspect of mathematics (as the method) and the fact that mathematics can be applied in circumstances that render it political. Little research has been done specifically about applied mathematics in relation to its political, social and ethical impact. The most obvious relationship seems to be the connection between mathematics and war, mathematicians having lent their services and mathematical knowledge to its furtherance. Another,\
+\page Where mathematics becomes political\
+\
+125\
+\
+less obvious example concerns the way in which mathematics is handed down from generation to generation, and how mathematics is taught according to values, both implicit and explicit, included in the curriculum (Ernest [1991], Bishop [1991]). In this paper, however, we shall not elaborate on the circumstantial political aspects of (applied) mathematics, but on the essential ones. Indeed, it can be said that mathematics may become political in its applications, but this has little or nothing to do with any essential aspects of mathematics. The belief that \'91real\'92, \'91abstract\'92 and \'91higher\'92 mathematics is apolitical, e.g., as expressed by Hardy [1992], still exists. Believers reassure us that the sciences in general, and more specifically mathematics, can work for good as well as evil, in more or less the same way a knife can be used either to cut an apple or to kill a person. The question remains, however, whether mathematics (or a knife, for that matter) has an existence \'91on its own\'92 \{an sich).\
+\
+It may very well be possible to produce scientific results in isolated circumstances, in a laboratory, but any output of this kind takes upfront input and investment, comprising of, among other things, highly educated people in whom society has invested, plus working funds from the government or from industry. And at the end of the day, the results of the inquiry also end up in the outside world again, in the form of, e.g., modified soy, a cloned sheep, virtual communication, a search robot, an anti-AIDS cocktail, erection pills, Godel\'92s incompleteness theorems, a ranking of theorems according to their beauty (Wells [1988], [1990]), or a largest known prime number.2 This is even the case with parts of mathematics that will never be applied. Although in this case we can only speak of an input (without an output), it has a social relevance as (and like any other) scientific investment. In some of the examples, the connection with the social, ethical and political impact will be more obvious than in others. Nevertheless, in each instance, it is perfectly possible to show that relevance. This is not our present project, however. The boundary between science and society is a permeable membrane and indeed this has consequences in the two directions. Scientific research is 2\
+\
+2	On February 18, 2005, Martin Nowak calculated the 42nd known Mersenne Prime, 225,964,95l-l. The number has a whopping total of 7,816,230 decimal digits. It is now the largest known prime number.\
+\page 126\
+\
+K. Francois & L. De Sutter\
+\
+not an isolated activity. It is embedded in a social world and has a decisive impact on our personal lives, societies and the environment. All sciences and researchers are held to act with responsibility within the context of a democratic constitutional state. Moreover, current complex (social) problems cannot be solved by any science or scientist taken in isolation. Problems nowadays are to be characterised through a network of several sciences. Given these \'93loyalties\'94 of the sciences, the challenge seems to be how to get these sciences to communicate and interact in the most effective way. The loyalties of sciences are of two sorts: their involvement in the social and political world, and their mutual alliance. In the case of mathematics, the latter is most important, because mathematics is generally conceived as the method that must be followed by any scientist, at least him or her inquiring after (the) truth.\
+\
+3.	Using mathematics as the method\
+\
+Where the political aspect of mathematics is rather obvious in the case of the social embeddedness of mathematics, it is less clear in the case of its use as the method to grasp the world in terms of objectivity and formalization. We want to illustrate the essential political aspect of mathematics through the case of Galileo and Descartes.\
+\
+3.1 Galileo\'92s book of nature\
+\
+Let us recount the story of the emergence of modem science once more, with the archetypical example of Galileo Galilei (1564-1642), trying to represent nature through mathematical laws. Who was right, Aristotle or Galileo? The phenomenologist Rudolf Boehm (\'b01927) has often performed the following experiment in front of his students. Drop a pencil and a sheet of paper at the same time from the same height. One will easily conclude that, obviously, Aristotle\'92s theory of motion had it right: heavy things fall faster than light ones. Galileo however claimed that the mass of different bodies does not affect the acceleration, nor the average speed with which they fall, and developed a universal law of falling bodies according to which the acceleration of gravity does not\
+\page Where mathematics becomes political\
+\
+127\
+\
+vary with bodies, but remains 9,81m/s2.3 So who was right? Obviously, if we do the experiment in the vacuum, Galileo was. But Galileo produced the facts to obtain the law. That is, he stripped down the facts of their earthly conditions, and it is this construction of the facts that has yielded him his invariable and universal objective law. While the results of scientific research are usually expressed in terms of \'91true\'92 or \'91false\'92, in cases like this one, Bruno Latour ([1997]: 14) and Isabelle Stengers ([1993]: 101) prefer to speak about production of truth \{faitiche experimental). \'91Objective\'92 truth is \'91produced\'92 truth in the sense that the facts are constructed so as to give birth to objectivity and universality. The question remains open, however, if the results of this construction are interesting or uninteresting, that is, of high or little interest, importance and relevance.\
+\
+What is the political aspect to this story? It is the proliferation of one perspective that elevates itself above all the others, namely the \'91objective\'92 one, and moreover, the fact that this perspective claims neutrality. The choice for an objective representation of nature is presented as neutral in the sense that within this perspective one removes the impact of subjectivity (to the best of one\'92s possibilities) as well as of all needs and interests (those of objectivity itself excepted). However, it is not neutral to make a choice concerning the way things shall be represented, a choice concerning the way how to \'91epistemize\'92 the world. In this case in an abstract way, by isolating things and stripping them down from various variables, aimed at grasping nature in universal and immutable laws, and representing it in a formal framework At this moment, mathematics enters the picture, viz., as the language to objectify, make abstraction of, isolate things. And this is also where mathematics becomes both neutral and political. It is neutral in the sense that mathematics, used as the language to objectify, makes abstraction of subjectivity as well as of all needs and interests. It is political in the sense that one makes the choice, however implicit, to represent nature in an objective way, sedimented in universal laws; a choice which is made without any ideological, social or political argumentation. While Galileo may very well have preached that the book of nature is written in the\
+\
+3	That is, on average, depending on one\'92s geographical situation. It is slightly less (9,79 m/s2) at the equator and a bit more at the poles (9,83 m/s2).\
+\page 128\
+\
+K. Francois & L. De Sutter\
+\
+language of mathematics, we contend that, contrary to this claim, he has referred to one of the possible books only, with surely many more of them to be written.\
+\
+Ontologically, mathematical objects are usually attributed supra-human characteristics. Most practicing mathematicians and philosophers of mathematics are indeed Platonists,4 and consider mathematics as being strictly outside and elevated above human beings, something that has been in existence since the beginning of time (either or not created by God), without the interference of humans. If the book of nature is written in the language of mathematics, then indeed God must be a mathematician (or at least, God speaks a language that, translated into human terms, turns out to be mathematical).\
+\
+3.2.	Descartes\'92 logical truth\
+\
+The cultivation of logical truth we owe to a large extent to Rene Descartes (1596-1650), who handed down the regulations (regulae) for how to represent, get to know and properly indicate things (objecta). Descartes gave birth to a new method surviving with success until now, one introducing mathematics as the purest of sciences and the privileged way to achieve certain knowledge. Intuition and deduction, for him, are the two core operations through which reason achieves this goal. The former is a faculty, which he supposes us to have, by which one is capable of grasping truths in some immediate way, this knowledge being moreover worthy of trust, impossible to doubt. Every piece of knowledge must either have this type of intuitive clarity or be straightforwardly deducible from such claims. This so called analytico-synthetic methodology is based on reducing the unknown to the known, in the same way as conclusions of mathematical proofs are deducible from the premises. Descartes inquired on this method in his \'93Regulae Ad Directionem Ingenii\'94 or regulations concerning the intellectual activities,\
+\
+4	Although not wholly unsupported, this statement remains conjectural to a certain degree. Suggestions in this direction have been given hy the mathematicians Davis and Hersh [1980] and by the sociologist Restivo et al. [1993], In further research, we shall ourselves he inquiring this matter from an ethnographical point of view.\
+\page Where mathematics becomes political\
+\
+129\
+\
+his first philosophical work, dating from 1628,5 and left unpublished until over thirty years after his death.6 For present purposes, viz., to introduce the concept of topical truth, in contrast to that of logical truth, we need only elaborate on the first three rules. In his first rule, Descartes announces his program, laying out the purposes of his \'93Regulae\'94.\
+\
+Rule 1\
+\
+The purpose of any intellectual inquiry should be to reach solid and true judgments about everything that occurs.\
+\
+In the second and third rule, Descartes gives the epistemological constraints put on obtaining certain knowledge. In rule 2, logical truth gets into the picture as the core of it all, and in rule 3, the place and status of mathematics within the sciences is highlighted.\
+\
+Rule 2\\\
+\
+We should attend only to those objects of which our minds appear to be capable of having certain and indubitable cognition.\
+\
+The topical question is the question of which objects should or are interesting to be known.7 In Descartes\'92 \'93Regulae\'94, this question is reduced to a matter of logic: are qualified only those objects of which our minds are capable of attaining indubitable cognition. To make a selection of objects that we should attend to is not a neutral business, not even if the criterion concerns the method exclusively. The choice of how to represent objects is a political choice. In this politics of the\
+\
+5	Descartes\'92 famous \'93Discours de la methode\'94 was finished in 1636, and published in 1637 (Leiden).\
+\
+6	It was first published in Dutch translation in 1684 (by Glazemaker, a member of the Spinoza-circle). The Latin translation, \'93Editio Princeps\'94, dates from 1701. The \'93Regulae\'94 have later been also translated as \'93Regies pour la direction de l\'92esprit\'94 (1963) and \'93Rules for the Direction of the Mind\'94 (1984-91).\
+\
+7	The philosophical term \'91topica\'92 as used by Aristotle has a double meaning. It means (1) theme and (2) the point of view from which something is approached.\
+\page 130\
+\
+K. Francois & L. De Sutter\
+\
+representation of things (called non-humans by Latour, see below) mathematics plays a crucial part, due to the fact that it seems to be the only method to achieve certain knowledge, viz., by deduction. In the third rule, Descartes indeed describes the fundamentals of this recommended method.\
+\
+Rule 3:\
+\
+Concerning the things proposed, one ought not to look at what others might have thought or at what any one might have conjectured, but only at what we can either clearly and evidently intuit or deduce with certainty; for in no other way can knowledge be acquired.\
+\
+Descartes thus proposes the powers to obtain certain knowledge to be intuition and deduction, and further on elaborates on the actual rules that should be applied: the rules of mathematics.\
+\
+While Galileo proclaimed that the book of nature is written in the language of mathematics, Descartes explained how to take into account which objects, when probing for certain and indubitable knowledge. This entire project seems to strike one as an objective thus neutral one. However, it is not, because the way in which to represent nature results from a choice, even if it be the choice for the formal mathematical way. This choice has its social relevance, and therefore has a \'91topical\'92 dimension. In contrast with a pure method-based or \'91logical\'92 choice, a topical choice involves broader interests. Therefore we call the Cartesian project based on the logico-mathematical method a political project.\
+\
+4.	Representing (non-)humans\
+\
+The latter observation derives from the French anthropologist of science Bruno Latour, who in his [1999] is talking of politics as the representation of both humans and non-humans, while traditionally the use of the word is restricted to the former. Below, we first want to go into this classical dichotomized representation of reality in categories of humans and non-humans (4.1). After that, we shall go into the meaning of \'91politics\'92 (4.2 and 4.3), and finally draw a parallel with the \'91politics of nature\'92 (4.4).\
+\page Where mathematics becomes political\
+\
+131\
+\
+4.1. The gap between humans and non-humans\
+\
+The separation of humans and non-humans that supports the classical dichotimized representation of reality has prevailed for centuries. Oddly enough, signs are clearly present that the distinction between humans and non-humans cannot be maintained. In view of the politics of concern, in any case, this dichotomy cannot persist, since both dimensions are connected, interrelated and of mutual influence. What would be the relevance of deconstructing this gap in our system of knowledge? In this respect, Latour invokes the term \'91hybrid\'92 (Latour [1997]: 7), while Haraway speaks of \'91cyborg\'92 (Haraway [1991]: 149). The latter term is borrowed from science fiction, a cyborg being a creature that is partly human and partly machine. We can easily recognize the cyborg in ourselves. Just think what our lives would be like without glasses, sets of dentures, or medicines. Extremer but also clearer examples are pacemakers, artificial heart valves, plastic knees or hips, and further prostheses of all kinds. But even when in perfect health, we can hardly move without a bike, car or public transport. Without a computer or a mobile, most of our communication would come to a halt. As a result, we can not longer speak of two completely separated categories of humans and non-humans. At least, we need to arrange them on a continuum.\
+\
+It is thus fairly obvious that non-humans intervene in human life. But how do humans intervene in the space of non-humans? Here we can appeal to cases involving research. For example, if we want to know the temperature of an object, we cannot measure it without intervening, that is, without an effect -however tiny- on the very temperature we want to measure. Indeed, the act of measuring temperature affects the heat balance, and so the researcher has an influence on the state of his or her object under investigation. But there is more. What about those who decide what is to be the object of inquiry? They determine the way in which the interesting facts should be isolated, or the way in which they should be represented. Consequently, they decide what facts should be produced and in what format we shall come to know about them. Humans, scientists, are the ones who determine how the world will come into view. Their particular perspectives establish the way in which scientific objects will be publicly presented, creating the contexts from within which non-humans are brought into existence. Representation and its epistemological constraints presuppose a choice for a specific\
+\page 132\
+\
+K. Francois & L. De Sutter\
+\
+perspective, a choice with social and political relevance. Hence the importance of politics of fact or politics of concern. The political discourse is extended from the sphere of humans to the sphere of nonhumans.8\
+\
+4.2.	Latour\'92s political turn\
+\
+Political discourse takes place at the heart of a representation process of individuals, citizens, trying to get a grip on their particularities, complaints, desires, needs and interests, and how these are best (not) taken into account. Due to the fact that the whole of politically relevant human features is immensely complex and in constant change, political representation has been fundamentally biased, ever since the earliest establishment of political elites on. Indeed, political representation of humans is always incomplete and therefore must be formally renewed through elections from time to time, which installs a feedback mechanism, however imperfect, between those who represent and those who are represented. The process of political representation is volatile, unstable and incomplete in principle, due to the nature of those who are represented. It is a kind of representation that needs to be rearticulated time and again to avoid ending up in a totalitarian system. Bearing these characteristics in mind, let us oppose the political to the scientific discourse. The first observation is that while (s)he who engages in political discourse is held to give account, scientific discourse seems legitimated \'91by itself and apparently is in no need of further justification. On the contrary, it has been elevated to an authoritarian status when it comes to speaking \'91wisely\'92 about non-humans.\
+\
+Scientific discourse is presented and presents itself as having direct and privileged access to the truth, unhindered by the resistances offered by individual human and non-human obstacles or combinations of those:\
+\
+8	Latour ([1999]: 354) elaborates on this topic and makes the difference between\
+\
+(1)	epistemologie as the \'91neutral\'92 study of the sciences and their used methods,\
+\
+(2)	epistemologie (politique) as a kind of political correction of the derailments of science, but without respect for the procedures coordinating science and politics, and (3) epistemologie politique (without parentheses), as the explicit analysis of the power division between science and politics, within the frame of the constitution.\
+\page Where mathematics becomes political\
+\
+133\
+\
+laboratories, instruments, fellows, research groups, \'91facts\'92, journal referees, conference boards, supervisors, funding agencies. On the contrary, it is usually presented as having direct access to the realm of transparent truth, on a \'91double-click\'92 (Latour [1997]) as it were. Instead, we propose to recognize the political dimension of the representation of nature or, as we prefer to express it, of non-humans. That is, in the same manner that politicians appear to be empowered to speak of and for humans, scientists are empowered to speak of and for non-humans. Unmistakably, scientists have this power because they hand us, laypersons, knowledge about nature, bring its whereabouts to our consciousness, \'91represent\'92 facets of it. We want to emphasize the double meaning of representation in this respect. Obviously, to represent nature means to show or tell what it is like in reality, either \'91by itself or \'91to us\'92. But representation also refers to the processes whereby scientists are legitimized to do so, i.e., speak \'91on behalf of non-humans.\
+\
+4.3.	Politics of science\
+\
+There is an inherent political dimension to scientific activities. Following Latour [2004], we call this political dimension, as exemplified by the first meaning of representation, the politics of fact. Latour puts an emphasis on the reduction of scientific knowledge by \'93objective\'94 discourse, the monopoly of which shortcuts the possibility for the facts of being something else or more than mere facts. Does this strike are as nonsensical? This could only be so if we reduce our ways of looking at the facts such that what is left to see is indeed nothing but facts \'93as such\'94. But facts are not facts \'93as such\'94. They are the results (the objective results) of common constructions and of common \'93interests\'94 towards them (Stengers [1993]). These interests are irreducible to the single interest of scientists, or of those who finance them, but connect with scientists building around them the largest possible network of considerations, passions, uses, etc. It is within the context of this network that a fact becomes \'93interesting\'94 or of concern to others, or not. Politics of concern would then be the apt name for this political dimension of science in the second sense, stressing the circumstance that science always involves more than \'93mere\'94 science strictly conceived. These politics of concern, for Latour, reveal the political side of the multidimensional activity that ideally ends with making a fact\
+\page 134\
+\
+K. Francois & L. De Sutter\
+\
+\'93objective\'94, i.e., interesting for the greatest amount of people. Put otherwise, the politics of concern refers to a way of going about science that gives maximal room for considering these diverse interests.\
+\
+The main difficulty with this picture, as has been recalled by Latour [1999], is that the fundamental political structure of our societies denies the possibility of leaving behind the politics of facts, and grant the floor to the politics of concern. Our societies, he claims, are still structured according to the Great Divides (les Grands Partages), the most important one of which is that between nature and culture. By believing that there really is something like nature as such out there, and that we just have to investigate it thoroughly to discover its intrinsic secrets, we have de facto given scientists full power of speaking on its behalf; moreover, they are expected to do so. Hereby, scientists have received the political power to speak publicly and with authority about and on behalf of non-humans (things, facts, \'93nature\'94), which, if you think about it, is an enormous power. Moreover, it is a power without competitive opposition, because scientists are assumed to \'93know\'94 about the facts or nature, while we, laypersons, are not. The only one thing the latter are supposed to \'93know\'94 about is the way they want to lead their daily lives, and the only thing they are expected to do for that purpose is to carry out their personal world view via the institutional decision procedures of parliamentary representation, which should ensure their fair share of rights and plights.\
+\
+Following Latour [1991], our \'93modem\'94 societies are governed by parliaments divided into two separate chambers. On the one hand, a public chamber of politicians, to whom the power has been delegated to decide on behalf of the people, i.e. \'93humans\'94, and thus to rule the nation institutionally. On the other hand, a secret chamber of scientists, who have been granted the monopoly of deciding about or ruling \'93nonhumans\'94. The problem now is that these two chambers do not communicate, except for situations in which in the political chamber questions are raised concerning \'93matters of fact\'94, in which cases the scientific chamber is appealed to in order to wipe out doubts. Again, since they are assumed to be the experts, the scientists are expected and presumed to provide with certain knowledge about reality as it is. And who would be foolish enough to go into discussion about such proclaimed truths? If the scientist tells us that, under standard circumstances, water boils at a hundred degrees centigrade, indeed who\
+\page Where mathematics becomes political\
+\
+135\
+\
+will stand up and say this is not true?\
+\
+4.4 The representational function of scientists\
+\
+At this stage, the issue of representation needs to be further developed. In the two-chambered parliament metaphor, both politicians and scientists are attributed the power to speak on behalf of \'93others\'94 -other people or other things. Thus, politicians as well as scientists are representatives, whose legitimacy to speak derives from reducing (the interests of) a vast number of represented persons or things to (those of) a small group of empowered speakers. The latter\'92s actions are legitimized exactly through the act of empowerment. Representation, wherever it happens, is always a question of being granted the proper power. This is what one should understand when interested in the mechanisms of this empowerment: it is all about warranting it. The logical consequence of such a reductive understanding of representation seems to be that representation is only political when it concerns the institutional structure of the state. Put more simply: when we speak about \'93political representation\'94, we do not intend anything but the way the parliamentary life is justified, referring to nothing else than the process embodying that justification (Burdeau/Hamon/Troper [2001]). Clearly, this does not concern scientific practices at all. From the legal point of view, it would indeed be absurd to say that there can be representation outside the scope of the representative institutions, i.e., outside the political structures that have been declared representational by constitution.\
+\
+Nevertheless, if we want to open ourselves to the politics of concern, it is necessary to rethink the separation just introduced, between the fictitious and real chambers, and move beyond the question of justification of the existing institutions to other types of actual representation. That is, if we want to overcome the \'93Great Divide\'94 between scientific knowledge and political action, and give way to the politics of concern, it is necessary to understand the political reality of representation in all places where representation is at stake -and not only when it concerns parliaments, not just when elections are involved. First of all, we have to take serious the statement that scientists, as speakers on behalf of non-humans, do fulfil a representational function, just as politicians do for humans. The most important argument is that these representatives have indeed turned out to have a real -i.e., political-\
+\page 136\
+\
+K. Francois & L. De Sutter\
+\
+impact on the way power structures have been erected surrounding \'93matters of fact\'94. If there is a distinction between experts and laypersons, and if experts are trusted while laypersons are not, it is simply because scientists are considered as truthful and legitimized representatives of the things on behalf of which they are supposed to speak. However, as far as we know, there are no such things as elections for scientists; there only are the scientists\'92 personal curricula, which narrate life stories Ml of passions, interests and -yes- concerns.\
+\
+The challenge of any politics of concern worthy that name will be to take into account all the ways in which representation is activated within contemporary constitutional states, rather than to restrict itself to what happens in parliaments, and to try and think them together, thereby putting upside down old (\'93modem\'94) divisions of power. More specifically, representation must become the common political name of what it is like to speak on behalf of \'93others\'94, humans and non-humans alike. At least, if it is really our intention to let \'93concern\'94 become the core subject of politics, and really want the word \'93expertise\'94 to designate our common experience of things instead of an exclusivity claim over scientific discourse.\
+\
+5.	Conclusion\
+\
+The way in which nature is represented depends on human choices. Consequently, public knowledge invariably results from a particular perspective. Just like the representation of humans, the representation of non-humans is a political act, involving a political vision. Scientific objectivity, using mathematics as the purest of languages, necessary to express all natural events, claims to be neutral, while it in fact involves a perspective that gives preference to applying a characteristic method rather than paying attention to the specific objects to be known. Next to the logical truth thus produced, there is topical truth, which is also produced by a specific method, not claiming neutrality, but on the contrary, based on interests. In reality, neither method is neutral. But where the latter is based on external and broadly political interests, in\
+\page Where mathematics becomes political\
+\
+137\
+\
+case of the former, the interest is virtually limited to the proper functioning of the method itself.\
+\
+Vrije Universiteit Brussel Karen.Francois@vub.ac.be\
+\
+REFERENCES\
+\
+Bishop, Alan. J. (1991, 1997), Mathematical Enculturation, A Cultural Perspective on Mathematics Education, Mathematics Education Library, Vol. 6, Kluwer Academic Publishers, Dordrecht / Boston / London.\
+\
+Boehm, Rudolf (2002), Topik, Phaenomenologica 162, Kluwer Academic Publishers, Dordrecht / Boston / London.\
+\
+Burdeau, Georges; Hamon, Francis; Troper, Michel (2001), Droit constitutionnel, L.G.D.J, Paris.\
+\
+Davis, Philip J. & Hersh, Reuben (1980), The Mathematical Experience, Birkhauser, Boston.\
+\
+Descartes, Rene (1966), Regulae ad directionem ingenii, avec la collab. de Giovanni Crapulii, Den Haag, Nijhoff.\
+\
+Descartes, Rene (1967), Oeuvres, (1618-1637), vol. 1, commente par Ferdinand Alquie, Gamier, Paris.\
+\
+Descartes, Rene (1984-1991), Regulae ad directionem ingenii (Rules for the Direction of the Mind), in: vol. 1 of The Philosophical Writings of Descartes , ed. and trans. J. Cottingham, R. Stoothoff, D. Murdoch and A. Kenny, Cambridge University Press, Cambridge.\
+\
+Echeverria, Javier, Ibarra, Andoni & Mormann, Thomas (eds.) (1992), The Space of Mathematics, Philosophical, Epistemological, and Historical Explorations, Walter de Gruyter, Berlin, New York.\
+\
+Ernest, Paul (1991, 2003), The Philosophy of Mathematics Education, Studies in Mathematics Education, Routledge Falmer, London.\
+\
+Haraway, Donna (1991, 2002), Simians, Cyborgs, and Women. The Reinvention of Nature, Free Association Books, London.\
+\
+Hardy, G. H. (1992), A mathematician's apology, with a foreword by C.P. Snow, Canto (ed.), Cambridge [England]; New York: Cambridge University Press.\
+\
+Kline, Morris (1980), Mathematics. The Loss of Certainty, Oxford University Press, New York.\
+\
+Latour, Bruno (1991, 1997), Nous n\'92avons jamais ete modernes, Essai d\'92anthropologie symetrique, La Decouverte/Poche; 26. Sciences humaines et sociales, Paris.\
+\page 138\
+\
+K. Francois & L. De Sutter\
+\
+Latour, Bruno (1999), Politiques de la nature, Comment faire entrer les sciences en democratie, La Decouverte, Paris.\
+\
+Latour, Bruno (2002), \'93Si l\'92on parlait un peu politique\'94, in: Politix, vol. 15, nr. 58, pp. 143-166.\
+\
+Latour, Bruno (2004), \'93Why Has Critique Run out of Steam: From Matters of Facts to Matters of Concern\'94, in: Critical Inquiry nr. 2, pp. 25-48.\
+\
+Restivo, Sal; Van Bendegem, Jean Paul; Fischer, Roland (eds.) (1993), Math worlds. Philosophical and Social Studies of Mathematics and Mathematics Education, Suny Series in Science, Technology, and Society (Sal Restivo, Editor), State University of New York Press. New York.\
+\
+Stengers, Isabelle (1993), L\'92invention des sciences modernes, La Decouverte, Paris.\
+\
+Stengers, Isabelle (1997), Sciences et Pouvoirs, Faut-il en avoir peur? Labor, Bruxelles.\
+\
+van Leeuwen, E. (1986), Descartes' Regulae: de eenheid van heuristische wetenschap en zelfbewustzijn, VU-Press, Amsterdam.\
+\
+Wells, David (1988), \'93Which is the most beautiful?\'94, in: The Mathematical Intelligencer, vol. 10, nr. 4, pp. 30-31.\
+\
+Wells, David (1990), \'93Are these the most beautiful?\'94, in: The Mathematical Intelligencer, vol. 12, nr. 3, pp. 37-41.\
+}
