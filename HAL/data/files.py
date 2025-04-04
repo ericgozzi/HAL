@@ -22,7 +22,7 @@ def read_file(file_path: str) -> str:
         IOError: If there is an issue opening or reading from the file.
     
     """
-    with open(file_path, 'r') as file:
+    with open(file_path, 'r', encoding='utf-8') as file:
         content = file.read()
         return content
     
@@ -54,7 +54,7 @@ def write_file(file_path: str, content: any) -> None:
         IOError: If there is an issue opening or writing to the file.
     
     """
-    with open(file_path, 'w') as file:
+    with open(file_path, 'w', encoding='utf-8') as file:
         file.write(content)
 
 
@@ -77,7 +77,7 @@ def append_to_file(file_path: str, content: any) -> None:
         None
 
     """
-    with open(file_path, "a") as file:
+    with open(file_path, "a", encoding='utf-8') as file:
         file.write(content)
 
 
@@ -225,7 +225,7 @@ def export_json(data, file_path):
         None
     """
     # Write data to the file
-    with open(file_path, "w") as file:
+    with open(file_path, "w", encoding='utf-8') as file:
         json.dump(data, file, indent=4)
 
 
@@ -250,7 +250,7 @@ def add_to_json(file_path, new_item):
         raise FileNotFoundError(f"Error: The file '{file_path}' does not exist.")
 
     # Read the existing data
-    with open(file_path, "r") as file:
+    with open(file_path, "r", encoding='utf-8') as file:
         try:
             data = json.load(file)
         except json.JSONDecodeError:
@@ -265,7 +265,7 @@ def add_to_json(file_path, new_item):
         raise ValueError("Unsupported JSON format. Expected a list or a dictionary.")
 
     # Write the updated data back to the file
-    with open(file_path, "w") as file:
+    with open(file_path, "w", encoding='utf-8') as file:
         json.dump(data, file, indent=4)
 
 
@@ -289,7 +289,7 @@ def read_json(file_path):
         raise FileNotFoundError(f"Error: The file '{file_path}' does not exist.")
 
     # Read and parse the JSON file
-    with open(file_path, "r") as file:
+    with open(file_path, "r", encoding='utf-8') as file:
         try:
             return json.load(file)
         except json.JSONDecodeError:
