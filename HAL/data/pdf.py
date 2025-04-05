@@ -8,14 +8,14 @@ from reportlab.lib.enums import TA_JUSTIFY
 class PDF:
 
     def __init__(self, file_name: str):
-        self.file = file_name
+        self.file = file_name + '.pdf'
         self.doc = SimpleDocTemplate(self.file, pagesize=A4)
         self.paragraphs = []
 
     
     def export(self):
         self.doc.build(self.paragraphs)
-        print('Aplausos! The PDF has been exported!')
+        print(f'Aplausos! The PDF {self.file} has been exported!')
 
 
 

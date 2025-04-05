@@ -496,23 +496,53 @@ class Quotebook:
         return quotebook
     
 
-    def build_text_randomly(self):
+    def build_text_randomly(self, create_title=False, n=10):
         quotes = self.quotes.copy()
         random.shuffle(quotes)
         text = ""
         footnotes = ""
-        for i, quote in enumerate(quotes):
-            text_snippet = quote.quote
+        for i in range(n):
+            text_snippet = quotes[i].quote
             text_snippet = text_snippet.replace('\n', ' ')
             
-            author = quote.author
+            author = quotes[i].author
             author = author.replace('\n', '')
             author = author.replace('\t','')
             author = author.replace('  ', ' ')
 
-            title = quote.book_title
+            title = quotes[i].book_title
             title = title.replace('\n', ' ')
 
             text += f'{text_snippet}[{i}] '
             footnotes += f'[{i}]: {author}, {title} \t'  
-        return text, footnotes
+
+        title = None
+        if create_title:
+            title = ''
+            # The index of the title
+            for i in range(3):
+                title += quotes[i].quote[i]
+            words = get_most_popular_word(text)
+            word_counts = Counter(words)
+            most_common = word_counts.most_common(1)
+            title += f'_{most_common[0][0]}'
+
+
+
+        return text, footnotes, title
+    
+
+
+
+def get_most_popular_word(text):
+    lemmatizer = WordNetLemmatizer()
+    all_words = re.findall(r'\b\w+\b', text)
+    words = []
+    stop_words = set(stopwords.words("english"))
+    for word in all_words:
+        base_form = lemmatizer.lemmatize(word)
+        if base_form not in stop_words and len(base_form)>2:
+            words.append(base_form) 
+    return words
+
+

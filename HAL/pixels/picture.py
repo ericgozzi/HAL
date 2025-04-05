@@ -2,6 +2,8 @@ import math
 
 import numpy as np
 
+import os
+
 from PIL import Image
 from PIL import ImageDraw
 from PIL import ImageFilter
@@ -903,3 +905,90 @@ def superimpose_pictures(picture_1, picture_2):
     picture_1 = picture_1.copy()
     picture_1.image.paste(picture_2.image, (0, 0), picture_2.image)
     return picture_1
+
+
+
+
+
+
+
+
+
+
+
+
+def get_blank_picture(width: int, height: int, color: Color, border_thickness=0, border_color=Color(0, 0, 0)) -> Picture:
+    image = Image.new("RGB", (width, height), color.color)
+    
+    draw = ImageDraw.Draw(image)
+    draw.rectangle([0, 0, width - 1, height - 1], outline=border_color.color, width=border_thickness)
+
+    picture = Picture.from_PIL_image(image)
+    return picture
+
+
+from PIL import ImageDraw, ImageFont
+
+def add_centered_text(picture: Picture, text: str, **kwargs) -> Picture:
+
+    # Function to wrap text
+    def wrap_text(draw, text, font, max_width):
+        lines = []
+        words = text.split()
+        current_line = []
+
+        for word in words:
+            # Join current line with the new word and calculate its width
+            current_line.append(word)
+            line_width, _ = draw.textbbox((0, 0), ' '.join(current_line), font=font)[2:4]
+
+            # If line exceeds max width, start a new line
+            if line_width > max_width:
+                lines.append(' '.join(current_line[:-1]))  # Add previous line (without last word)
+                current_line = [word]  # Start a new line with the current word
+
+        lines.append(' '.join(current_line))  # Add the last line
+        return lines
+    
+
+
+    text_color = kwargs.get('color', Color(0, 0, 0))
+    font_size = kwargs.get('font_size', 40)
+
+
+    picture = picture.copy()
+    # Initialize ImageDraw object
+    draw = ImageDraw.Draw(picture.image)
+
+
+    # Get the path to the .ttf font in the parent directory (relative path)
+    font_path = os.path.join(os.path.dirname(__file__), '..', 'fonts', 'Helvetica', 'Helvetica.ttf')
+    font = ImageFont.truetype(font_path, font_size)
+    #font = ImageFont.load_default()
+
+    # Wrap the text
+    max_width = picture.width - 20  # Max width of the text block (with some padding)
+    lines = wrap_text(draw, text, font, max_width)
+
+
+        # Calculate the total height of the text block
+    total_text_height = sum([draw.textbbox((0, 0), line, font=font)[3] for line in lines])
+
+    # Calculate the starting position to center the text vertically
+    y_start = (picture.height - total_text_height) // 2
+
+    # Set the starting position for the text (horizontally centered)
+    x_start = (picture.width - max_width) // 2
+
+    # Draw each line of text
+    y = y_start
+    for line in lines:
+        line_width = draw.textbbox((0, 0), line, font=font)[2]  # Calculate the width of the current line
+        x_start = (picture.width - line_width) // 2  # Center the line horizontally
+        draw.text((x_start, y), line, fill=text_color.color, font=font)
+        y += draw.textbbox((0, 0), line, font=font)[3]  # Move to the next line's position
+
+
+    return picture
+
+
