@@ -8,7 +8,7 @@ from ..data import read_file
 from ..data import export_json
 from ..data import read_json
 
-from ..data import Graph
+from ..metrika import Graph
 
 
 
@@ -145,7 +145,7 @@ class Book:
         """
         if self.has_json:
             data = read_json(self.json_path)
-            word_count = data['word count']
+            word_count = data['words count']
             return word_count
         else:
             raise FileNotFoundError('The json file associated with this book does not exists yet.')

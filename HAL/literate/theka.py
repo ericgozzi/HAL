@@ -1,3 +1,5 @@
+from collections import defaultdict
+
 
 from .book import Book
 from .book import Quote
@@ -162,5 +164,81 @@ class Library:
             words = book.read_words()
             topics.update(words)
         return topics
+    
 
+    def get_most_popular_words(self, n: int):
+        words_dictionary = self.get_words_count_dictionary()
+
+        # Calculate total count for each word
+        total_counts = {word: sum(counts) for word, counts in words_dictionary.items()}
+
+        # Sort the words by total count in descending order
+        sorted_words = sorted(total_counts.items(), key=lambda item: item[1], reverse=True)
+
+        # Get the n most popular words
+        top_n_words = sorted_words[:n]
+        words = [tnw[0] for tnw in top_n_words]
+
+        return words
+    
+    def get_eigenvector_dictionary_of_n_most_popular_worlds(self, n:int):
+        eigenvector = self.get_eigenvector_dictionary()
+        words = self.get_most_popular_words(n)
+
+        limited_dict = defaultdict(float)
+        for word in words:
+            limited_dict[word] = eigenvector[word]
+
+        return limited_dict
+
+
+    def get_eigenvector_dictionary(self) -> dict:
+        eigen_dictionary = defaultdict(list)
+        for book in self.books:
+            eigen_values = book.read_eigenvector()
+
+            # For each word in the current book's word counts
+            for word, count in eigen_values.items():
+                eigen_dictionary[word].append(count)
+        
+        # To ensure all words have counts for all books (add 0 for missing words)
+        for word in eigen_dictionary:
+            while len(eigen_dictionary[word]) < len(self.books):
+                eigen_dictionary[word].append(0)
+
+        # Convert defaultdict to a regular dict if needed
+        eigen_dictionary = dict(eigen_dictionary)
+
+        return eigen_dictionary
+
+
+    def get_words_dictionary_of_n_popular_words(self, n:int)->dict:
+        dict = self.get_eigenvector_dictionary()
+        words = self.get_most_popular_words(n)
+
+        limited_dict = defaultdict(list)
+        for word in words:
+            limited_dict[word] = dict[word]
+
+        return limited_dict
+
+
+    def get_words_count_dictionary(self) -> dict:
+        words_dictionary = defaultdict(list)
+        for book in self.books:
+            word_counts = book.read_word_count()
+
+            # For each word in the current book's word counts
+            for word, count in word_counts.items():
+                words_dictionary[word].append(count)
+        
+        # To ensure all words have counts for all books (add 0 for missing words)
+        for word in words_dictionary:
+            while len(words_dictionary[word]) < len(self.books):
+                words_dictionary[word].append(0)
+
+        # Convert defaultdict to a regular dict if needed
+        words_dictionary = dict(words_dictionary)
+
+        return words_dictionary
 
