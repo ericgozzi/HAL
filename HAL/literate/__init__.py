@@ -1,5 +1,6 @@
 from .book import *
 from .theka import *
+from .functions import *
 
 
 
@@ -13,18 +14,18 @@ from nltk.corpus import stopwords
 
 
 # Download WordNet data needed for Lemmatization
-try:
-    nltk.data.find("corpora/wordnet")
-except LookupError:
+from nltk.downloader import Downloader
+
+d = Downloader()
+
+# Check and download 'wordnet'
+if not d.is_installed("wordnet"):
     nltk.download("wordnet")
 
-try:
-    nltk.data.find("corpora/omw-1.4")
-except LookupError:
+# Check and download 'omw-1.4'
+if not d.is_installed("omw-1.4"):
     nltk.download("omw-1.4")
 
-#Download stopwords
-try:
-    nltk.data.find("corpora/stopwords")
-except LookupError:
-    nltk.download("stopwords")    
+# Check and download 'stopwords'
+if not d.is_installed("stopwords"):
+    nltk.download("stopwords")
