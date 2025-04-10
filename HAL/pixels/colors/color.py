@@ -62,3 +62,30 @@ class Color:
         # Convert CMYK to percentage (0-100 scale)
         return (c * 100, m * 100, y * 100, k * 100)
     
+
+
+    def as_integer(self):
+        integer = self.red + self.green + self.blue
+        return integer
+    
+    
+    def from_integer(integer: int):
+        red, green, blue = 0, 0, 0
+        if integer > 255:
+            red = 255
+            integer -= 255
+        else:
+            red = integer
+            return Color(red, green, blue)
+        if integer > 255:
+            green = 255
+            integer -= 255
+        else: 
+            green = integer
+            return Color(red, green, blue)
+        
+        if integer > 255:
+            raise ValueError("Integer too big")
+        else:
+            blue = integer
+            return Color(red, green, blue)

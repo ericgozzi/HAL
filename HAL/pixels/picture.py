@@ -704,6 +704,15 @@ class Picture:
         """
         self.image.putalpha(mask.image)
 
+
+
+    def paste_picture(self, picture_to_paste, coord_x: int, coord_y: int):
+        mask = picture_to_paste.copy()
+        mask.convert_to_rgba()
+
+        self.image.paste(picture_to_paste.image, (coord_x, coord_y), mask.image)
+
+
                     
 
     # Filters
@@ -761,6 +770,10 @@ class Picture:
         color_filter = Image.new("RGB", self.image.size, color.color)
         self.image = ImageChops.multiply(self.image, color_filter)
 
+
+    def get_pixel_color(self, coord_x:int, coord_y:int):
+        color = self.image.getpixel((coord_x, coord_y))
+        return Color(color[0], color[1], color[2])
 
 
 
@@ -925,6 +938,7 @@ def get_blank_picture(width: int, height: int, color: Color, border_thickness=0,
 
     picture = Picture.from_PIL_image(image)
     return picture
+
 
 
 from PIL import ImageDraw, ImageFont
