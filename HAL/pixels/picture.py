@@ -11,9 +11,7 @@ from PIL import ImageOps
 from PIL import ImageEnhance
 from PIL import ImageChops
 
-from .colors import Color
-from .colors import BLACK
-from .colors import WHITE
+from .color import Color
 
 
 class Picture:

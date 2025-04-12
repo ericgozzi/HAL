@@ -176,14 +176,14 @@ class Organism(object):
     Yet new life rises, filling the room.
     """
 
-    def __init__(self, max_generations, blueprint, chunks):
+    def __init__(self, max_generations, blueprint, chunks, x_rows, y_rows):
 
         self.generations = max_generations
         self.blueprint = blueprint
 
         self.chunks = chunks
-        self.n_rows = chunks.BranchCount
-        self.n_indices = len(chunks.Branch(0))
+        self.n_rows = x_rows
+        self.n_indices = y_rows
 
         self.original_cells = []
         self.cells = []
@@ -205,18 +205,18 @@ class Organism(object):
         The grid is laid, for the cells to grow and thrive.   
         """
         generation = 0
+        chunks_i = 0
         function = self.blueprint.floors[0].function
-        for i in range(self.chunks.BranchCount):
+        for i in range(self.n_rows):
             row = i
-            branch_list = self.chunks.Branch(i)
-            for j in range(len(branch_list)):
+            for j in range(self.n_indices):
                 index = j
                 
                 cell = Cell(False, generation, row, index, function, cell_height)
                 
                 corners = []
 
-                rectangle = branch_list[j]
+                rectangle = self.chunks[chunks_i]
                 corner0 = rectangle.Corner(0)
                 corner2 = rectangle.Corner(2)
                                 
@@ -224,6 +224,7 @@ class Organism(object):
                 cell.define_corner_2(corner2.X, corner2.Y, corner2.Z)
 
                 self.add_cell(cell)
+                chunks_i += 1
 
         #implement the initial condition
         for cell in self.cells:
