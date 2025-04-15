@@ -52,6 +52,7 @@ class Video:
         return duration
 
 
+
     def from_file_path(file_path):
         """
         Initialize a video object from the an .mp4 file.
@@ -71,7 +72,9 @@ class Video:
     
 
 
-    
+    def from_list_of_pictures(pictures_list: list[Picture]):
+        pass
+        
 
 
     def extract_frames(self, frame_interval=1) -> Picture:
@@ -114,3 +117,32 @@ class Video:
 
         return pictures
 
+
+
+
+def export_video_from_frames(frame_folder, output_path='output_video.mp4', fps=24):
+    # Only look for BMP files
+    frame_files = sorted([
+        f for f in os.listdir(frame_folder)
+        if f.lower().endswith(('.bmp', '.jpg', '.jpeg', '.png'))
+    ])
+    
+    if not frame_files:
+        raise ValueError("No .bmp frames found in the provided folder.")
+
+    # Read first frame to get dimensions
+    first_frame_path = os.path.join(frame_folder, frame_files[0])
+    first_frame = cv2.imread(first_frame_path)
+    height, width, _ = first_frame.shape
+
+    # Initialize the video writer
+    fourcc = cv2.VideoWriter_fourcc(*'mp4v')  # Or 'XVID' for .avi
+    out = cv2.VideoWriter(output_path, fourcc, fps, (width, height))
+
+    for file in frame_files:
+        frame_path = os.path.join(frame_folder, file)
+        frame = cv2.imread(frame_path)
+        out.write(frame)
+
+    out.release()
+    print(f"Video saved to {output_path}")
