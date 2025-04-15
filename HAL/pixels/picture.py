@@ -776,6 +776,51 @@ class Picture:
 
 
 
+
+
+
+    def draw_line(self, start: tuple, end: tuple, width=3) -> None:
+        draw = ImageDraw.Draw(self.image)
+        draw.line([start, end], fill=(255, 255, 255), width=width)
+
+
+    def draw_circle(self, center: tuple[int], radius: int) -> None:
+        draw = ImageDraw.Draw(self.image)
+        x, y = center
+        bounding_box = [x - radius, y - radius, x + radius, y + radius]
+        draw.ellipse(bounding_box, width=5, fill=(255, 255, 255))
+
+    def draw_text(self, text: str, position: tuple[int], font_size) -> None:
+        draw = ImageDraw.Draw(self.image)
+        font_path = os.path.join(os.path.dirname(__file__), '..', 'fonts', 'Helvetica', 'Helvetica.ttf')
+        font = ImageFont.truetype(font_path, font_size)
+
+        # Measure text size
+        bbox = draw.textbbox((0, 0), text, font=font)
+        text_width = bbox[2] - bbox[0]
+        text_height = bbox[3] - bbox[1]
+
+        # Adjust position if centering
+        x, y = position
+        x -= text_width // 2
+        y -= text_height // 2
+
+        draw.text((x, y), text, fill=(0, 0, 0), font=font)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Blendings
 def blend_images(image1: Picture, image2: Picture, **kwargs) -> Picture:
     """
