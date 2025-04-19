@@ -10,6 +10,7 @@ from PIL import ImageFilter
 from PIL import ImageOps
 from PIL import ImageEnhance
 from PIL import ImageChops
+from PIL import ImageFont
 
 from .color import Color
 
@@ -356,10 +357,14 @@ class Picture:
             list[Color]: list of HAL.pixels.Color objects.
         """
         # Convert image to "P" mode (palette-based) with an adaptive palette
-        image = self.image.convert("P", palette=Image.ADAPTIVE, colors=num_colors)
+        image = self.image.convert("P", palette=Image.Palette.ADAPTIVE, colors=num_colors)
 
         # Get the palette (a list of RGB values, where every 3 values are an (R, G, B) triplet)
-        palette = image.getpalette()[:num_colors * 3]  # Only get requested number of colors
+        palette = image.getpalette()
+        if palette is None:
+            return []
+
+        palette = palette[:num_colors * 3]  # Only get requested number of colors
 
         # Convert flat list to list of RGB tuples
         colors = [tuple(palette[i:i+3]) for i in range(0, len(palette), 3)]
@@ -431,14 +436,23 @@ class Picture:
         for y in range(0, height, dot_spacing):
             for x in range(0, width, dot_spacing):
                 # Get pixel brightness (0-255, where 0 is black and 255 is white)
-                brightness:float = self.image.getpixel((x, y))
+                pixel_value = self.image.getpixel((x, y))
+
+                # Handle different pixel formats
+                if isinstance(pixel_value, int):  # Grayscale
+                    brightness = float(pixel_value)
+                elif isinstance(pixel_value, tuple) and len(pixel_value) > 0:
+                    brightness = float(pixel_value[0])  # Take first channel
+                else:
+                    brightness = 0.0  # Default if pixel format is unexpected
+
                 # Scale dot size based on brightness (darker areas have larger dots)
                 radius = (1 - brightness / 255) * dot_size / 2
 
                 if radius > 0:
                     draw.ellipse((x - radius, y - radius, x + radius, y + radius), fill=dot_color.color)
 
-        self.image =  halftone
+        self.image = halftone
 
 
     def dither_ordered(self, **kwargs):
@@ -478,8 +492,8 @@ class Picture:
         # Kwargs
         matrix_size = kwargs.get('matrix_size', 8)
         scale_factor = kwargs.get('scale_factor', 5)
-        color = kwargs.get('color', WHITE)
-        background_color = kwargs.get('background_color', BLACK)
+        color = kwargs.get('color', Color.WHITE)
+        background_color = kwargs.get('background_color', Color.BLACK)
 
         # Bayer matrices of different sizes
         bayer_matrices = {
@@ -564,7 +578,7 @@ class Picture:
 
         scaled_height = int(height / scale_factor)
         scaled_width = int(width / scale_factor)
-        scaled_image = Image.fromarray(pixels.astype(np.uint8)).resize((scaled_width, scaled_height), Image.NEAREST)
+        scaled_image = Image.fromarray(pixels.astype(np.uint8)).resize((scaled_width, scaled_height), Image.Resampling.NEAREST)
         pixels = np.array(scaled_image, dtype=np.float32)
 
         for y in range(scaled_height):
@@ -584,7 +598,7 @@ class Picture:
                         pixels[y + 1, x + 1] += quant_error * (1 / 16)
 
         dithered_image = Image.fromarray(np.clip(pixels, 0, 255).astype(np.uint8), mode='L')
-        dithered_image = dithered_image.resize((width, height), Image.NEAREST)
+        dithered_image = dithered_image.resize((width, height), Image.Resampling.NEAREST)
         self.image = dithered_image
 
 
@@ -634,11 +648,12 @@ class Picture:
 
         if color:
             self.convert_to_rgb()
-            pixels = self.image.load()
-            for y in range(self.image.height):
-                for x in range(self.image.width):
-                    if pixels[x, y] == (0, 0, 0):
-                        pixels[x, y] = color.color
+            pixels = self.image.load()  # This returns an object that can be indexed, not None
+            if pixels is not None:  # Add a check to ensure pixels is not None
+                for y in range(self.image.height):
+                    for x in range(self.image.width):
+                        if pixels[x, y] == (0, 0, 0):
+                            pixels[x, y] = color.color
 
 
     def create_alpha_mask(self):
@@ -771,9 +786,18 @@ class Picture:
         self.image = ImageChops.multiply(self.image, color_filter)
 
 
-    def get_pixel_color(self, coord_x:int, coord_y:int):
-        color = self.image.getpixel((coord_x, coord_y))
-        return Color(color[0], color[1], color[2])
+    def get_pixel_color(self, coord_x: int, coord_y: int) -> Color:
+        pixel_value = self.image.getpixel((coord_x, coord_y))
+
+        if isinstance(pixel_value, int):  # Grayscale
+            return Color(pixel_value, pixel_value, pixel_value)
+        elif isinstance(pixel_value, tuple):
+            if len(pixel_value) >= 3:
+                return Color(pixel_value[0], pixel_value[1], pixel_value[2])
+            # Handle other tuple lengths if needed
+
+        # Fallback or raise an error
+        raise ValueError(f"Unexpected pixel format: {pixel_value}")
 
 
 
@@ -1020,7 +1044,6 @@ def get_blank_picture(width: int, height: int, color: Color, border_thickness=0,
 
 
 
-from PIL import ImageDraw, ImageFont
 
 def add_centered_text(picture: Picture, text: str, **kwargs) -> Picture:
 
