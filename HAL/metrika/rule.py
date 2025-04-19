@@ -15,11 +15,3 @@ class Rule:
         string += '|>'
         return string
     
-
-
-
-cnts = [('a', 'b'), ('b', 'c'), ('a', 'c')]
-
-rule = Rule(cnts)
-
-print(rule)

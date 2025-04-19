@@ -6,3 +6,5 @@ opencv-python
 reportlab
 ipywidgets
 matplotlib
+requests
+BeautifulSoup4

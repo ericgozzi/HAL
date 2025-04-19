@@ -776,21 +776,25 @@ class Picture:
 
 
 
+    def draw_line(self, start: tuple, end: tuple, width=3, **kwargs) -> None:
+        color = kwargs.get('color', Color.WHITE)
 
-
-
-    def draw_line(self, start: tuple, end: tuple, width=3) -> None:
         draw = ImageDraw.Draw(self.image)
-        draw.line([start, end], fill=(255, 255, 255), width=width)
+        draw.line([start, end], fill=color.color, width=width)
 
 
-    def draw_circle(self, center: tuple[int], radius: int) -> None:
+    def draw_circle(self, center: tuple[int], radius: int, **kwargs) -> None:
+        color: Color = kwargs.get('color', Color.WHITE)
+
         draw = ImageDraw.Draw(self.image)
         x, y = center
         bounding_box = [x - radius, y - radius, x + radius, y + radius]
-        draw.ellipse(bounding_box, width=5, fill=(255, 255, 255))
+        draw.ellipse(bounding_box, width=5, fill=color.color)
 
-    def draw_text(self, text: str, position: tuple[int], font_size) -> None:
+    def draw_text(self, text: str, position: tuple[int], font_size, **kwargs) -> None:
+
+        color = kwargs.get('color', Color.BLACK)
+
         draw = ImageDraw.Draw(self.image)
         font_path = os.path.join(os.path.dirname(__file__), '..', 'fonts', 'Helvetica', 'Helvetica.ttf')
         font = ImageFont.truetype(font_path, font_size)
@@ -805,7 +809,37 @@ class Picture:
         x -= text_width // 2
         y -= text_height // 2
 
-        draw.text((x, y), text, fill=(0, 0, 0), font=font)
+        draw.text((x, y), text, fill=color.color, font=font)
+
+    
+    def draw_arrow(self, start: tuple, end: tuple, width=3, arrowhead_length=50, arrowhead_angle=30, **kwargs) -> None:
+        color = kwargs.get('color', Color.WHITE)
+
+        draw = ImageDraw.Draw(self.image)
+
+        # Draw the main shaft
+        draw.line([start, end], fill=color.color, width=width)
+
+        # Direction vector
+        dx = end[0] - start[0]
+        dy = end[1] - start[1]
+        angle = math.atan2(dy, dx)
+
+        # Arrowhead points
+        left_angle = angle + math.radians(arrowhead_angle)
+        right_angle = angle - math.radians(arrowhead_angle)
+
+        left_point = (
+            end[0] - arrowhead_length * math.cos(left_angle),
+            end[1] - arrowhead_length * math.sin(left_angle)
+        )
+        right_point = (
+            end[0] - arrowhead_length * math.cos(right_angle),
+            end[1] - arrowhead_length * math.sin(right_angle)
+        )
+
+        # Draw filled triangle for arrowhead
+        draw.polygon([end, left_point, right_point], fill=color.color)
 
 
 
