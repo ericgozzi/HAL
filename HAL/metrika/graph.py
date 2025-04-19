@@ -90,12 +90,12 @@ class Graph:
                 pic.draw_line(start, end, width=edge_width, color=edge_color)
 
         for key in pos.keys():
-            x = pos[key][0] * scale_factor + pic_size/2
-            y = pos[key][1] * scale_factor + pic_size/2
+            center_x: int = pos[key][0] * scale_factor + pic_size/2
+            center_y: int = pos[key][1] * scale_factor + pic_size/2
             if show_node:
-                pic.draw_circle((x, y), node_radius, color=node_color)
+                pic.draw_circle((center_x, center_y), node_radius, color=node_color)
             if show_label:
-                pic.draw_text(key, (x, y), label_size, color=label_color)
+                pic.draw_text(key, (center_x, center_y), label_size, color=label_color)
 
         if invert_colors:
             pic.invert_colors()
