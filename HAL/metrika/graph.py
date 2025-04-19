@@ -1,3 +1,4 @@
+from networkx.algorithms.link_prediction import within_inter_cluster
 from ..pixels import get_blank_picture
 from ..pixels import Picture
 from ..pixels import Color
@@ -23,14 +24,14 @@ class Graph:
     @property
     def eigenvector_centrality(self) -> dict:
         return nx.eigenvector_centrality(self.graph)
-    
+
 
     def draw(self, **kwargs) -> Picture:
 
         graph_type: str = kwargs.get('graph_type', 'KAMADA-KAWAI')
 
         show_node: bool = kwargs.get('show_node', True)
-        node_radius: int = kwargs.get('node_radius', 30) 
+        node_radius: int = kwargs.get('node_radius', 30)
         node_color: Color = kwargs.get('node_color', Color.WHITE)
 
         show_label: bool = kwargs.get('show_label', True)
@@ -41,7 +42,7 @@ class Graph:
         edge_width: int = kwargs.get('edge_width', 2)
         arrowhead_length: int = kwargs.get('arrowhead_length', 20)
         edge_color: Color = kwargs.get('edge_color', Color.WHITE)
-        
+
         pic_size: int = kwargs.get('pic_size', 2000)
         background_color: Color = kwargs.get('background_color', Color.BLACK)
         invert_colors: bool = kwargs.get('invert_colors', False)
@@ -68,7 +69,7 @@ class Graph:
             else:
                 xds = 1
                 xde = -1
-                
+
             if dy < 0:
                 yds = -1
                 yde = 1
@@ -76,18 +77,18 @@ class Graph:
                 yds = 1
                 yde = -1
 
-            
+
             # Move start and end points to the edge of the circles
-            start = (p1x + abs(math.cos(angle)) * node_radius * xds, 
+            start = (p1x + abs(math.cos(angle)) * node_radius * xds,
                      p1y + abs(math.sin(angle)) * node_radius * yds)
-            end = (p2x + abs(math.cos(angle)) * node_radius * xde, 
+            end = (p2x + abs(math.cos(angle)) * node_radius * xde,
                    p2y + abs(math.sin(angle)) * node_radius * yde)
 
             if edge_direction:
                 pic.draw_arrow(start, end, width=edge_width, arrowhead_length=arrowhead_length, color = edge_color)
             else:
                 pic.draw_line(start, end, width=edge_width, color=edge_color)
-        
+
         for key in pos.keys():
             x = pos[key][0] * scale_factor + pic_size/2
             y = pos[key][1] * scale_factor + pic_size/2
@@ -95,7 +96,7 @@ class Graph:
                 pic.draw_circle((x, y), node_radius, color=node_color)
             if show_label:
                 pic.draw_text(key, (x, y), label_size, color=label_color)
-        
+
         if invert_colors:
             pic.invert_colors()
 
@@ -120,7 +121,7 @@ class Graph:
         eigenvector_centrality_dictionary = self.eigenvector_centrality
         item_centrality = eigenvector_centrality_dictionary[item]
         return item_centrality
-    
+
 
 
     def get_nodes_coordinate(self, method):
@@ -135,7 +136,7 @@ class Graph:
 
         elif method == 'CIRCULAR':
             positions = nx.circular_layout(self.graph)
-        
+
         else:
             positions = nx.random_layout(self.graph)
 
