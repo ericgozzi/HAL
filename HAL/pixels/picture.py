@@ -25,22 +25,23 @@ class Picture:
         self.image = image
 
     # Constructors
-    def from_file_path(image_path):
+    @classmethod
+    def from_file_path(cls, image_path: str):
         """
         Create a `Picture` object from an image file.
 
         Args:
             image_path (str): File path of the image.
-        
+
         Returns:
             `Picture`
         """
         image = Image.open(image_path)
-        return Picture(image)
-    
+        return cls(image)
 
 
-    def from_PIL_image(image):
+    @classmethod
+    def from_PIL_image(cls, image):
         """
         Create a `Picture`object from a PIL image.
 
@@ -50,9 +51,10 @@ class Picture:
         Returns:
             `Picture`
         """
-        return Picture(image)
-    
-    def from_array(array): 
+        return cls(image)
+
+    @classmethod
+    def from_array(cls, array):
         """
         Convert a NumPy Array to a Picture Object
 
@@ -62,9 +64,9 @@ class Picture:
         Returns:
             Picture: `Picture`
 
-        """  
+        """
         pil_image = Image.fromarray(array)
-        return Picture(pil_image)
+        return cls(pil_image)
 
 
     @property
@@ -74,7 +76,7 @@ class Picture:
 
         Returns:
             tuple: A tuple containing two integers representing the width and height of the image.
-        
+
         Example:
             >>> picture = Picture(image)
             >>> print(picture.size)
@@ -82,7 +84,7 @@ class Picture:
             This will print the size of the image as a tuple.
         """
         return self.image.size
-    
+
     @property
     def width(self) -> int:
         """
@@ -92,7 +94,7 @@ class Picture:
             int: The width of the image.
         """
         return self.image.size[0]
-    
+
     @property
     def height(self) -> int:
         """
@@ -101,8 +103,8 @@ class Picture:
         Returns:
             int: The height of the image.
         """
-        return self.image.size[1] 
-    
+        return self.image.size[1]
+
     @property
     def entropy(self) -> float:
         """
@@ -132,7 +134,7 @@ class Picture:
             - Common modes include "RGB", "RGBA", "L" (grayscale), "P" (palette-based), and more.
         """
         return self.image.mode
-    
+
     @property
     def red_channel(self):
         """
@@ -172,7 +174,7 @@ class Picture:
     @property
     def np_array(self):
         """
-        The numpy array of the image. 
+        The numpy array of the image.
 
         Returns:
             np.ndarray: A NumPy array representing the image, with shape (height, width, channels) for RGB images.
@@ -194,7 +196,7 @@ class Picture:
         Saves the image to a file.
 
         Args:
-            output_path (str): The pathe on which to save the image. 
+            output_path (str): The pathe on which to save the image.
         """
         self.image.save(output_path)
 
@@ -208,8 +210,8 @@ class Picture:
         """
         Converts the image mode to grayscale (L).
         """
-        self.image = self.image.convert('L') 
-    
+        self.image = self.image.convert('L')
+
     def convert_to_rgb(self):
         """
         Convert the image mode to RGB.
@@ -224,7 +226,7 @@ class Picture:
 
     def adjust_brightness(self, value: float):
         """
-        Adjusts the exposurte of the image. 
+        Adjusts the exposurte of the image.
          - (1.0 = original, >1.0 = brighter, <1.0 = darker)
 
         Args:
@@ -237,7 +239,7 @@ class Picture:
 
     def adjust_contrast(self, value: float):
         """
-        Adjusts the contrast of the image. 
+        Adjusts the contrast of the image.
          - (1.0 = original, >1.0 = more contrast, <1.0 = less contrast)
 
         Args:
@@ -250,7 +252,7 @@ class Picture:
 
     def adjust_sharpness(self, value: float):
         """
-        Adjusts the sharpness of the image. 
+        Adjusts the sharpness of the image.
          - (1.0 = original, >1.0 = sharper, <1.0 = duller)
 
         Args:
@@ -263,7 +265,7 @@ class Picture:
 
     def adjust_saturation(self, value: float):
         """
-        Adjusts the saturation of the image. 
+        Adjusts the saturation of the image.
          - (1.0 = original, >1.0 = more saturated, <1.0 = less saturated)
 
         Args:
@@ -289,18 +291,18 @@ class Picture:
     def resize(self, width, height, keep_aspect_ratio = True, crop = False):
         """
         Resizes the image according to the specified width and height, with options to maintain
-        the aspect ratio and/or crop the image. Different resizing methods are used depending on the combination 
+        the aspect ratio and/or crop the image. Different resizing methods are used depending on the combination
         of options chosen.
 
         Args:
             width (int): The target width of the resized image.
             height (int): The target height of the resized image.
-            keep_aspect_ratio (bool, optional): Whether to preserve the original aspect ratio of the image. 
-                                                Defaults to True. If True, the image is resized to fit within the 
+            keep_aspect_ratio (bool, optional): Whether to preserve the original aspect ratio of the image.
+                                                Defaults to True. If True, the image is resized to fit within the
                                                 specified dimensions.
                                                 If False, the image is resized to exactly match the target dimensions.
-            crop (bool, optional): Whether to crop the image to fit the specified dimensions. Defaults to False. 
-                                If True, the image will be cropped to maintain the aspect ratio after resizing 
+            crop (bool, optional): Whether to crop the image to fit the specified dimensions. Defaults to False.
+                                If True, the image will be cropped to maintain the aspect ratio after resizing
                                 (used when `keep_aspect_ratio` is also True).
         """
         if keep_aspect_ratio and not crop:
@@ -308,11 +310,11 @@ class Picture:
         if (keep_aspect_ratio and crop) or crop:
             self.image = ImageOps.fit(self.image, (width, height))
         if not keep_aspect_ratio and not crop:
-            self.image = self.image.resize((width, height)) 
+            self.image = self.image.resize((width, height))
 
     def crop(self, left_margin, top_margin, right_margin, bottom_margin):
         """
-        Crops the image by removing the specified margins from the left, top, right, and bottom edges. 
+        Crops the image by removing the specified margins from the left, top, right, and bottom edges.
 
         Args:
             left_margin (int): The number of pixels to remove from the left edge of the image.
@@ -323,7 +325,7 @@ class Picture:
         Example:
             >>> picture = Picture(image)
             >>> picture.crop(50, 30, 50, 30)
-            This will crop the image by removing 50 pixels from the left, 30 from the top, 50 from the right, 
+            This will crop the image by removing 50 pixels from the left, 30 from the top, 50 from the right,
             and 30 from the bottom.
         """
         width, height = self.size
@@ -363,7 +365,7 @@ class Picture:
         colors = [tuple(palette[i:i+3]) for i in range(0, len(palette), 3)]
         colors = [Color(c[0], c[1], c[2]) for c in colors]
         return colors
-    
+
     def get_color_palette(self, num_colors):
         """
         Return a `Picture` of the colorpalette of the image.
@@ -388,9 +390,9 @@ class Picture:
         """
         Apply a Halftone Dither Effect to the Image
 
-        This method converts the image to grayscale and applies a halftone dithering effect, 
-        where the brightness of the image is represented using dots of varying sizes. The dots 
-        are placed in a grid pattern, with darker areas having larger dots and lighter areas 
+        This method converts the image to grayscale and applies a halftone dithering effect,
+        where the brightness of the image is represented using dots of varying sizes. The dots
+        are placed in a grid pattern, with darker areas having larger dots and lighter areas
         having smaller dots.
 
         Args:
@@ -414,8 +416,8 @@ class Picture:
 
         """
         # Kwargs
-        dot_color = kwargs.get('dot_color', BLACK)
-        background_color = kwargs.get('background_color', WHITE)
+        dot_color = kwargs.get('dot_color', Color.BLACK)
+        background_color = kwargs.get('background_color', Color.WHITE)
         dot_spacing = kwargs.get('dot_spacing', 12)
         dot_size = kwargs.get('dot_size', 8)
 
@@ -424,18 +426,18 @@ class Picture:
         width, height = self.size
         halftone = Image.new('RGB', (width, height), background_color.color)
         draw = ImageDraw.Draw(halftone)
-        
+
         # Process image in a grid pattern
         for y in range(0, height, dot_spacing):
             for x in range(0, width, dot_spacing):
                 # Get pixel brightness (0-255, where 0 is black and 255 is white)
-                brightness = self.image.getpixel((x, y))
+                brightness:float = self.image.getpixel((x, y))
                 # Scale dot size based on brightness (darker areas have larger dots)
                 radius = (1 - brightness / 255) * dot_size / 2
-                
+
                 if radius > 0:
                     draw.ellipse((x - radius, y - radius, x + radius, y + radius), fill=dot_color.color)
-      
+
         self.image =  halftone
 
 
@@ -443,19 +445,19 @@ class Picture:
         """
         Apply Ordered Dithering to the Image using Bayer Matrix
 
-        This method applies ordered dithering to an image using a Bayer matrix, which is a technique 
-        to convert grayscale images to a binary representation using a threshold map. The method 
-        divides the image into a grid pattern and uses a Bayer matrix of a specified size to 
+        This method applies ordered dithering to an image using a Bayer matrix, which is a technique
+        to convert grayscale images to a binary representation using a threshold map. The method
+        divides the image into a grid pattern and uses a Bayer matrix of a specified size to
         determine the threshold for dithering.
 
         Args:
-            matrix_size (int, optional): The size of the Bayer matrix to use for dithering. 
+            matrix_size (int, optional): The size of the Bayer matrix to use for dithering.
                                         Supported values are 2, 4, or 8. Defaults to 8.
-            scale_factor (int, optional): The size of the grid to process in the dithering. 
+            scale_factor (int, optional): The size of the grid to process in the dithering.
                                         Defaults to 5 pixels.
-            color (Color, optional): The color for the "on" pixels in the dithering (typically white). 
+            color (Color, optional): The color for the "on" pixels in the dithering (typically white).
                                     Defaults to white.
-            background_color (Color, optional): The color for the "off" pixels in the dithering (typically black). 
+            background_color (Color, optional): The color for the "off" pixels in the dithering (typically black).
                                                 Defaults to black.
 
         Returns:
@@ -464,13 +466,13 @@ class Picture:
         Example:
             >>> picture = Picture(image)
             >>> picture.dither_ordered(matrix_size=4, scale_factor=6, color=WHITE, background_color=BLACK)
-            This will apply ordered dithering to the image using a 4x4 Bayer matrix, 
+            This will apply ordered dithering to the image using a 4x4 Bayer matrix,
             with a scale factor of 6 pixels for each grid and white for the "on" color.
 
         Notes:
-            - The Bayer matrices of size 2, 4, and 8 are pre-defined, and the dithering is based on the threshold values 
+            - The Bayer matrices of size 2, 4, and 8 are pre-defined, and the dithering is based on the threshold values
             derived from these matrices.
-            - The method processes the image in blocks of the specified `scale_factor` and applies the dithering based on 
+            - The method processes the image in blocks of the specified `scale_factor` and applies the dithering based on
             pixel brightness in relation to the corresponding threshold in the Bayer matrix.
         """
         # Kwargs
@@ -494,13 +496,13 @@ class Picture:
                 [63, 31, 55, 23, 61, 29, 53, 21]
             ]) / 64.0
         }
-        
+
         if matrix_size not in bayer_matrices:
             raise ValueError("Unsupported matrix size. Choose from 2, 4, or 8.")
-        
+
         bayer_matrix = bayer_matrices[matrix_size]
         threshold_map = (bayer_matrix * 255).astype(np.uint8)
-        
+
         # Open image and convert to grayscale
         self.convert_to_grayscale()
         width, height = self.image.size
@@ -514,7 +516,7 @@ class Picture:
             for x in range(0, width, scale_factor):
                 threshold = threshold_map[(y // scale_factor) % matrix_size, (x // scale_factor) % matrix_size]
                 color_pixels[y:y+scale_factor, x:x+scale_factor] = color.color if pixels[y, x] > threshold else background_color.color
-        
+
         dithered_image = Image.fromarray(color_pixels, mode='RGB')
         self.image =  dithered_image
 
@@ -523,9 +525,9 @@ class Picture:
         """
         Apply Floyd-Steinberg Dithering to the Image
 
-        This method applies the Floyd-Steinberg dithering algorithm, a popular error-diffusion technique 
-        used to convert grayscale images into a binary representation while preserving the appearance of 
-        continuous tones. The method scales the image, applies the dithering, and then resizes it back to 
+        This method applies the Floyd-Steinberg dithering algorithm, a popular error-diffusion technique
+        used to convert grayscale images into a binary representation while preserving the appearance of
+        continuous tones. The method scales the image, applies the dithering, and then resizes it back to
         the original size.
 
         Args:
@@ -543,9 +545,9 @@ class Picture:
 
         Notes:
             - The image is first converted to grayscale before applying the dithering.
-            - The algorithm works by diffusing the error between the pixel value and the nearest threshold 
+            - The algorithm works by diffusing the error between the pixel value and the nearest threshold
             (either 0 or 255) to neighboring pixels.
-            - The image is scaled down by the specified `scale_factor` to speed up the dithering process, 
+            - The image is scaled down by the specified `scale_factor` to speed up the dithering process,
             and then scaled back to the original dimensions after dithering.
             - The error diffusion weights for the Floyd-Steinberg algorithm are as follows:
             - (7/16) to the pixel to the right
@@ -559,19 +561,19 @@ class Picture:
         self.convert_to_grayscale()
         pixels = np.array(self.image, dtype=np.float32)
         height, width = pixels.shape
-        
+
         scaled_height = int(height / scale_factor)
         scaled_width = int(width / scale_factor)
         scaled_image = Image.fromarray(pixels.astype(np.uint8)).resize((scaled_width, scaled_height), Image.NEAREST)
         pixels = np.array(scaled_image, dtype=np.float32)
-        
+
         for y in range(scaled_height):
             for x in range(scaled_width):
                 old_pixel = pixels[y, x]
                 new_pixel = 255 if old_pixel > 127 else 0
                 pixels[y, x] = new_pixel
                 quant_error = old_pixel - new_pixel
-                
+
                 if x < scaled_width - 1:
                     pixels[y, x + 1] += quant_error * (7 / 16)
                 if y < scaled_height - 1:
@@ -580,7 +582,7 @@ class Picture:
                     pixels[y + 1, x] += quant_error * (5 / 16)
                     if x < scaled_width - 1:
                         pixels[y + 1, x + 1] += quant_error * (1 / 16)
-        
+
         dithered_image = Image.fromarray(np.clip(pixels, 0, 255).astype(np.uint8), mode='L')
         dithered_image = dithered_image.resize((width, height), Image.NEAREST)
         self.image = dithered_image
@@ -590,18 +592,18 @@ class Picture:
         """
         Convert the Image to Binary (Black and White) using a Threshold
 
-        This method converts the image into a binary image, where each pixel is either black or white, 
-        based on a specified threshold. The method also allows for color customization when the image 
-        is in color mode, and it includes options for converting the image to grayscale or color before 
+        This method converts the image into a binary image, where each pixel is either black or white,
+        based on a specified threshold. The method also allows for color customization when the image
+        is in color mode, and it includes options for converting the image to grayscale or color before
         applying the threshold.
 
         Args:
-            threshold (int, optional): The pixel intensity threshold used to decide whether a pixel becomes 
-                                        white (255) or black (0). Values greater than the threshold will be 
+            threshold (int, optional): The pixel intensity threshold used to decide whether a pixel becomes
+                                        white (255) or black (0). Values greater than the threshold will be
                                         set to white. Default is 128.
-            grayscale (bool, optional): If True, the image will be converted to grayscale before binarization. 
+            grayscale (bool, optional): If True, the image will be converted to grayscale before binarization.
                                         Default is True.
-            color (Color, optional): A color to replace black pixels in the image when `grayscale` is False. 
+            color (Color, optional): A color to replace black pixels in the image when `grayscale` is False.
                                     If None, the black pixels will remain black. Default is None.
 
         Returns:
@@ -614,8 +616,8 @@ class Picture:
 
         Notes:
             - If `grayscale` is True or `color` is specified, the image is first converted to grayscale.
-            - The image is processed pixel by pixel, and each pixel value is compared to the threshold. 
-            If the pixel value is above the threshold, it is set to white (255), and if it is below, it is 
+            - The image is processed pixel by pixel, and each pixel value is compared to the threshold.
+            If the pixel value is above the threshold, it is set to white (255), and if it is below, it is
             set to black (0).
             - If `color` is specified, black pixels will be replaced with the given color.
         """
@@ -643,12 +645,12 @@ class Picture:
         """
         Create an Alpha Mask for the Image
 
-        This method generates an alpha mask for the image, where pixels with a value of 0 (black) 
-        are set to fully transparent (alpha = 0) and non-zero pixels are set to partially transparent 
+        This method generates an alpha mask for the image, where pixels with a value of 0 (black)
+        are set to fully transparent (alpha = 0) and non-zero pixels are set to partially transparent
         (alpha = 1). It creates an RGBA image with the alpha channel representing the mask.
 
-        The image is first copied and then processed to create an RGBA version where the alpha channel 
-        is set based on the binarized pixel values. After creating the mask, the image is converted 
+        The image is first copied and then processed to create an RGBA version where the alpha channel
+        is set based on the binarized pixel values. After creating the mask, the image is converted
         back to grayscale.
 
         Returns:
@@ -676,15 +678,15 @@ class Picture:
         """
         Apply an Alpha Mask to the Image
 
-        This method applies an alpha mask to the current image. The alpha mask should be a binary image 
-        (with an alpha channel) that defines transparency values for the image. The mask is applied by 
+        This method applies an alpha mask to the current image. The alpha mask should be a binary image
+        (with an alpha channel) that defines transparency values for the image. The mask is applied by
         setting the alpha channel of the current image according to the mask's alpha channel.
 
         The method expects that the mask is a `Picture` object with an image that contains an alpha channel.
         It uses the alpha values of the mask to modify the transparency of the original image.
 
         Args:
-            mask (Picture): A `Picture` object that contains the alpha mask to be applied. 
+            mask (Picture): A `Picture` object that contains the alpha mask to be applied.
                             The mask image should be in RGBA mode.
 
         Returns:
@@ -711,15 +713,15 @@ class Picture:
         self.image.paste(picture_to_paste.image, (coord_x, coord_y), mask.image)
 
 
-                    
+
 
     # Filters
     def blur(self, radius: float):
         """
         Apply a Gaussian Blur to the Image
 
-        This method applies a Gaussian blur filter to the current image, which softens the image by 
-        averaging nearby pixels. The intensity of the blur is determined by the radius parameter. 
+        This method applies a Gaussian blur filter to the current image, which softens the image by
+        averaging nearby pixels. The intensity of the blur is determined by the radius parameter.
         Larger values for the radius will result in a stronger blur effect.
 
         Args:
@@ -749,7 +751,7 @@ class Picture:
             None
         """
         self.image = ImageOps.invert(self.image)
-    
+
 
 
 
@@ -783,7 +785,7 @@ class Picture:
         draw.line([start, end], fill=color.color, width=width)
 
 
-    def draw_circle(self, center: tuple[int], radius: int, **kwargs) -> None:
+    def draw_circle(self, center: tuple[int, int], radius: int, **kwargs) -> None:
         color: Color = kwargs.get('color', Color.WHITE)
 
         draw = ImageDraw.Draw(self.image)
@@ -791,7 +793,7 @@ class Picture:
         bounding_box = [x - radius, y - radius, x + radius, y + radius]
         draw.ellipse(bounding_box, width=5, fill=color.color)
 
-    def draw_text(self, text: str, position: tuple[int], font_size, **kwargs) -> None:
+    def draw_text(self, text: str, position: tuple[int, int], font_size, **kwargs) -> None:
 
         color = kwargs.get('color', Color.BLACK)
 
@@ -811,7 +813,7 @@ class Picture:
 
         draw.text((x, y), text, fill=color.color, font=font)
 
-    
+
     def draw_arrow(self, start: tuple, end: tuple, width=3, arrowhead_length=50, arrowhead_angle=30, **kwargs) -> None:
         color = kwargs.get('color', Color.WHITE)
 
@@ -886,7 +888,7 @@ def blend_images(image1: Picture, image2: Picture, **kwargs) -> Picture:
         - The alpha value determines the influence of each image in the final blend. A value of 0.5 results in an equal blend of both images.
         - The result is a new image that blends the pixel values of the two input images based on the alpha value.
     """
-    
+
     if image1.size != image2.size:
         raise ValueError("Images must have the same size.")
     if image1.mode != image2.mode:
@@ -901,17 +903,17 @@ def create_grid_of_pictures(pictures: list[Picture], **kwargs) -> Picture:
     """
     Create a Grid of Pictures
 
-    This function arranges a list of `Picture` objects into a grid layout. The grid is constructed based on 
-    the number of pictures provided, and each picture is resized to fit a uniform image size. The resulting 
+    This function arranges a list of `Picture` objects into a grid layout. The grid is constructed based on
+    the number of pictures provided, and each picture is resized to fit a uniform image size. The resulting
     grid of pictures is returned as a new `Picture` object.
 
     Args:
         pictures (list[Picture]): A list of `Picture` objects to be arranged into the grid.
         grid_size (tuple, optional): A tuple representing the number of columns and rows in the grid.
-                                      If not provided, the grid will be created with an optimal square 
-                                      layout based on the number of pictures. Default is determined 
+                                      If not provided, the grid will be created with an optimal square
+                                      layout based on the number of pictures. Default is determined
                                       by the square root of the number of pictures.
-        image_size (tuple, optional): A tuple representing the size (width, height) of each individual image 
+        image_size (tuple, optional): A tuple representing the size (width, height) of each individual image
                                       in the grid. Default is (720, 720).
 
     Returns:
@@ -927,12 +929,12 @@ def create_grid_of_pictures(pictures: list[Picture], **kwargs) -> Picture:
         >>> grid_picture = create_grid_of_pictures(pictures, grid_size=(2, 2), image_size=(500, 500))
 
     Notes:
-        - The images are resized to fit the specified `image_size`, and if necessary, the images are centered 
+        - The images are resized to fit the specified `image_size`, and if necessary, the images are centered
           on a blank white background to maintain the aspect ratio.
         - If the number of pictures exceeds the grid size (cols * rows), extra images are ignored.
         - The resulting collage will have a white background for empty spaces.
     """
-    
+
     grid_size = kwargs.get('grid_size', (math.ceil(math.sqrt(len(pictures))), math.ceil(math.sqrt(len(pictures)))))
     image_size = kwargs.get('image_size', (720, 720))
 
@@ -940,27 +942,27 @@ def create_grid_of_pictures(pictures: list[Picture], **kwargs) -> Picture:
     cols, rows = grid_size
     collage_width = cols * image_size[0]
     collage_height = rows * image_size[1]
-    
+
     collage = Image.new('RGB', (collage_width, collage_height))
-    
+
     for index, picture in enumerate(pictures):
         if index >= cols * rows:
             break
-        
+
         img = picture.image
         img.thumbnail(image_size)  # Maintain aspect ratio while resizing
-        
+
         # Create a blank image with the target size and paste the resized image at the center
         temp_img = Image.new('RGB', image_size, (255, 255, 255))  # White background
         x_offset = (image_size[0] - img.size[0]) // 2
         y_offset = (image_size[1] - img.size[1]) // 2
         temp_img.paste(img, (x_offset, y_offset))
-        
+
         x_offset = (index % cols) * image_size[0]
         y_offset = (index // cols) * image_size[1]
-        
+
         collage.paste(temp_img, (x_offset, y_offset))
-    
+
     return Picture.from_PIL_image(collage)
 
 
@@ -971,8 +973,8 @@ def superimpose_pictures(picture_1, picture_2):
     """
     Superimpose Two Pictures
 
-    This function overlays one picture on top of another, using the alpha channel of the second image 
-    to determine transparency. The second image is pasted on top of the first one, and the result is returned 
+    This function overlays one picture on top of another, using the alpha channel of the second image
+    to determine transparency. The second image is pasted on top of the first one, and the result is returned
     as a new `Picture`.
 
     Args:
@@ -1009,7 +1011,7 @@ def superimpose_pictures(picture_1, picture_2):
 
 def get_blank_picture(width: int, height: int, color: Color, border_thickness=0, border_color=Color(0, 0, 0)) -> Picture:
     image = Image.new("RGB", (width, height), color.color)
-    
+
     draw = ImageDraw.Draw(image)
     draw.rectangle([0, 0, width - 1, height - 1], outline=border_color.color, width=border_thickness)
 
@@ -1040,7 +1042,7 @@ def add_centered_text(picture: Picture, text: str, **kwargs) -> Picture:
 
         lines.append(' '.join(current_line))  # Add the last line
         return lines
-    
+
 
 
     text_color = kwargs.get('color', Color(0, 0, 0))
@@ -1081,5 +1083,3 @@ def add_centered_text(picture: Picture, text: str, **kwargs) -> Picture:
 
 
     return picture
-
-

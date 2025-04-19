@@ -3,3 +3,5 @@ from .conversions import *
 from .metapicture import *
 from .color import *
 
+Color.constants()
+
