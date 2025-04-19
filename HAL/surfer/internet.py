@@ -38,11 +38,10 @@ def crawl_images(query, max_images=5):
 
     pil_images = []
 
-    for idx, img_url in enumerate(image_urls[:max_images]):
+    for idx, img_url in enumerate(image_urls[:max_images+1]):
         try:
             # Skip images with "logo" or "google" in the URL
             if "logo" in img_url.lower() or "google" in img_url.lower():
-                print(f"Skipping logo image: {img_url}")
                 continue
 
             # Join relative URLs to form full URLs
@@ -55,7 +54,6 @@ def crawl_images(query, max_images=5):
             img = Image.open(BytesIO(img_data))
 
             pil_images.append(img)
-            print(f"Downloaded image {idx + 1}: {img_url}")
 
         except Exception as e:
             print(f"Failed to download image {idx + 1}: {e}")

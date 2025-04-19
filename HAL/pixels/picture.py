@@ -3,6 +3,10 @@ import math
 import numpy as np
 
 import os
+import io
+
+from IPython.display import display, HTML
+import base64
 
 from PIL import Image
 from PIL import ImageDraw
@@ -24,6 +28,28 @@ class Picture:
 
     def __init__(self, image):
         self.image = image
+
+    
+    def __str__(self):
+        return f"<Picture: {self.image.width}x{self.image.height} image>"
+
+
+    def _repr_png_(self):
+        with io.BytesIO() as buf:
+            self.image.save(buf, format='PNG')
+            return buf.getvalue()
+        
+        
+    def display(self, height=100):
+        """Display the image in a Jupyter notebook cell output."""
+        with io.BytesIO() as buffer:
+            self.image.save(buffer, format="PNG")
+            encoded = base64.b64encode(buffer.getvalue()).decode()
+        html = f'<img src="data:image/png;base64,{encoded}" style="height:{height}px;">'
+        display(HTML(html))
+
+
+        
 
     # Constructors
     @classmethod
