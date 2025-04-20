@@ -1104,7 +1104,7 @@ def add_centered_text(picture: Picture, text: str, **kwargs) -> Picture:
 
 
     # Get the path to the .ttf font in the parent directory (relative path)
-    font_path = os.path.join(os.path.dirname(__file__), '..', 'fonts', 'Helvetica', 'Helvetica.ttf')
+    font_path = os.path.join(os.path.dirname(__file__), '..', 'fonts', 'Helvetica.ttf')
     font = ImageFont.truetype(font_path, font_size)
     #font = ImageFont.load_default()
 
