@@ -3,40 +3,87 @@ import colorsys
 
 class Color:
     """
-    # Color Class
+    Color Class
 
-    The `Picture`class represent images.
+    Represents a color.
+
+    Attributes:
+        red (int): Red component (0–255).
+        green (int): Green component (0–255).
+        blue (int): Blue component (0–255).
     """
 
+
+
+    
+
     def __init__(self, red, green, blue):
+        """
+        Initializes a Color instance with RGB values.
+
+        Args:
+            red (int): Red component (0–255).
+            green (int): Green component (0–255).
+            blue (int): Blue component (0–255).
+        """
         self.red = red
         self.green = green
         self.blue = blue
 
-    def __str__(self):
+
+
+
+
+
+
+    def __str__(self) -> str:
+        """
+        Returns a string representation of the color using ANSI background color escape codes.
+
+        This allows the color to be displayed as a colored block in compatible terminals.
+        """
         return f"\033[48;2;{self.red};{self.green};{self.blue}m  \033[0m"
     
-    def __repr__(self):
+
+
+
+
+
+    def __repr__(self) -> str:
+        """
+        Returns a developer-friendly string representation of the color as a colored block.
+
+        Mirrors the behavior of __str__ for quick previews in terminal-based debugging or REPLs.
+        """
         return f"\033[48;2;{self.red};{self.green};{self.blue}m  \033[0m"
 
-    @property
-    def color(self) -> tuple:
-        """
-        A 3-values tuple representing the color in RGB.
-        """
-        return (self.red, self.green, self.blue)
+
+
+
+
     
 
+    #OPERATOR METHODS
 
-    def __add__(self, other):
+    def __add__(self, other: 'Color') -> 'Color':
+        """
+        Adds two Color instances by combining their RGB values, clamped between 0–255.
+        """
         if isinstance(other, Color):
             # You can call a custom function here, for example:
             return add_colors(self, other)
         else:
             raise ValueError("You can only add another Color instance")
         
+
+
+
+
     
-    def __sub__(self, other):
+    def __sub__(self, other: 'Color') -> 'Color':
+        """
+        Subtracts one Color instance from another by RGB values, clamped between 0–255.
+        """
         if isinstance(other, Color):
             # You can call a custom function here, for example:
             return subtract_colors(self, other)
@@ -46,7 +93,10 @@ class Color:
 
 
 
-    # INITIALIZERS
+
+
+
+    # CONSTRUCTORS
     @classmethod
     def from_rgb(cls, red: int, green: int, blue: int):
         """
@@ -61,6 +111,99 @@ class Color:
             Color: A color object
         """
         return cls(red, green, blue)
+    
+
+
+
+
+    @classmethod
+    def from_hsv(cls, h, s, v):
+        """
+        Constructs from HSV (Hue, Saturation, Value) to RGB and return a Color object.
+
+        Args:
+            h (float): The hue in degrees (0–360).
+            s (float): The saturation (0–1).
+            v (float): The value (brightness) (0–1).
+
+        Returns:
+            Color: A Color object representing the color in RGB.
+        """
+        h = h / 360  # Normalize the hue to [0, 1] range
+        s = max(0, min(s, 1))  # Saturation must be in [0, 1]
+        v = max(0, min(v, 1))  # Value must be in [0, 1]
+
+        c = v * s
+        x = c * (1 - abs((h * 6) % 2 - 1))
+        m = v - c
+
+        if 0 <= h < 1/6:
+            r, g, b = c, x, 0
+        elif 1/6 <= h < 2/6:
+            r, g, b = x, c, 0
+        elif 2/6 <= h < 3/6:
+            r, g, b = 0, c, x
+        elif 3/6 <= h < 4/6:
+            r, g, b = 0, x, c
+        elif 4/6 <= h < 5/6:
+            r, g, b = x, 0, c
+        else:
+            r, g, b = c, 0, x
+
+        r = int((r + m) * 255)
+        g = int((g + m) * 255)
+        b = int((b + m) * 255)
+
+        return Color(r, g, b)
+    
+
+
+
+
+    @classmethod
+    def from_hsl(cls, h, s, l):
+        """
+        Convert from HSL (Hue, Saturation, Lightness) to RGB and return a Color object.
+
+        Args:
+            h (float): The hue in degrees (0–360).
+            s (float): The saturation (0–1).
+            l (float): The lightness (0–1).
+
+        Returns:
+            Color: A Color object representing the color in RGB.
+        """
+        h = h / 360  # Normalize the hue to [0, 1]
+        s = max(0, min(s, 1))  # Saturation must be in [0, 1]
+        l = max(0, min(l, 1))  # Lightness must be in [0, 1]
+
+        c = (1 - abs(2 * l - 1)) * s
+        x = c * (1 - abs((h * 6) % 2 - 1))
+        m = l - c / 2
+
+        if 0 <= h < 1 / 6:
+            r, g, b = c, x, 0
+        elif 1 / 6 <= h < 2 / 6:
+            r, g, b = x, c, 0
+        elif 2 / 6 <= h < 3 / 6:
+            r, g, b = 0, c, x
+        elif 3 / 6 <= h < 4 / 6:
+            r, g, b = 0, x, c
+        elif 4 / 6 <= h < 5 / 6:
+            r, g, b = x, 0, c
+        else:
+            r, g, b = c, 0, x
+
+        r = int((r + m) * 255)
+        g = int((g + m) * 255)
+        b = int((b + m) * 255)
+
+        return Color(r, g, b)
+    
+
+
+
+
 
     # CONVERTERS
     @property
@@ -87,14 +230,39 @@ class Color:
         # Convert CMYK to percentage (0-100 scale)
         return (c * 100, m * 100, y * 100, k * 100)
     
+
+
+
+
+
+
     @property
-    def hex(self):
-        """Convert RGB values (0–255) to HEX string."""
+    def hex(self) -> str:
+        """
+        Convert RGB values (0–255) to a HEX string.
+
+        Returns:
+            str: The color represented as a HEX string (e.g., '#FF5733').
+        """
         return "#{:02X}{:02X}{:02X}".format(self.red, self.green, self.blue)
     
+
+
+
+
+
+
+
     @property
-    def xyz(self):
-        """Convert RGB values (0–255) to CIE XYZ color space."""
+    def xyz(self) -> tuple:
+        """
+        Convert RGB values (0–255) to CIE XYZ color space.
+
+        The conversion uses the sRGB color space with the D65 illuminant.
+
+        Returns:
+            tuple: The XYZ values rounded to four decimal places.
+        """
 
         # Normalize RGB values to [0, 1]
         r = self.red / 255.0
@@ -114,9 +282,21 @@ class Color:
 
         return (round(x, 4), round(y, 4), round(z, 4))
     
+
+
+
+
+
+
+
     @property
-    def lab(self):
-        """Convert RGB (0–255) to CIELAB (L*, a*, b*) using D65 reference white."""
+    def lab(self) -> tuple:
+        """
+        Convert RGB (0–255) to CIELAB (L*, a*, b*) using D65 reference white.
+
+        Returns:
+            tuple: The LAB values (L*, a*, b*) rounded to four decimal places.
+        """
 
         # First, convert to XYZ
         x, y, z = self.xyz
@@ -139,9 +319,20 @@ class Color:
         return (round(L, 4), round(a, 4), round(b, 4))
     
 
+
+
+
+
+
     @property
     def hsl(self):
-        """Return color as HSL (Hue 0–360, Saturation 0–1, Lightness 0–1)."""
+        """
+        Return the color as HSL (Hue 0–360, Saturation 0–1, Lightness 0–1).
+
+        Returns:
+            tuple: The HSL values (Hue, Saturation, Lightness) rounded to two and four decimal places respectively.
+        """
+
         r, g, b = self.red / 255.0, self.green / 255.0, self.blue / 255.0
         max_c = max(r, g, b)
         min_c = min(r, g, b)
@@ -167,6 +358,13 @@ class Color:
             h *= 60  # convert to degrees
 
         return (round(h, 2), round(s, 4), round(l, 4))
+    
+
+
+
+
+
+
     
     @property
     def hsv(self):
@@ -196,24 +394,57 @@ class Color:
         return (round(h, 2), round(s, 4), round(v, 4))
 
     
+
+
+
+
     @property
     def rgb(self):
+        """
+        Return the color as an RGB tuple (Red, Green, Blue).
+
+        Returns:
+            tuple: The RGB values as a tuple (Red, Green, Blue) in the range 0–255.
+        """
         return (self.red, self.green, self.blue)
 
 
 
+
+
+    # METHODS ON COLOWHEEL
+
     def get_complementary(self):
         """
         Returns the complementary color.
+
         Complementary colors are those that are opposite each other on the color wheel.
+        This method works by shifting the hue by 180 degrees.
+
+        Returns:
+            Color: A new Color object representing the complementary color.
         """
         h, s, v = self.hsv
-
         h += 180
-
         return Color.from_hsv(h, s, v)
     
+
+
+
+
+
+
     def get_analogus(self, n=3, angle = 30):
+        """
+        Returns a list of analogous colors. Analogous colors are colors that are next to each other on the color wheel.
+
+        Args:
+            n (int): The number of analogous colors to generate. Must be an even number (default is 3).
+            angle (int): The angle between each analogous color on the color wheel (default is 30 degrees).
+
+        Returns:
+            list: A list of Color objects representing the analogous colors.
+        """
         if n % 2 != 0:
             n -= 1
         n = int(n/2)
@@ -224,67 +455,119 @@ class Color:
             color = Color.from_hsv(h + i, s, v)
             colors.append(color)
         return colors
-
-    @classmethod
-    def from_hsv(cls, h, s, v):
-        h = h / 360  # Normalize the hue to [0, 1] range
-        s = max(0, min(s, 1))  # Saturation must be in [0, 1]
-        v = max(0, min(v, 1))  # Value must be in [0, 1]
-
-        c = v * s
-        x = c * (1 - abs((h * 6) % 2 - 1))
-        m = v - c
-
-        if 0 <= h < 1/6:
-            r, g, b = c, x, 0
-        elif 1/6 <= h < 2/6:
-            r, g, b = x, c, 0
-        elif 2/6 <= h < 3/6:
-            r, g, b = 0, c, x
-        elif 3/6 <= h < 4/6:
-            r, g, b = 0, x, c
-        elif 4/6 <= h < 5/6:
-            r, g, b = x, 0, c
-        else:
-            r, g, b = c, 0, x
-
-        r = int((r + m) * 255)
-        g = int((g + m) * 255)
-        b = int((b + m) * 255)
-
-        return Color(r, g, b)
     
 
+    # CONSTANTS
     @classmethod
-    def from_hsl(cls, h, s, l):
-        h = h / 360  # Normalize the hue to [0, 1]
-        s = max(0, min(s, 1))  # Saturation must be in [0, 1]
-        l = max(0, min(l, 1))  # Lightness must be in [0, 1]
+    def constants(cls):
 
-        c = (1 - abs(2 * l - 1)) * s
-        x = c * (1 - abs((h * 6) % 2 - 1))
-        m = l - c / 2
+        #: Pure red color (RGB: 255, 0, 0)
+        cls.RED = cls(255, 0, 0)
 
-        if 0 <= h < 1 / 6:
-            r, g, b = c, x, 0
-        elif 1 / 6 <= h < 2 / 6:
-            r, g, b = x, c, 0
-        elif 2 / 6 <= h < 3 / 6:
-            r, g, b = 0, c, x
-        elif 3 / 6 <= h < 4 / 6:
-            r, g, b = 0, x, c
-        elif 4 / 6 <= h < 5 / 6:
-            r, g, b = x, 0, c
-        else:
-            r, g, b = c, 0, x
+        #: Pure green color (RGB: 0, 255, 0)
+        cls.GREEN = cls(0, 255, 0)
 
-        r = int((r + m) * 255)
-        g = int((g + m) * 255)
-        b = int((b + m) * 255)
+        #: Pure blue color (RGB: 0, 0, 255)
+        cls.BLUE = cls(0, 0, 255)
 
-        return Color(r, g, b)
+        #: Yellow color, a mix of red and green (RGB: 255, 255, 0)
+        cls.YELLOW = cls(255, 255, 0)
+
+        #: Cyan color, a mix of green and blue (RGB: 0, 255, 255)
+        cls.CYAN = cls(0, 255, 255)
+
+        #: Magenta color, a mix of red and blue (RGB: 255, 0, 255)
+        cls.MAGENTA = cls(255, 0, 255)
+
+        #: Pure white color (RGB: 255, 255, 255)
+        cls.WHITE = cls(255, 255, 255)
+
+        #: Very light gray, slightly darker than white (RGB: 192, 192, 192)
+        cls.VERY_LIGHT_GRAY = cls(192, 192, 192)
+
+        #: Light gray color (RGB: 192, 192, 192)
+        cls.LIGHT_GRAY = cls(192, 192, 192)
+
+        #: Moderate light gray, between light gray and white (RGB: 224, 224, 224)
+        cls.MODERATE_LIGHT_GRAY = cls(224, 224, 224)
+
+        #: Neutral gray, midway between black and white (RGB: 128, 128, 128)
+        cls.GRAY = cls(128, 128, 128)
+
+        #: Moderate dark gray, slightly darker than neutral gray (RGB: 96, 96, 96)
+        cls.MODERATE_DARK_GRAY = cls(96, 96, 96)
+
+        #: Dark gray, significantly darker than neutral gray (RGB: 80, 80, 80)
+        cls.DARK_GRAY = cls(80, 80, 80)
+
+        #: Very dark gray, close to black but not completely black (RGB: 64, 64, 64)
+        cls.VERY_DARK_GRAY = cls(64, 64, 64)
+
+        #: Pure black color (RGB: 0, 0, 0)
+        cls.BLACK = cls(0, 0, 0)
+
+        #: Orange color (RGB: 255, 165, 0)
+        cls.ORANGE = cls(255, 165, 0)
+
+        #: Purple color (RGB: 128, 0, 128)
+        cls.PURPLE = cls(128, 0, 128)
+
+        #: Brown color (RGB: 165, 42, 42)
+        cls.BROWN = cls(165, 42, 42)
+
+        #: Pink color (RGB: 255, 192, 203)
+        cls.PINK = cls(255, 192, 203)
+
+        #: Violet color (RGB: 238, 130, 238)
+        cls.VIOLET = cls(238, 130, 238)
+
+        #: Indigo color (RGB: 75, 0, 130)
+        cls.INDIGO = cls(75, 0, 130)
+
+        #: Teal color (RGB: 0, 128, 128)
+        cls.TEAL = cls(0, 128, 128)
+
+        #: Gold color (RGB: 255, 215, 0)
+        cls.GOLD = cls(255, 215, 0)
+
+        #: Coral color (RGB: 255, 127, 80)
+        cls.CORAL = cls(255, 127, 80)
+
+        #: Turquoise color (RGB: 64, 224, 208)
+        cls.TURQUOISE = cls(64, 224, 208)
+
+        #: Rose color (RGB: 255, 0, 128)
+        cls.ROSE = cls(255, 0, 128)
+
+        #: Heliotrope color (RGB: 223, 115, 255)
+        cls.HELIOTROPE = cls(223, 115, 255)
+
+        #: Azure color (RGB: 0, 127, 255)
+        cls.AZURE = cls(0, 127, 255)
+
+        #: Sea Green color (RGB: 46, 139, 87)
+        cls.SEA_GREEN = cls(46, 139, 87)
+
+        #: Spring Green color (RGB: 0, 250, 154)
+        cls.SPRING_GREEN = cls(0, 250, 154)
+
+        #: Olive color (RGB: 107, 142, 35)
+        cls.OLIVE = cls(107, 142, 35)
+
+        #: Yellow Green color (RGB: 154, 205, 50)
+        Color.YELLOW_GREEN = cls(154, 205, 50)
+
+        #: Army Green color (RGB: 75, 83, 32)
+        Color.ARMY_GREEN = cls(75, 83, 32)
 
 
+
+
+
+
+
+
+    # Strange things happening down here, don't look!
 
     @classmethod
     def rgb_distance(cls, color1, color2):

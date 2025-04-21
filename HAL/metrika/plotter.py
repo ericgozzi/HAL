@@ -6,6 +6,8 @@ import os
 from ..pixels import Color
 from ..pixels import Picture
 
+from .math import Equation
+
 class Plotter:
     
     def __init__(self, **kwargs):
@@ -110,6 +112,9 @@ class Plotter:
 
     def plot(self, func, **kwargs):
 
+        if isinstance(func, Equation):
+            func = func.as_lambda
+
         color = kwargs.get('color', Color.WHITE)
         thickness = kwargs.get('thickness', 4)
 
@@ -129,6 +134,8 @@ class Plotter:
             except:
                 prev_point = None
 
+    def plot_from_equation(equation: Equation):
+        pass
 
     def plot_parametric(self, func_x, func_y, t_min, t_max, **kwargs):
             
@@ -217,6 +224,7 @@ class Plotter:
         x_pos = margin_x + gap_width
 
         for label, value in data.items():
+            label = str(label)
             # The top of the bar's position
             top = self.height-margin_y - value * self.y_scale  # Direct height from value
 

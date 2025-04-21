@@ -1,11 +1,12 @@
 from collections import defaultdict
 
-
 from .book import Book
 from .book import Quote
 
 from ..data import get_files_all_files_name
-from ..data import read_json
+
+
+
 
 class Library:
     """
@@ -76,7 +77,7 @@ class Library:
                 vector = 0
             sorted_books[book] = vector
 
-        self.books = dict(sorted(sorted_books.items(), key=lambda item: item[1], reverse=True))
+        self.books_dictionary = dict(sorted(sorted_books.items(), key=lambda item: item[1], reverse=True))
 
 
 
@@ -121,7 +122,7 @@ class Library:
             Quote[str]: a the sentences containig the anwers to the question.
         """
         answer = []
-        for i, book in enumerate(self.books.keys()):
+        for i, book in enumerate(self.books_dictionary.keys()):
             sentences_list = book.get_sentences()
 
             results = []

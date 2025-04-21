@@ -115,25 +115,53 @@ class Video:
 
 
 
+
+
+
 def create_video_from_frame_folder(frame_folder, output_path='video.mp4', fps=24):
+    """
+    Creates a video from a folder of image frames.
+
+    This function reads all image files from a specified folder, sorts them numerically, 
+    and compiles them into a video file at the specified frame rate and resolution.
+
+    Args:
+        frame_folder (str): The folder containing the image frames to be converted into a video.
+        output_path (str): The path where the resulting video file will be saved (default is 'video.mp4').
+        fps (int): The frame rate of the resulting video in frames per second (default is 24).
+
+    Returns:
+        None: The function doesn't return anything, but it saves the video file to the specified location.
+
+    Example:
+        >>> create_video_from_frame_folder('frames_folder', 'output_video.mp4', 30)
+        This will create a video from the frames in 'frames_folder', 
+        with the video saved as 'output_video.mp4' at 30 fps.
+    """
+    def extract_number(filename):
+        # Extracts the numeric part of the filename, e.g., '12' from '12.png' or 'frame12.png'
+        return int(''.join(filter(str.isdigit, filename)))
+
+    # Get list of frame image files and sort them numerically
     frame_files = sorted([
         f for f in os.listdir(frame_folder)
         if f.lower().endswith(('.bmp', '.jpg', '.jpeg', '.png'))
-    ])
-    
-    # Read first frame to get dimensions
+    ], key=extract_number)
+
+    # Read the first frame to determine the video resolution
     first_frame_path = os.path.join(frame_folder, frame_files[0])
     first_frame = cv2.imread(first_frame_path)
     height, width, _ = first_frame.shape
 
-    # Initialize the video writer
+    # Set up the video writer
     fourcc = cv2.VideoWriter_fourcc(*'mp4v')  # Or 'XVID' for .avi
     out = cv2.VideoWriter(output_path, fourcc, fps, (width, height))
 
+    # Write each frame into the video
     for file in frame_files:
         frame_path = os.path.join(frame_folder, file)
         frame = cv2.imread(frame_path)
         out.write(frame)
 
     out.release()
-    print(f"Video saved to {output_path}")
+    print(f"✅ Video saved to {output_path}")

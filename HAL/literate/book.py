@@ -10,6 +10,8 @@ from ..data import read_json
 
 from ..metrika import Graph
 
+from ..metrika import Rule
+
 
 
 # NATURAL LANGUAGE TOOLKIT
@@ -391,8 +393,9 @@ class Book:
 
         for i in range(len(words) - 1):
             word_connections.append((words[i], words[i+1]))
+            
 
-        return word_connections
+        return Rule(word_connections)
     
 
 

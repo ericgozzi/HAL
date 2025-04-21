@@ -5,8 +5,6 @@ import numpy as np
 import os
 import io
 
-from IPython.display import display, HTML
-import base64
 
 from PIL import Image
 from PIL import ImageDraw
@@ -23,7 +21,7 @@ class Picture:
     """
     # Picture Class
 
-    The `Picture`class represent images.
+    The `Picture` class represent images.
     """
 
     def __init__(self, image):
@@ -39,18 +37,10 @@ class Picture:
             self.image.save(buf, format='PNG')
             return buf.getvalue()
         
-        
-    def display(self, height=100):
-        """Display the image in a Jupyter notebook cell output."""
-        with io.BytesIO() as buffer:
-            self.image.save(buffer, format="PNG")
-            encoded = base64.b64encode(buffer.getvalue()).decode()
-        html = f'<img src="data:image/png;base64,{encoded}" style="height:{height}px;">'
-        display(HTML(html))
+    
 
 
-        
-
+    
     # Constructors
     @classmethod
     def from_file_path(cls, image_path: str):
@@ -67,6 +57,9 @@ class Picture:
         return cls(image)
 
 
+
+
+
     @classmethod
     def from_PIL_image(cls, image):
         """
@@ -79,6 +72,11 @@ class Picture:
             `Picture`
         """
         return cls(image)
+
+
+
+
+
 
     @classmethod
     def from_array(cls, array):
@@ -94,6 +92,11 @@ class Picture:
         """
         pil_image = Image.fromarray(array)
         return cls(pil_image)
+
+
+
+
+
 
 
     @property
@@ -112,6 +115,11 @@ class Picture:
         """
         return self.image.size
 
+
+
+
+
+
     @property
     def width(self) -> int:
         """
@@ -121,6 +129,11 @@ class Picture:
             int: The width of the image.
         """
         return self.image.size[0]
+
+
+
+
+
 
     @property
     def height(self) -> int:
@@ -132,6 +145,11 @@ class Picture:
         """
         return self.image.size[1]
 
+
+
+
+
+
     @property
     def entropy(self) -> float:
         """
@@ -141,6 +159,11 @@ class Picture:
             float: The `entropy` of the image.
         """
         return self.image.entropy()
+
+
+
+
+
 
     @property
     def mode(self):
@@ -162,6 +185,11 @@ class Picture:
         """
         return self.image.mode
 
+
+
+
+
+
     @property
     def red_channel(self):
         """
@@ -173,6 +201,11 @@ class Picture:
         r_values = self.image.split()[0]
         red_image = Image.merge("RGB", (r_values, Image.new("L", self.image.size, 0), Image.new("L", self.image.size, 0)))
         return Picture.from_PIL_image(red_image)
+
+
+
+
+
 
     @property
     def green_channel(self):
@@ -186,6 +219,11 @@ class Picture:
         green_image = Image.merge("RGB", (Image.new("L", self.image.size, 0), g_values, Image.new("L", self.image.size, 0)))
         return Picture.from_PIL_image(green_image)
 
+
+
+
+
+
     @property
     def blue_channel(self):
         """
@@ -197,6 +235,11 @@ class Picture:
         b_values = self.image.split()[2]
         blue_image = Image.merge("RGB", (Image.new("L", self.image.size, 0), Image.new("L", self.image.size, 0), b_values))
         return Picture.from_PIL_image(blue_image)
+
+
+
+
+
 
     @property
     def np_array(self):
@@ -210,13 +253,21 @@ class Picture:
         image_np = np.array(self.image)
         return image_np
 
-    # General methods
 
+
+
+
+
+    # General methods
     def show(self):
         """
         Displays the image using the default image viewer.
         """
         self.image.show()
+
+
+
+
 
     def save(self, output_path):
         """
@@ -227,11 +278,19 @@ class Picture:
         """
         self.image.save(output_path)
 
+
+
+
+
     def copy(self):
         """
         Return a copy of the `Picture` instance.
         """
         return Picture.from_PIL_image(self.image.copy())
+
+
+
+
 
     def convert_to_grayscale(self):
         """
@@ -239,17 +298,29 @@ class Picture:
         """
         self.image = self.image.convert('L')
 
+
+
+
+
     def convert_to_rgb(self):
         """
         Convert the image mode to RGB.
         """
         self.image = self.image.convert('RGB')
 
+
+
+
+
     def convert_to_rgba(self):
         """
         Convert the image mode to RGBA
         """
         self.image = self.image.convert('RGBA')
+
+
+
+
 
     def adjust_brightness(self, value: float):
         """
@@ -264,6 +335,10 @@ class Picture:
         enhanced_image = enhancer.enhance(value)
         self.image = enhanced_image
 
+
+
+
+
     def adjust_contrast(self, value: float):
         """
         Adjusts the contrast of the image.
@@ -277,6 +352,10 @@ class Picture:
         enhanced_image = enhancer.enhance(value)
         self.image = enhanced_image
 
+
+
+
+
     def adjust_sharpness(self, value: float):
         """
         Adjusts the sharpness of the image.
@@ -289,6 +368,10 @@ class Picture:
         enhancer = ImageEnhance.Sharpness(self.image)
         enhanced_image = enhancer.enhance(value)
         self.image = enhanced_image
+
+
+
+
 
     def adjust_saturation(self, value: float):
         """
@@ -304,8 +387,38 @@ class Picture:
         self.image = enhanced_image
 
 
-    # Geometry
 
+
+    def get_pixel_color(self, coord_x: int, coord_y: int) -> Color:
+        """
+        Get the color of a pixel at the specified coordinates (coord_x, coord_y).
+        
+        Args:
+            coord_x (int): The x-coordinate of the pixel.
+            coord_y (int): The y-coordinate of the pixel.
+        
+        Returns:
+            Color: The color of the pixel as a Color object.
+        
+        Raises:
+            ValueError: If the pixel format is unexpected.
+        """
+        pixel_value = self.image.getpixel((coord_x, coord_y))
+
+        if isinstance(pixel_value, int):  # Grayscale
+            return Color(pixel_value, pixel_value, pixel_value)
+        elif isinstance(pixel_value, tuple):
+            if len(pixel_value) >= 3:
+                return Color(pixel_value[0], pixel_value[1], pixel_value[2])
+            # Handle other tuple lengths if needed
+
+        # Fallback or raise an error
+        raise ValueError(f"Unexpected pixel format: {pixel_value}")
+
+
+
+
+    # Geometry
     def rotate(self, angle):
         """
         Rotates the image by the `angle` expressed in degrees.
@@ -314,6 +427,10 @@ class Picture:
             angle (float): angle of rotation in degrees
         """
         self.image = self.image.rotate(angle)
+
+
+
+
 
     def resize(self, width, height, keep_aspect_ratio = True, crop = False):
         """
@@ -339,6 +456,10 @@ class Picture:
         if not keep_aspect_ratio and not crop:
             self.image = self.image.resize((width, height))
 
+
+
+
+
     def crop(self, left_margin, top_margin, right_margin, bottom_margin):
         """
         Crops the image by removing the specified margins from the left, top, right, and bottom edges.
@@ -358,17 +479,29 @@ class Picture:
         width, height = self.size
         self.image = self.image.crop((left_margin, top_margin, width - right_margin, height - bottom_margin))
 
+
+
+
+
     def flip_horizontal(self):
         """
         Flips the image horizontally.
         """
         self.image = ImageOps.mirror(self.image)
 
+
+
+
+
     def flip_vertical(self):
         """
         Flips the image vertically.
         """
         self.image = ImageOps.flip(self.image)
+
+
+
+
 
 
 
@@ -397,6 +530,10 @@ class Picture:
         colors = [Color(c[0], c[1], c[2]) for c in colors]
         return colors
 
+
+
+
+
     def get_color_palette(self, num_colors):
         """
         Return a `Picture` of the colorpalette of the image.
@@ -413,6 +550,9 @@ class Picture:
             color_pictures.append(Picture.from_PIL_image(Image.new('RGB', (100, 100), color.color)))
         palette = create_grid_of_pictures(color_pictures, grid_size=(num_colors, 1), image_size=(100, 100))
         return palette
+
+
+
 
 
     # Dithering methods
@@ -479,6 +619,10 @@ class Picture:
                     draw.ellipse((x - radius, y - radius, x + radius, y + radius), fill=dot_color.color)
 
         self.image = halftone
+
+
+
+
 
 
     def dither_ordered(self, **kwargs):
@@ -561,6 +705,10 @@ class Picture:
         self.image =  dithered_image
 
 
+
+
+
+
     def dither_floyd_steinberg(self, **kwargs):
         """
         Apply Floyd-Steinberg Dithering to the Image
@@ -628,6 +776,10 @@ class Picture:
         self.image = dithered_image
 
 
+
+
+    # OTHER OPERATIONS
+
     def binarize(self, **kwargs):
         """
         Convert the Image to Binary (Black and White) using a Threshold
@@ -682,6 +834,11 @@ class Picture:
                             pixels[x, y] = color.color
 
 
+
+
+
+    # MASKS
+
     def create_alpha_mask(self):
         """
         Create an Alpha Mask for the Image
@@ -712,6 +869,10 @@ class Picture:
                 else:
                     self.image.putpixel((x, y), (0, 0, 0, 1))
         self.convert_to_grayscale()
+
+
+
+
 
 
 
@@ -747,11 +908,22 @@ class Picture:
 
 
 
+
+
+
     def paste_picture(self, picture_to_paste, coord_x: int, coord_y: int):
+        """
+        Paste one picture onto another at the specified coordinates while handling transparency.
+        
+        Args:
+            picture_to_paste (Picture): The picture to be pasted.
+            coord_x (int): The x-coordinate where the picture should be pasted.
+            coord_y (int): The y-coordinate where the picture should be pasted.
+        """
         mask = picture_to_paste.copy()
         mask.convert_to_rgba()
-
         self.image.paste(picture_to_paste.image, (coord_x, coord_y), mask.image)
+
 
 
 
@@ -796,6 +968,7 @@ class Picture:
 
 
 
+
     def apply_color_filter(self, color):
         """
         This method applies a color filter to the current image by multiplying the image with a solid color.
@@ -812,30 +985,55 @@ class Picture:
         self.image = ImageChops.multiply(self.image, color_filter)
 
 
-    def get_pixel_color(self, coord_x: int, coord_y: int) -> Color:
-        pixel_value = self.image.getpixel((coord_x, coord_y))
-
-        if isinstance(pixel_value, int):  # Grayscale
-            return Color(pixel_value, pixel_value, pixel_value)
-        elif isinstance(pixel_value, tuple):
-            if len(pixel_value) >= 3:
-                return Color(pixel_value[0], pixel_value[1], pixel_value[2])
-            # Handle other tuple lengths if needed
-
-        # Fallback or raise an error
-        raise ValueError(f"Unexpected pixel format: {pixel_value}")
 
 
 
 
-    def draw_line(self, start: tuple, end: tuple, width=3, **kwargs) -> None:
+
+
+
+
+
+    # DRAWING 
+
+
+    def draw_line(self, start: tuple, end: tuple, **kwargs) -> None:
+        """
+        Draw a line between two points on the image.
+        
+        Args:
+            start (tuple): The starting point of the line (x1, y1).
+            end (tuple): The ending point of the line (x2, y2).
+            width (int, optional): The width of the line. Defaults to 3.
+            **kwargs: Optional keyword arguments for customization. 
+                    - 'color' (Color): The color of the line. Defaults to `Color.WHITE`.
+                    - 'width' (int): The width of the line. Defaults to 3.
+        
+        Returns:
+            None
+        """
         color = kwargs.get('color', Color.WHITE)
+        width = kwargs.get('width', 3)
 
         draw = ImageDraw.Draw(self.image)
         draw.line([start, end], fill=color.color, width=width)
 
 
+
+
     def draw_circle(self, center: tuple[int, int], radius: int, **kwargs) -> None:
+        """
+        Draw a circle on the image with the given center and radius.
+        
+        Args:
+            center (tuple): The center point of the circle (x, y).
+            radius (int): The radius of the circle.
+            **kwargs: Optional keyword arguments for customization.
+                    - 'color': The color of the circle. Defaults to `Color.WHITE`.
+        
+        Returns:
+            None
+        """
         color: Color = kwargs.get('color', Color.WHITE)
 
         draw = ImageDraw.Draw(self.image)
@@ -843,12 +1041,28 @@ class Picture:
         bounding_box = [x - radius, y - radius, x + radius, y + radius]
         draw.ellipse(bounding_box, width=5, fill=color.color)
 
-    def draw_text(self, text: str, position: tuple[int, int], font_size, **kwargs) -> None:
 
+
+
+
+    def draw_text(self, text: str, position: tuple[int, int], font_size, **kwargs) -> None:
+        """
+        Draw text on the image at the specified position with the given font size.
+        
+        Args:
+            text (str): The text to be drawn.
+            position (tuple): The (x, y) position where the text's baseline will be.
+            font_size (int): The font size.
+            **kwargs: Optional keyword arguments for customization.
+                    - 'color': The color of the text. Defaults to `Color.BLACK`.
+        
+        Returns:
+            None
+        """
         color = kwargs.get('color', Color.BLACK)
 
         draw = ImageDraw.Draw(self.image)
-        font_path = os.path.join(os.path.dirname(__file__), '..', 'fonts', 'Helvetica', 'Helvetica.ttf')
+        font_path = os.path.join(os.path.dirname(__file__), '..', 'fonts', 'Helvetica.ttf')
         font = ImageFont.truetype(font_path, font_size)
 
         # Measure text size
@@ -862,6 +1076,9 @@ class Picture:
         y -= text_height // 2
 
         draw.text((x, y), text, fill=color.color, font=font)
+
+
+
 
 
     def draw_arrow(self, start: tuple, end: tuple, width=3, arrowhead_length=50, arrowhead_angle=30, **kwargs) -> None:

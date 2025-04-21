@@ -8,3 +8,4 @@ ipywidgets
 matplotlib
 requests
 BeautifulSoup4
+sympy
