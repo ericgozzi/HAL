@@ -4,3 +4,9 @@ pdfs/
 from_comfy/
 *.png
 *.pdf
+
+*.pyc
+__pycache__/
+*.pkl
+dist/
+build/

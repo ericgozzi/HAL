@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "HAL"
+version = "0.1.0"
+description = "A creative computational toolkit"
+authors = [
+    { name = "Eric Gozzi", email = "eric@cosmicgarage.ch" }
+]
+license-files = ["LICENSE"]
+readme = "README.md"
+requires-python = ">=3.6"
+dependencies = [
+    "numpy",
+    "Pillow",
+    "networkx",
+    "nltk",
+    "opencv-python",
+    "reportlab",
+    "requests",
+    "beautifulsoup4",
+    "sympy"
+]
+
+
+[project.urls]
+Homepage = "https://github.com/ericgozzi/HAL"
+
+
+[tool.setuptools]
+packages = ["HAL"]
