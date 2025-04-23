@@ -1,0 +1,615 @@
+We are called to be architects of the future, not its victims. 
+
+R. Buckminster Fuller, 1969 
+
+ONE 
+
+FUTURECRAFT 
+
+On December 24, 1900, the  Boston Globe  ran a piece imagining what Boston would look like at the turn of the millennium. The lavishly illustrated article by Thomas F. Anderson painted an elaborate vision of a city with moving sidewalks, airships soaring high above the streets, and pneumatic tube delivery of everything from newspapers to food. The author’s predictions were sweeping and optimistic: Boston would be so beautiful that the word “slum” would be eliminated from the city’s vernacular.1 
+
+Such descriptions, in retrospect, are almost comical— 
+
+yet a hope of glimpsing the future continues to enchant us. A vibrant thread in fiction and film, speculations have become a genre in their own right, encompassing, as a common trope, the future of the city. Notions vary widely, from H. G. Wells’ grim dystopias to Fritz Lang’s  Metropolis  or the pseudo-police state of  Minority Report.  Regardless of the time and medium, however, “nothing ever looks as dated as old science fiction,” as the saying goes. Futures quickly become  paleofutures —early speculations about the futures that would never come to pass. 
+
+In the midst of a sprawling graveyard of ideas, an exercise like this book—an exploration of cities as part of Yale University Press’s series on the future—is vexed with a crucial question: Is it possible for our predictions to escape the fate of Anderson’s? How can we avoid the scrap heap of urban visions? And, more specifically, Does the act of considering the future—in this case, the future of the city—have inherent and productive value? 
+
+Traditionally, most future visions have been attempts to accurately depict the world of tomorrow—and that may be their undoing. Prediction often involves assaying weak signals at the cutting edge of the contemporary world and flinging them far forward, for decades or centuries, to arrive at a portrait of the future city. To Anderson, writing in the year 1900, soon after the dazzling introduction of zeppelin travel and pneumatic technology, it seemed all but assured that these advances would define urban 
+
+development over the course of the next hundred years. The state of the art stirred his imagination and defined his portrait of millennial Boston. 
+
+We propose something quite different: to employ design in a systematic exploration and germination of possible futures. Our aim is not to portray what is to come. Rather, we apply a method that we call  futurecraft:  we posit future scenarios (typically phrased as What if? questions), entertain their consequences and exigencies, and share the resulting ideas widely, to enable public conversation and debate. In other terms, we propose to extrapolate from the present condition and to place ourselves, as designers, in a fictive but possible future context with the intent of realizing or precluding that future through public discourse. 
+
+This concept, primarily developed through our research at the Massachusetts Institute of Technology’s Senseable City Lab, has antecedents. Recently, Anthony Dunne and Fiona Raby at the Royal College of Art in London proposed “speculative design”—a process that acts as a “catalyst for collectively redefining our relationship to reality” and considering how things could be. An earlier framework, Comprehensive Anticipatory Design Science (CADS) proposed by the iconic inventor Buckminster Fuller, uses a systematic approach to design that he developed through a class at MIT in 1956. Motivating Fuller in his work was a general belief that design, speculation, and science go hand in hand. “The 
+
+function of what I call  design science  is to solve problems by introducing into the environment new artifacts, the availability of which will induce their spontaneous employment by humans and thus, coincidentally, cause humans to abandon their previous problem-producing behaviors and devices.”2 
+
+Buckminster Fuller’s statement suggests a latent evolutionary concept. As technical culture progresses, objects are produced and iteratively refined through design—an act that introduces mutations to improve a function or enable a new capability. On a broad scale, these mutations collectively promote change and development. In an 1863 text, “Darwin among the Machines,” the writer Samuel Butler proposed an evolutionary analogy for technology: replacing organisms with artifacts and classifying the synthetic kingdom into genera and species.3 
+
+Most importantly, futurecraft is not about fixing the present (an overwhelming task) or predicting the future (a disappointingly futile activity) but influencing it positively. Designers should not force their ideas into the world—in fact, whether or not an idea is realized is largely irrelevant. By virtue of being stated, explored, and debated, a concept will necessarily make an impact. Provocation is a better metric than certainty, for ideas both positive and negative. Effacing a dystopian vision for the sake of decency is a disservice, precluding the possibility of avoiding that future. 
+
+The Evolution of Culture by Augustus Henry Lane-Fox Pitt-Rivers 
+
+According to a long-standing hypothesis, the synthetic world—the kingdom of human-made objects—evolves in a way that is analogous to biological evolution: by iterative generations, small mutations, and natural selection. In 1852, Augustus Henry Lane-Fox Pitt-Rivers, a British imperial officer and avid collector, was commissioned by the Crown to prepare a manual on firearms. In studying the history of weaponry, he became convinced of the gradual technical development of human artifacts over time. This image shows an arrangement of primitive weapons in his collection, which points to what he called “the evolution of culture.” He devoted his later life to “evolutionary anthropology,” testing the concept of synthetic evolution through his vast collection of artifacts. Although his assumptions are now regarded as contrived, the application of an evolutionary analogy to the synthetic world remains a useful interpretive tool. 
+
+Methodologically, futurecraft dissolves prediction anxiety and opens up new avenues of research rather than delivering products and systems. Designers must not, however, peddle only abstract ideas—tangible demonstrations are crucial to promoting general discussion. At the urban scale, these enable interaction with people—future users—and demonstrate ideas that 
+
+spark development. Specific mutations are tested in urban space and subjected to public debate, a process that functions like natural selection in biology. The public will eventually steer broader technological development toward the most desirable future. 
+
+One should note that this process is not limited to areas traditionally identified as leaders of technological progress. In this book, we deliberately focus on new ideas at the cutting edge, where—almost by definition—every original concept begins before spreading to different contexts. This dissemination, particularly in the developing world, or contexts that do not have similar preexisting technologies, can cause a “leapfrogging” effect. Cell phones, for example, have become tremendously widespread across the African continent in only a few years—while Western countries went through a long, protracted development from analogue landlines. Countries without an existing telecommunications infrastructure could leap directly to the latest technology, bypassing interim stages. While we will not focus here on such developing contexts, we recognize that they could be one of the most fertile grounds for the development of future-craft. 
+
+Cities are, by definition, plural, public, and productive. They are created by society itself (barring exceptional cases like master-planned Brashia or Chandigarh), and they function as culture’s petri dish for progress.  Living in  space and  creating  space can go hand in hand. “To 
+
+achieve change,” in the words of Dunne and Raby, “it is necessary to unlock people’s imaginations and apply it to all areas of life at a microscale. Critical design, by generating alternatives, can help people construct compasses rather than maps for navigating new sets of values.”5 
+
+Our work is meaningless unless it ignites imaginations and provokes debate: design by mutation is intrinsically  collective.  Designers produce mutations, some of which will grow, evolve, and develop into tangible artifacts that cause global change—driven to realization by the energy of the crowd. Crucially, this process depends on channels for disseminating information from designers to citizens —media, museums, exhibitions, publications. This book itself is a vector for transmission, part of the idea propagation that is integral to futurecraft. 
+
+The method and the function of futurecraft are best shown in specific examples. Trash Track, a 2009 project by the Senseable City Lab, imagined a future scenario in which geolocating devices become so small and inexpensive that almost everything could be tagged. Researchers proposed a design into that scenario—trash that wirelessly reports its GPS location—and created a full-scale urban demonstration to test it. With the help of hundreds of citizen volunteers, the team deployed thousands of sensors into Seattle’s waste management system and watched as the tags traced waste movement 
+
+across the United States. A set of visualizations and videos revealed the inefficiencies of the disposal chain and were communicated widely through exhibitions, news, and other media. Subsequent discussion and debate has led to systemic improvements by waste management companies, inspired startups that produce trash trackers, and, most importantly, sparked behavioral change in citizens who are motivated to reduce their waste and to recycle. Trash Track exemplified a new relationship between designers and the public, demonstrating the power of futurecraft to shape urban development. 
+
+It is a fundamental responsibility of design to challenge the status quo, to introduce new possibilities, to materialize aberrations, and ultimately to pave the way for the public to realize a desirable future. Herbert Simon, echoing Albert Einstein, wrote that “sciences are concerned with how things are . . . design on the other hand is concerned with how things ought to be.”6 
+
+A concern with how things ought to be encompasses a variety of designerly endeavors, everything from aesthetic gloss to problem solving. Many roles within this spectrum can serve a valuable purpose. Aesthetics are crucial to marketability, and a problem-solving mentality can identify areas that are lacking and can generate improvements—yet futurecraft is far removed from these approaches. It is situated one step into the future, focused more on what could be than what is. Echoing Cedric Price 
+
+The designer is inherently optimistic in that ideas can be a catalyst for positive change. However, the framework of willful synthetic evolution hinges on an explicit and defined relationship to the future, structured by four core ideas: that the articulation of future conditions is a hypothetical tool; that futurecasting is only part of the enterprise meant to enable and provoke design; that possible futures are rooted in the present and not in distant, idealized, extraordinary, or digressive visions, which means balancing provocation with strong ties to the world-as-it-is; and finally, that whether or not the imagined scenarios come to pass is irrelevant. We are well aware that, in all likelihood, the future will look different from our “what-if ’ snapshots, but designing into a projected situation can nonetheless guide us toward a possible and desirable future. 
+
+The downfall of Anderson’s vision for Boston was a disjunction between time frame and reality. In his time, moving sidewalks seemed quite probable one hundred years in the future, but over the course of the twentieth century technological evolution branched in wildly different directions. Anderson imagined moving sidewalks; he could not have imagined Uber. The aim of 
+
+futurecraft is to maximize impact by aligning its scope with its reach. 
+
+Two variables—time and topic—govern this book and our work as designers. The chronology of each chapter encompasses a loosely defined “near future.” As a logical extension of the present, design in this arena is immediate and relevant, with potential to reflexively influence today’s urban evolution. Each chapter will delve into a specific topic, testing and extrapolating trends within the time frame to understand their promise and their consequence. 
+
+In this book we address ideas that will shape the form and function of cities in today’s world of bits and atoms. Taking a human-centric approach and acknowledging citizens as the crucial actuators of urban development, we examine urban information flows from the macro to the micro scale. We apply data-driven models to a spectrum of urban systems, from transportation to energy to fabrication and learning. Finally, we circle back to citizens themselves: you, all of us, who together constitute the active urban network.  Hack the city! 
+
+We believe that in each of these domains, the future city will grow from a symbiosis between design and the public. Where these worlds intersect, we can collectively imagine, examine, choose, and create the most desirable future. We ask you, the interested reader, to take this book as a collection of mutations that can spark debate and 
+
+Ubiquitous computing names the third wave in computing ,  just now beginning. First were mainframes, each shared by lots of people. Now we are in the personal computing era, person and machine staring uneasily at each other across the desktop. Next comes ubiquitous computing ,  or the age of  calm technology,  when technology recedes into the background of our lives. 
+
+MarkWeiser, 1996 
+
+TWO 
+
+BITS AND ATOMS 
+
+A new form of communication exploded into the early twentieth century, wildly skewing the nature of human connectivity with a sudden force: mass media. The way humans have always related—face-to-face dialogue between neighbors and friends—was expanded by orders of magnitude. With this amplification, elements of the village, whether social or functional, took on new reactive properties, and the world shrank dramatically. Marshall McLuhan, one of the fathers of social media theory, described the universal connective paradigm as a global village: an entire planet of people living as neighbors, suddenly given the tools to speak, or shout, around the world. Humanity was connected from any and every location. 
+
+Yet in McLuhan’s time the idea of the global village accounted only for unidirectional mass media like radio and television. Information streamed outward, from privileged content-creators to distributors to passive consumers. Universal communication functioned more as a megaphone than as a telephone, amplifying inherent tensions in society rather than promoting cohesion. McLuhan readily acknowledged that “the more you create village conditions,” the more you generate “discontinuity and division and diversity. The Global Village absolutely insures maximal disagreement on all points. It never occurred to me that uniformity and tranquility were 
+
+properties of the Global Village. It has more spite and envy. The spaces and times are pulled out from between people. A world in which people encounter each other in depth all the time. The tribal-global village is far more divisive—full of fighting—than any nationalism ever was. Village is fission, not fusion, in depth all the time.”1 Unidirectional mass media brought a clash of polemics on the global scale. 
+
+In the 1980s, soon after McLuhan died, a new connective infrastructure arose that would cause even more sweeping and dramatic changes. The bidirectional connective interface of the Internet became a jumble of top-down and bottom-up energy. More than could ever have been possible through television or radio, people began to share ideas, thoughts, work, obsessions, and intimacies to the widest extent of the network. The choke points of media providers were opened (though not obliterated), and content was democratized to a certain extent. Media became dialogue rather than monologue, and it was at this moment that humanity began coming together as a real village, with shared culture, ideas, and discussion. 
+
+People were unified by a pervasive “space of flows.” “There is a new spatial form characteristic of social practices that dominate and shape the network society: the space of flows,” wrote Manuel Castells, the sociologist who coined the term. “The space of flows is the material 
+
+Neither could this new system be neutral. The space of flows refers to a merger of virtual networks and material space—one in which digital and physical configurations actively influence one another. But how? What effect would the space of flows have on the physical city? In the looming shadow of the ubiquitous Internet, would the specificity of place have any significance? 
+
+A prevailing opinion at this crucial moment in human’s cultural history was that distance would die. Physicality, it seemed, would lose all relevance as it was subsumed by the connective fabric of the Internet. 
+
+New York Talk Exchange by the MIT Senseable City Laboratory 
+
+According to Manuel Castells, the space of flows— transfers of digital information across and throughout space—cannot be separated from our physical world. The contemporary condition is animated by “sequences of exchange and interaction between physically disjointed positions held by social actors.” This image—from a project called New York Talk Exchange by the Senseable City Lab—reveals the relationships that New Yorkers share with the rest of the world through a visualization of 
+
+long-distance telephone calls and Internet data flowing into and out of the city. How does New York connect to other urban spaces? With which cities does New York have the strongest ties, and how do these relationships shift with time? How does the rest of the world reach into the neighborhoods of New York? First exhibited at the Museum of Modern Art in 2008,  New York Talk Exchange  shows the human story hiding within the global space of flows. 
+
+The Internet was expected to neuter place in every dimension of human habitation, from entertainment to employment. Many of the tools for interaction, commerce, and information management were digitized and dematerialized. They became efficient, accessible, and—most significantly—aspatial. The economist 
+
+Frances Caimcross followed this trend to its logical conclusion with an overt hypothesis that she called the “death of distance.” The Internet would usher in a “communications future . . . in which distance is irrelevant.”4 
+
+Why? It seems that in the collective frenzy of the network, the death-of-distance theorists forgot something crucial to human experience: the importance of physical interaction between people and with the environment.  E- 
+
+“Traditional urban patterns cannot coexist with cyberspace. But long live the new, network-mediated metropolis of the digital era.” Today’s reality is a powerful collision of physical and digital that augments both—a triumph of atoms and bits. “To pursue this agenda effectively, we must extend the definitions of architecture and urban design to encompass virtual places as well as physical ones, software as well as hardware.”8 Rather than the network subsuming and replacing space, the two are becoming increasingly enmeshed. 
+
+In short, the digital revolution did not kill urban spaces —far from it—but neither did it leave them unaffected. 
+
+The introduction of the Internet, the space of flows, the connective tissue that theorists from Cairncross to Negroponte expected to kill physical proximity, has indeed had a profound impact on cities. Instead of flows replacing spaces and bits replacing atoms, cities are now a hybrid space at the intersection of the two. Physical and virtual are fused through a productive collision, where both propinquity and connectivity play an important role. 
+
+real time. Formula One winners now work together with “intelligent” vehicles that sense and respond with lightning precision to the conditions of the race. Today, winning is as much about the team behind the computers as it is about the driver behind the wheel. 
+
+The Formula One car effectively became a real-time control system—a loop with both sensing and actuating components. The sensors give constant information about conditions and performance, and the actuators can, in turn, have an effect on performance. As sensors and actuators inform each other, they work together toward optimizing the system. In the case of the Formula One race car, they might deal with weather conditions and acceleration in a curve—but something similar can now happen in cities. 
+
+Formula One Telemetry of Adrian Sutil 
+
+Telemetry technology—wireless, nearly instant data transmission—has completely transformed Formula One automobile racing. Today, the frame, the engine, and the mechanisms of the car—even the driver behind the wheel —are only part of the picture. An array of sensors embedded in the vehicle constantly monitors everything from tire pressure to engine temperature. That information is transferred back to a ground crew, who use real-time analytics to optimize performance and immediately respond to race conditions. Shown here is Adrian Sutil’s pit crew during the qualifying session of the Gran Premio de Espana, May 9, 2009. Just as digital technologies have 
+
+changed Formula One racing by integrating sensors and actuators in cars, they are quickly transforming our cities. Real-time control systems may monitor and respond at the urban scale, working with citizens and dynamically reacting to the environment or the population’s behavior. 
+
+All of this has repercussions in digital space: almost every contemporary action and interaction creates data. Broadband fiber-optic and wireless telecommunications grids are supporting mobile phones, smartphones, and 
+
+The city is humanity’s laboratory ,  where people flock to dream ,  create, build, and rebuild. 
+
+Edward Glaeser, 2012 
+
+THREE 
+
+WIKI CITY 
+
+Visions of the future city, beautiful and ticking like clockwork, have fascinated planners for centuries. In 1922, Le Corbusier aimed to achieve a sophisticated feat of urban engineering, a city of optimal efficiency, which he presented with lyrical prose. “I should like to draw a picture of ‘the street’ as it would appear in a truly up-to-date city . . . You are under the shade of trees, vast lawns spread all round you . . . Look through the charmingly dispersed arabesques of branches out into the sky towards those widely-spaced crystal towers which soar higher than 
+
+any pinnacle on earth.”1 
+
+Future cities are traditionally the domain of urban planners, architects, and social theorists, but today a new player is entering the arena, using new tools to chase the same ideal: multinational computing giants. Companies like IBM, Cisco, Siemens, HP, and Microsoft are jockeying to build (and program) the city of tomorrow, with the persistent goal of efficiency and well-being. Just as Le Corbusier’s unrealized Ville Radieuse was a reaction to the contemporary automobile and the rise of mass production, today’s smart cities are engineered as computer chips, designed to address urgent considerations of sustainability and efficiency. 
+
+With technology companies concerting their energies, creating so-called smart cities seems imminently possible. In addition to technological feasibility, the anticipation of new markets has spurred investment. Construction of 
+
+Songdo, South Korea, began in 2004, with the heavy involvement of Cisco Systems. The new city development is suffused with digital technologies at every level.3 Songdo was designed from square one as an integrated hardware and software system, capable of monitoring and controlling everything from transportation to utilities. Regardless of its success or failure, Songdo has attracted worldwide scrutiny and serves as a model for a host of subsequent projects. 
+
+Songdo Central Park 
+
+New urban-oriented partnerships between governments and software companies are rushing to build, inaugurate, 
+
+and control the next generation of smart cities. With a tabula rasa planning principle, the hope is to integrate technology at every level, allowing unprecedented optimization and control. In Songdo, South Korea, buildings are designed for ecological sustainability, a smart transportation system monitors traffic patterns in real-time, and a pneumatic trash system pulls waste from individual homes to a central sorting and processing plant. This level of complete top-down control can be seen as stifling—if not Orwellian and dystopic. Do we need such full-scale experiments to inform smart city development? Pictured here is a view of Songdo’s Central Park (with integrated saltwater-flow sensors, of course). 
+
+The smart city presents the same appeal that planners have long dreamed of: when every element of a city is thought of coherently, the whole can function like clockwork. Rather than a “machine for living,” what some now seek to create is an urban-scale circuit board, a computer in open air, driven by the objective of efficiency. Today’s smart city is an engineer’s or computer scientist’s dream come true. Every piece of information is instantly revealed, and the urban machine can be controlled and optimized. With such a high degree of integration, information technology companies are seeking to enhance urban function: the race for urban optimization is in full tilt. 
+
+In short, cutting-edge cities are now shaped by the 
+
+In 1950, the mathematician and philosopher Norbert Wiener predicted a future in which “messages between man and machines, between machines and man, and between machine and machine, are destined to play an ever-increasing part” in society, concluding that “to live effectively is to live with adequate information.”5 Bringing that to the urban scale gives us the simplest definition of “smart city” as constant, ubiquitous high-volume information flow at the intersection of habitation and computing. 
+
+This information flow generally has three components. First, instrumentation: an omnipresent array of sensors measuring environmental conditions and movements (both human and material). Second, analytics: the algorithms that consume massive amounts of urban data to find patterns and even predict future scenarios. Third, actuators: digitally controlled devices that can respond to data in real time and impact physical space. These three 
+
+main elements are united and governed by standard protocols for managing digital urban systems. As a whole, this software and hardware structure pushes forward the latest in sustainability technologies integrated at the building level—from occupancy-sensing architecture to resource-saving utilities. 
+
+This condition is commonly referred to as ubiquitous computing, or the “third wave in computing.” Early mainframe computers, each shared by many different people, evolved into the personal computers we know today. And yet the screen-and-keyboard-based interface is awkward. Mark Weiser, a Xerox PARC engineer who coined the term “ubiquitous computing,” imagined that screens would disappear altogether as technology gently suffused cities, bridging digital and physical space. His was “a new way of thinking about computers in the world, one that takes into account the natural human environment and allows the computers themselves to vanish into the background.”6 
+
+base with the milk carton to make sure it was full and fresh and, if not, ping the nearest grocery store to stock a gallon of the same organic 2%. A world full of interconnected objects would create an unprecedented Internet-like structure in physical space. The ubiquitous geospatial mesh of IoT could have disruptive ramifications in all dimensions of business. 
+
+The trend toward ubiquitous computing is poised to transform the basic experience of urban habitation. As digital systems slip quietly into the background, an entirely new generation of consumer products will be introduced—“everyware”—imagined as intuitive, integrated, and invisible, an unobtrusive class of devices and systems that scarcely demand any attention from users. Everyware will become an ecosystem of quiet technology, deeply assimilated in urban space. Using that infrastructure, every element of the city and its buildings could be designed to derive maximum resource efficiency by working coherently and systematically.8 
+
+But is ruthless, systematic optimization the most 
+
+desirable application of ubiquitous computing? Is clockwork the only vision of “urban smartness” that should guide development? The iconic (and ironic) question remains: “How smart does your bed have to be, before you are afraid to go to sleep at night?”10 An altogether different application of ubiquitous computing and urban-scale digital networks has been emerging in parallel—a vision of a city based less on technology-driven optimization and more on the empowerment of people. Social platforms are connecting individuals and allowing communities to form around concepts and causes, both positive and negative. Most importantly, these shared ideas do not remain sequestered in virtual space. In 2011, sentiment that had fomented online spilled out onto the streets when cities across the United Kingdom were torn apart by the so-called Blackberry Riots. Platforms like Twitter spread catalytic phrases such as #TottenhamRiot or #LondonRiot, and over the course of five days, arson, looting, and clashes with law enforcement burned across the country. “Everyone watching these horrific actions will be struck by how they were organized via social media,” Prime Minister David Cameron told an emergency House of Commons meeting. “We are working with the police, the intelligence services and industry to look at whether it would be right to stop people communicating via these websites and services when we know they are plotting 
+
+Yet the most influential Tweet of the event—shared with over 40,900 Retweets—was a different call to action. In the wake of violence, #RiotCleanup suggested that citizens respond positively to the chaos around them. Almost instantaneously, #RiotCleanup gathered Twitter users in the same streets that had just been shattered by violence. The momentum carried across the United Kingdom, and ultimately more than ninety thousand people were involved with the effort. The (now expired) #RiotCleanup website stated that the movement “started not as an organization but an idea, an idea to change what was a downfall in society into something positive.”12 
+
+The success of #RiotCleanup proves that the bottom-up, self-organizing energy of cohabiting humans is being expanded by networks and can, in turn, be reinfused into physical space. Digital platforms catalyze community, bringing people together to co-create and fix their city. 
+
+But what if we had more tools—digital tools—to act on the city around us? What if the same mechanisms of smart urban optimization allowed people to take ownership of their city and make improvements that only residents could dream up? 
+
+If the feedback loop closes, specific local wisdom and actions may directly affect metropolitan policy. “Leak the 
+
+The seeds of a non-optimized city—one that embraces a touch of chaos and unexpected vitality—were repeatedly sown in the history of urban planning. Through writing, criticism, and activism, Jane Jacobs proposed the idea that cities should have their own texture, life, and alchemy, noting famously that cities are places for people. She advocated an interwoven planning concept, prescribing a set of specific components to generate diversity and heterogeneity. By commingling, many interacting elements would generate a vibrant and active urban space, resulting in such phenomena as “natural surveillance”—the idea that a stimulating urban fabric would draw people out and about at all hours and that their “eyes on the street” would ensure a safer environment for all. 
+
+Jacobs emerged as a champion of the citizens’ city in 
+
+the face of her contemporaries’ uncompromising approach—most contentiously, Robert Moses’ highway-based urban efficiency. Jacobs mounted what she herself called “an attack on current city planning and rebuilding,” arguing that there is a higher goal for urban design than promoting high-volume traffic flow.14 
+
+The tension between these urban-planning mentalities, Moses versus Jacobs, essentially matches the divergence within architectural design, computer science, and politics known generally as top-down versus bottom-up. These two basic schemas define information flows, decisionmaking, and project direction models across several fields. A top-down approach first considers a concept at the broadest universal level and then systematically breaks it down into smaller and smaller components. Conversely, a bottom-up approach begins with the most atomized unit and builds it up into increasing complexity. In the case of urban planning, this is the difference between starting with an elegant highway scheme and cramming houses between its routes and starting with houses, shops, and parks and grouping them together into a city. 
+
+An alternate smart city could incorporate a bottom-up model—counterintuitively, it would not necessarily be at odds with data-driven urban systems. Network technologies allow for fine-grained control over physical space—the same control that can, of course, be used for 
+
+mechanistic efficiency. But it may also become a tool for citizen engagement, actively involving the broader population in decision-making and operation. For example, a traffic system of autonomous cars could be optimized for maximum throughput, or for maximum sharing within social networks, or for maximum novelty and surprise. Given that a digitally integrated city could potentially be optimized according to myriad variables, the choice of which to focus on affects not only current function but also the subsequent array of possible choices. Planning decisions we make today determine the scope of choices we will have tomorrow. 
+
+Put simply, this is the concept of futurecraft in urban space. A merger of top-down and bottom-up systems can invite wide-spread engagement and mean effective implementation of solutions, ideally resulting in livable urban spaces. Pure optimization quickly becomes obsolete, but a hybrid model with a measure of chaos may be a more sustainable form of efficiency. 
+
+The idea of smart cities should be recast into something more human-centric—what we often call “senseable cities.” Optimization inflected with humanization means neither metropolitan-scale computers nor a network-enabled wild west. It is the convergence of bits and atoms: systems and citizens, interacting.15 
+
+In a dynamic and mutually reinforcing urban ecology, the historically fickle power of the crowd could be 
+
+focused, while the slow-moving corporate and political juggernauts could be driven by the citizens they mean to serve. In the same way that free software—such as the computer operating system Linux—grew exponentially through open source development, engineered urban clockwork stands to benefit from sparks of serendipity. And just as ordinary people have hacked software, “citizen developers” can begin to hack their city. Various crowd-based platforms have proven the strength, ingenuity, bug fixing, and ideation of the world-at-large. A broad mix of experts, amateurs, corporate teams, and wildcard players is remarkably productive in unexpected ways if it can be effectively organized. Heterogeneity is beneficial. Yet space itself is crucial as well—the city constantly and definitionally provides new information to its agents, whether through challenges, collaborations, or inspirations. With the right frameworks in place, urban space can undergo an open source revolution similar to the one that transformed software. 
+
+situations, facilitating aid and enabling beneficial interventions. Ushahidi started by collecting and mapping reports of violence in the wake of Kenya’s 2007 presidential election and has been active in many disaster situations since its founding—from the 2010 earthquake in Haiti, to BP’s Deepwater Horizon oil spill, to Hurricane Sandy in New York—creating software platforms that are instrumental in saving lives. 
+
+Boston 311 Map by the MIT Senseable City Laboratory 
+
+We live in a hybrid digital-physical space, particularly in cities—but how can virtual networks, applications, and 
+
+platforms tangibly change material urban reality? New tools are emerging that connect people and enable them to take an active role. One example, a new class of applications called 311 apps, provides citizens with a phone number to dial in and report urban issues, such as broken pavement, litter, or graffiti. The Senseable City Lab created this map of Boston’s incident reports, sorting calls by type of damage and total number of reports. The data began with the start of the service in October 2010 and ran until June 2012, showing how citizens care for the city they live in over time. As more and more digital-physical platforms are integrated into urban spaces, the smart city may be designed, built, and operated in no small part by its “smart citizens.” 
+
+control, and the possibility of failure. But if hacking catches on, the productive integration of top-down and bottom-up urban paradigms may yet realize tomorrow’s city by futurecraft. 
+
+PART II METROPOLITAN INFORMATION FLOWS 
+
+Not only have we already put the contents of the most important libraries of the world, and likewise the archives and museums and newspaper annals of every nation ,  on our punch cards, but also a great deal of documentation gathered ad hoc, person by person ,  place by place . . . What we are planning to build is a centralized archive of human kind. 
+
+Italo Calvino, 1968 
+
+FOUR 
+
+BIG (URBAN) DATA 
+
+As digital technologies become increasingly pervasive (and networked online, as with the Internet of Things), every individual is generating a staggering amount of 
+
+In addition to opportunistic sensing, data can also be generated by deploying an array of sensors with a specific intent. Embedding technology into the urban environment 
+
+can yield robust and fine-grained data, whether to map an existing system, to reveal dynamics that have never been brought to light, or to gain a new understanding of humanity’s fingerprint. On a macro scale, the Google Street View car, for example, has driven across the world photographing 360-degree panoramas. After its first five years of operation, the Street View team announced that the car had captured five million miles of road in thirty-nine countries, generating a staggering twenty petabytes of data—quadrillions of images. 
+
+As more and more of these digital elements are embedded in physical space, many other aspects of the urban environment can be revealed—for example, the waste disposal system. As described in chapter 1, the Senseable City Lab began a project, Trash Track, that addressed the scenario of ubiquitous tracking. 
+
+Real Time Rome by the MIT Senseable City Laboratory 
+
+Data analysis and visualization can reveal important dimensions of a city and how its population lives—yet even more insight may lie in the merger of several related datasets. Real Time Rome was one of the world’s first explorations of aggregated data from cell phones (through Telecom Italia’s location platform), buses, and taxis to better understand urban dynamics and explore a data-rich future scenario through futurecraft. With maps such as this one, revealing the pulse of the city of Rome during the soccer World Cup (as Italy wins, playing against France in Rome!), the project shows how technology can 
+
+help individuals make informed decisions about their environment, such as choice of transportation. The project points to possible strategies for reducing the inefficiencies of present-day urban systems through bottom-up behavioral change. 
+
+The trend points toward a phenomenon that has been termed “smart dust.” Physical space could be laced ubiquitously with nanosensors—scattered micro devices that are smaller than grains of rice. “Large-scale networks of wireless sensors are becoming an active topic of research. Advances in hardware technology and engineering design have led to dramatic reductions in size, power consumption and cost . . . This has enabled very compact, autonomous and mobile nodes, each containing one or more sensors, computation and communication capabilities, and a power supply.”9 
+
+A rich array of data will be available in a future scenario of ubiquitous smart dust. In the meanwhile, a pervasive network already exists in our cities today: citizens themselves. In some cases, collecting personal data is fully intentional. The computer scientist Gordon Bell was one of the first to explore the idea of individual data in a practical way—in 1998 he began a project called Your Life, Uploaded, making himself the subject of the first full-resolution experiment in so-called life-logging. Bell created the hardware and software to capture every 
+
+moment and every action of his life through photos, computer activity, biometrics, and more. The technology was primitive, and in many ways disruptive, but the project was successful in cataloguing his existence for more than a decade. “The result?” he wrote. “An amazing enhancement of human experience from health and education to productivity and just reminiscing about good times. And then, when you are gone, your memories, your life will still be accessible for your grandchildren.”10 
+
+Trash Track by the MIT Senseable City Laboratory 
+
+Trash Track, a project by the Senseable City Lab, is an exercise in futurecraft. Researchers imagined a future in which almost everything could be tagged and tracked, and 
+
+information was constantly streamed online. Trash Track was first deployed in 2009 in Seattle, Washington, bringing together hundreds of volunteers and thousands of geolocating tags. Citizens attached GPS tags to garbage and disposed of it as usual. Digital and physical merged to reveal an invisible metabolic function of the city: its waste removal system. Over the following weeks and months, the sensors traced a dizzyingly complex disposal chain across the entire United States. An elaborate national waste removal system was brought to light through technology that disappears into the environment. 
+
+Spider Mite on Mirror Assembly by Sandia National Laboratories 
+
+Digital technology is shrinking, approaching a scale at which it can disappear into the environment. This suffusion enables what is known as a cyber-physical system, one that can sense the world, create data, and respond. Pictured here is a microelectromechanical system (MEMS) with a tiny mite perched on top to show its size. Researchers are currently working on refining a wide array of capacities for such devices, including inertial sensors, microfluidic actuators, photovoltaics, and advanced optics. With the continued development and deployment of this “smart dust,” digitally augmented space will open new avenues for research and urban applications—and possibly a future in which using a computer does not involve looking at a screen while manipulating a mouse and a keyboard. 
+
+What Bell initially set out to do as a full-scale scientific and sociological study is now the unconscious norm—the default condition—of an Internet generation. Our spatial and social activity is tracked and logged (in many cases, it requires more effort and determination to opt out of documentation than to engage in it). Tweets, Uber calls, text messaging, Yelp reviews, and check-ins are becoming the natural activities of daily living. A trove of information is flowing out of and through the population, and people are more and more interconnected. The bulk of the extraordinary (and growing) amount of data being created today is user-generated content, an 
+
+almost constant stream of personal data. 
+
+Anyone and everyone can put tiny chunks of data online—and we do, almost constantly, whether intentionally or unintentionally. Some incentive-based platforms give individuals a small monetary 
+
+compensation for completing a single task that contributes to a greater collective effort, while other systems enable deliberate civic action through a more altruistic motivation. Numerous community-based smartphone applications automatically upload detailed information about road damage, traffic, and gas prices for the benefit of all drivers. Citizen contributors to the collaborative OpenStreetMap (particularly relevant in areas not yet graced by Google) draw roads and make the information publicly available. Many 311 apps allow city dwellers to report nonemergencies, including potholes, fallen trees, and damaged street signs, and either alert city government or organize the community to fix the problem. Another category of data is unintentionally created, encompassing the broad (and expanding) array of social media platforms, such as Twitter, Facebook, and Flickr. Users may hardly realize that their actions online are a rich source of data—a fact that was exploited for a research collaboration between Facebook and Cornell University, to much controversy.12 
+
+Ojos del Mundo by the MIT Senseable City Laboratory 
+
+Almost every human alive today is somehow represented online: each of us creates data, constantly and unconsciously. Some of this information we share willingly—for example, by using social media platforms. The resulting big (human) data can show how we interact with our environment and with each other. Using data from the photo-sharing platform Flickr, researchers at the Senseable City Lab were able to see the world through the eyes of its inhabitants, whether tourists or residents. The 
+
+project, titled “Ojos del Mundo” in Spanish, or “Eyes of the World,” mapped social photo-sharing activity across Spain to identify movement patterns, attractions, and even —by applying color analysis to photos—areas of drought. 
+
+Individuals are becoming agents of data collection, and at the scale of an urban population, we all constitute a vast trove of crowdsourced information. As Gordon Bell’s 
+
+experiment recedes into the past, society is moving from “life-logging” to “city-logging.” We are all enmeshed in a distributed sensing ecosystem. 
+
+Broad trends point toward an increasing number of apps and technologies that create urban data, wider 
+
+adoption across demographics, and faster response from city governments. Entirely new positions are being created at the city level—urban CTOs (chief technology officers), for example, will nimbly manage the urban implications of digital systems on the macro scale, while personal data management tools will govern on the micro scale. People are quantifying themselves to better understand who they are and how they can improve their lives. Together, we compose a mosaic portrait of the city. People are becoming more and more aware of the digital shadows they cast and will be empowered to take a more active role in inhabiting—and contributing to—the places where they live. We are moving from the quantified  self  to the quantified  city. 
+
+You are a cyborg every time you look at a computer screen or use a cellphone device. 
+
+Amber Case, 2010 
+
+FIVE 
+
+CYBORG SOCIETY 
+
+Cyborgs, creatures of intertwined biology and technology, have fascinated humans for decades, at least since the term was coined in the 1960s. One of the first cyborgs was a rat equipped with an osmotic pump; the enmeshed technology was intended to function as life support in hostile environments. The project pointed toward the broader goal of “adapting man’s body to any environment he may choose,” or, more specifically, creating a human-machine system that could one day maintain homeostasis in outer space. The key to unlocking new environments 
+
+Given the general definition—dependence on synthetic tools for inhabiting new ecosystems—cyborgs are not strictly science fiction. In a basic sense, the human is a cyborg species, distinguished (though not unique) for its creation and appropriation of extrinsic tools. Weapons and fire and clothing, for example, enabled our ancestors to inhabit environments they otherwise could not, just as the osmotic pump would serve the rat bound for outer space. Humans create technologies that surround the body and support its physical survival. 
+
+Human progress, on a macro scale, can be tracked through the use of tools, from the earliest worked stones in the Paleolithic Era to mechanical technology in the Modern Era. Life-support technologies have become increasingly sophisticated over the course of human history. During the 1960s, new theories sought to articulate the cyborg condition, finding humans to be nothing without a constellation of external tools. The prevailing idea was that, rather than using tools as accessories for augmenting specific functions, humans do not exist independently of a collage of support systems. 
+
+Le Geste et la Parole , drawing a curve of human progress across history according to the use of tools, from the Neolithic Era to the twentieth century, from primitive stone utensils to the development of digital technologies.3 
+
+Following the progression from stone to silicon tools, we could describe humanity today as a new form of  Homo sapiens —one with an entirely new apparatus. Tools have historically been a modification of the physical self, extending such capacities as speed and strength; essentially, they are implements that transform matter around us in ways that are difficult or impossible using just the human body. Yet today’s tools are fundamentally different, extensions not of the anatomy but of the mind— of memory, identity, and social function. “Human progress was marked by the gradual externalization of functions,” wrote Antoine Picon, “from stone knives and axes that extended the capacity of the hand to the externalization of mental functions with the computer.”4 The erosion of the discrete boundary around a human being occurred at this distinct shift in the function tools. 
+
+Discourse evolved as technology played an increasingly central role in daily life—approaching 
+
+prosthesis. In the 1980s a nascent “cyborg theory” emerged, positing the cyborg condition as a new paradigm of human social-biological-technological existence. The feminist theorist Donna Haraway articulated a social dimension of cyborg theory and propelled the idea into broader public debate. Humans, she wrote, are “post-Second World War hybrid entities made of, first, ourselves and other organic creatures in our unchosen ‘high-technological’ guise as information systems, texts, and ergonomically controlled laboring, desiring, and reproducing systems. The second essential ingredient in cyborgs is machines in their guise, also, as communications systems, texts, and self-acting, ergonomically designed apparatus.” And this is the crucial feature of the modern cyborg: digital technologies have become a dynamic extension of our bodies and minds, demanding a constant and two-way cybernetic exchange in a way that our traditional (one-way) extensions, such as clothing or axes, have never done. This has even been conceptualized as a “third wave” of civilization, following radical transformations in mobility and telecommunications technology—what the urban cultural theorist Paul Virilio calls a “revolution of transplants.”5 Virilio further contends that human existence is “no longer structured by the polarity of public and private.”6 Humans are thrown, exposed, into the world, but we are also sustained by the world. In many ways, Haraway’s 
+
+cyborg is the citizen of McLuhan’s convoluted, connected, and often contentious global village. For the human as sender and receiver of information, a modern social context forges and maintains entity indistinguishable from identity. 
+
+Smartphones are effectively powerful mini-computers enhancing humans’ logical and computational capacities, particularly because they are always available. Take, for example, remembering an address: rather than committing it to memory, that information can be stored in a digital contact book or quickly looked up online at any moment. 
+
+Memory has been outsourced. Furthermore, we have abdicated any navigational responsibility for reaching a location in favor of individualized, personalized, on-demand way-finding tools such as Google Maps. The tools for mapping can respond to real-time traffic information and then deliver suggestions for a good meal on the way. The theorist Bruno Latour, together with Valerie November and Eduardo Camacho-Hubner, explores this reconfiguration of maps as dynamic “navigational platforms” in the 2010 paper “Entering Risky Territory: Space in the Age of Digital Navigation.”9 
+
+The posthuman is a creature born into this binary condition, into a world of converged digital and material, where each individual’s mental and social existence is enabled, sustained, and improved by technologies. 
+
+Beyond individual personal interactions, the global adoption of smartphones—mass mobile communications —amounts to a collective societal shift. Over half of the global population is now instantaneously interconnected. Personal devices serve as a portal to externalize and multiply the self to a conceivably infinite degree. The prosthetic smartphone has deeply permeated society along the backbone of wireless telecommunications, giving rise to a new networked humanism. 
+
+Anthropologists have considered this aspatial and omnipresent social phenomenon. Connective technologies generate a condition of “ambient intimacy,” wherein 
+
+Peering through this digital lens is an intensely personal experience. Your smartphone locates you precisely in space and time, and it knows your preferences, schedule, and consumer patterns. Geolocated applications “no longer adhere to the anything-anytime-anywhere-new-media paradigm of the 1990s. Rather, they are centered on location-sensing capacities and aim to intervene in or add to a specific here-and-now. Their exact interventions differ, but . . . urban media are making deep inroads on a diverse range of activities of place making—be they the top-down deployment by government agencies or the bottom-up appropriation by urbanites in their every-day life.”14 
+
+This class of smartphone applications, known as location-based services (LBS), was introduced around the year 2000, offering a menu of personally relevant information through location sensing. LBS entered a variety of domains, from mobility, entertainment, and food to way finding, weather, and romance—all enabled by the ubiquity of smartphone devices. One of the earliest, called Dodgeball (launched in 2000), allowed users to log in with their location and receive notifications about crushes, friends, friends of friends, and interesting venues in their general vicinity through SMS text messaging. Google acquired Dodgeball in 2005 but discontinued the service in 2009; according to critics, “It didn’t make the company any money, and its user base had shrunk to a small cadre of digital-media enthusiasts 
+
+based primarily in New York. It’s sort of the Arrested Development of Web apps: not particularly popular, and most people don’t even seem to really understand it, but those loyalists sure are loyal. And much like a TV show with a small fan base, the corporate parent pulled the plug.”15 
+
+Yet shortly after Dodgeball’s demise, its original founder, Dennis Crowley, launched a new project called Foursquare. Unlike his initial foray into LBS, Foursquare became wildly successful. Foursquare is different from Dodgeball in key ways: it is an app unto itself, it offers 
+
+incentives (“You’re the mayor of-!), it integrates a 
+
+A common criticism of digital applications— specifically, one leveled by the voices predicting the “death of distance”—was that they would eliminate the chemistry of the city. Yet real-time applications are now 
+
+delivering rich, digitally brewed serendipity, and rather than neutering urban space, networked systems are becoming a new interface with the physical world. Each smartphone communicates in real time with a constellation of phones, businesses, and networks surrounding it. 
+
+Systems are becoming increasingly robust, enabling real-time everything, from Uber (a platform for citizen taxi cabs) to Tinder and Grindr (connecting nearby people for anything from social to romantic encounters). Always-on devices connect the majority of the human population to one another, to physical places, and to dynamic processes. Cyborg humans have entirely new modes of inhabiting the physical city at all times. 
+
+As these networks become increasingly dense, the smartphone remains an integral tool for data generating, interface, and collision, for combining and contributing to various streams of information. Local and personal information delivered through a smartphone is a mediated, bite-size connection to global networks and the larger ebbs and flows of metropolitan function. Through your smartphone, you can understand and digest the broader, complex reality of the city. It serves as a control room, revealing urban systems such as transportation, weather, and social and interactive media. Understanding these urban dynamics enables people to more effectively (or enjoyably) inhabit the city. The smartphone is a location-inflected analytics tool with almost infinite 
+
+dimensions. 
+
+As online and on-site activity blend together, crowds can be cohesive and, potentially, productive. Two simultaneous trends—increases in both smartphone adoption and embedded technologies—are transforming what was formerly a communications network into a sensing network. A whole class of applications appropriate embedded hardware in the smartphone that is intended for other purposes—for example, using a phone’s accelerometer to detect pace, or its camera light to measure heartrate. These take advantage of the always-on prosthetic device to implement “viral sensing” at a large scale. 
+
+In addition to these opportunistic apps, another class of 
+
+digital technologies links the phone to external hardware that extends its capabilities. These piggyback technologies work symbiotically with the phone—taking advantage of its high-power computing, high-speed network access, and nearly constant use—and have given rise to the quantified-self phenomenon. A variety of quantified-self gadgets, from bracelets to pins to watches, can tell users everything about their daily activities, including steps taken and patterns of sleep. Not only are smart-phones our mechanism for interfacing with the world around us, augmenting our social and professional selves, they are now a means of scrutinizing our individual bodies, our biological selves. 
+
+two-way conduits of information between the body and the network. Just as the Internet of Things is connecting billions of devices worldwide, digitally integrated implants are creating a new interface with our physical anatomy. In addition to providing a machine-to-human interface, these implants may also enable machine-to-machine connection and analytics. Humans are becoming directly enmeshed with the network. 
+
+As technological sophistication advances, could devices begin to sense the human biome—even map humanity’s evolving health? Will we soon be communicating, geolocating, and tracking nutrition through a “digital tooth” implant? Will our contact lenses —and then our irises—become both cameras and realtime augmented reality displays? And what are the privacy issues? Google Glass—a project by the tech giant —was progressing in this direction, integrating glasses with a constant heads-up, voice-controlled display. However, after a negative public reaction and weak consumer response, and amidst an explosion of press, the project was put on hold before it was ever released. 
+
+More and more bodies are going online, and detailed external analysis of the collective quantified self is becoming possible. At the moment, quantified-self technologies do not go far beyond confirming what you already know. When you wake up in the morning, your bracelet-integrated phone will announce that you slept poorly—the last thing you want to see as you rub your 
+
+eyes and blink through a headache. But in the future, this kind of data will extend beyond the individual and reveal broader human patterns—whether through the work of specialists or by harnessing the collective intelligence of the crowd. A new “quantified us” paradigm might map the human biome on the community, city, or country scale. 
+
+In light of the collective quantified us, the idea of a singular cyborg is being recast as an Internet of Bodies. Through networked technology, cyborgs—cybernetic organisms—may become a cybernetic species. There have been dire predictions of two scenarios: that computers become conscious or that consciousness is uploaded into a computer. The apocalyptic concept of the Singularity is that “we will soon create intelligences greater than our own.” When this happens, when machines become an autonomous, aware, cohesive (and malignant) system, “human history will have reached a kind of singularity.”19 Yet what seems to be far more likely is that human and machine will become seamlessly merged. In a way, this negates the fear of an impending Singularity. Ultimately, the human-augmented machine—that is, the machine-augmented human—will always be superior to systems that are exclusively machine or human. We have nothing to fear from machines as they become sentient and symbiotically interlaced with human consciousness. The new cyborg could be a networked human machine, (re)empowered to enhance and augment the individual 
+
+through contact with others. 
+
+If I-was to realize new buildings I should have to have new technique. I should have to design buildings that they would not only be appropriate to materials but design them so the machine that would have to make them could make them surpassingly well. 
+
+Frank Lloyd Wright, 1932 
+
+SIX 
+
+LIVING ARCHITECTURE 
+
+Sudden transformations sparked by abrupt technological leaps have punctuated the history of architecture. During 
+
+the mid-1400s, into the context of a craft-based architectural tradition, Leon Battista Alberti introduced a mathematical approach to graphic representation. In so doing, he paved the way for Renaissance classicism: architecture focused on precision and representation through drafting rather than approximate construction. Four centuries later, steel and glass enabled engineers like Isambard Kingdom Brunel, Sir Joseph Paxton, and Gustav Eiffel to design daring and innovative structures and shatter the limits of what could be constructed. Soaring feats of technological prowess became a new aesthetic at the nexus of architecture and engineering. A generation later, at the crest of the mechanical era, Le Corbusier appropriated the tools and forms of mass production, concluding—as previously cited—that the house is a  machine for living in.  Architecture was optimized not only from the standpoints of design and structural engineering but also from the standpoints of mass production and social function. 
+
+construction, and operation of our built environment. Just as machines brought standardization and high output, digital tools can bring dynamism, variation, and responsiveness. The question now becomes, How will architecture evolve in the digital era? 
+
+Initial attempts to address this question—to create dynamic architecture for the digital age—have been form-based. Designers have created evocative architectural sculptures that shout distinctive visual identities: Frank Gehry’s iconic Guggenheim Museum Bilbao, for example, and the similar projects he has scattered around the world. These have ushered in a new aesthetic regime of irregular and organic buildings, often called “blobby” architecture. 
+
+Guggenheim Museum Bilbao by Frank Gehry 
+
+For hundreds of years, painstakingly hand-drawn plans have defined the profession of architecture. As a result, 
+
+buildings have been limited to what can be conceived and represented in a manual way. Today, powerful computation has brought a radical transformation. Using parametric design software, designers have pushed the boundaries of formal possibility, an experimentation driven by the goal of creating vibrant, dynamic, and “living” structures. The architect Frank Gehry, one of the defining voices of his generation, has developed a signature style, often using metal panels to create a skin for complex curving shapes. Pictured is the Guggenheim Museum Bilbao, a contemporary art museum inaugurated in 1997 and arguably Gehry’s most widely recognized and praised project. 
+
+The new formal language was enabled in large part by parametric design software: digital tools that allow the architect to script an internal logic, input data values (objective contextual factors, zoning, or functionality requirements), and run an algorithm to negotiate those constraints and produce formal, often extraordinarily complex artifacts. Rather than detailing intricate specificities by hand, the architect writes parameters, and the computer churns out highly elaborate results. 
+
+Energetic swooping shapes and structures became possible at the architectural scale. Parametric software opened a new arena where designers could radically question inherited formal assumptions about architecture. They explored the boundaries of possibility eagerly and 
+
+productively, assuming that—given an opposition between rational and organic—nongridded and complex forms have a more vibrant quality. Early theorists of parametric architecture characterized a new sensibility that aimed for “maximal emphasis on conspicuous differentiation.”2 
+
+Parametric tools have granted architects an unprecedented power to generate space using algorithmic functions and to appropriate a rhetoric of vibrancy. As the trend has developed since  Metamorph , however, architects have been hard pressed to find meaningful data to feed into algorithmic design processes. A cruise ship terminal in Japan, for example, was informed by the geometry of waves in traditional paintings, specifically “the Hokusai Wave.” The designers were inspired by “a drawing from a local painter that we had been toying with while we indulged in geometric manipulations and construction hypotheses during the design phase.”4 Whereas this project was successful, the application of parametric software, in many cases, goes no deeper than the skin of a building. Algorithms can compute thousands of unique elements to compose a dazzling facade on an otherwise standard structure. 
+
+Parametric design promises a certain novelty, whether it is driven by geospatial data or by complex matrices of associations. The virtual dimension that now blankets physical space is burgeoning with data, some of them appropriated by designers to plug into scripts as they seek “to grow or evolve new formal configurations in response to specific forces and constraints: structural, climatic, or programmatic. While this has produced compelling formal results, there are conceptual and procedural limits. The design techniques used to generate these new buildings may be dynamic, but the buildings themselves 
+
+are static.” Architects can generate an almost infinite number of formal solutions in a given situation, but complexity and magnitude are not inherently meaningful or  living.  “The forms generated may resemble nature, but they retain little of the performative or adaptive complexity of life itself.”5 
+
+Algorithmically generated architecture is a static visualization of larger complexities. To evoke the fluidity of digital space in an inert physical object is to freeze a dynamic process, as if pressing Pause to find a single frame in an action sequence. Even the climax of energy and vibrancy, caught in a still frame, will convey only a shadow of the dynamic whole. 
+
+part of human life. Architecture must do more than just  look  like a living organism: it should  perform  as a living system. 
+
+The earliest glimmers of this possibility date back to experimentation with moveable structures in the midtwentieth century. A group of young Japanese designers, the Metabolists, imagined living architecture for the growing population of postwar Japan. Buildings, they proposed, could be shaped over time by the pushes and pulls of sociodynamic forces. Metabolist structures used biological models, attempting dynamism through, for example, spine-and-branch arrangements or cellularly subdivided megaforms. The architect would establish a master program (or “DNA”) that could propagate itself according to a patterned structural system. 
+
+Few of their structures were ever built. One notable exception—Kisho Kurokawa’s Nakagin Capsule Tower, located in central Tokyo—is a paradigmatic example of Metabolist theory. It is conceived as a central spine, onto which individual housing pods can be attached and rearranged. In theory, infinite combinations of pods and connections between them allow residents to create larger or smaller spaces in response to different families, budgets, or changes in housing demand over time. Yet the Capsule Tower reveals a deep conceptual flaw: since the building’s completion in 1972, not a single pod has been shifted or combined. 
+
+The twentieth century is dotted with a handful of attempts to construct functional mutable architecture, but in most cases, the structures have fallen into stasis or remain unbuilt. An entirely flexible structure still requires inspired occupants to take agency. In practice, mutable buildings go largely unchanged. 
+
+Flexible structures may not spark active participation, but it is here that digital technologies reenter the playing field, enabling a more gentle, intuitive, and responsive interaction between humans and the built environment. Far outside the discipline of architecture, pioneering computer scientists and mathematicians of the midtwentieth century started developing a theory of cybernetics. The emergent discipline sought to explore networks, focusing on communication and connections between interdependent actors in a system. Cybernetics, according to Gordon Pask, the academic responsible for popularizing the idea among architects, is “how systems regulate themselves, reproduce themselves, evolve and learn. Its high spot is the question of how they organize themselves.” This conceptual framework could be productively applied to architecture. As a practical design strategy, cybernetics is about negotiating a set of interrelated factors such that they function as a dynamic system. “The design goal is nearly always underspecified and the ‘controller’ is no longer the authoritarian apparatus which this purely technical name commonly brings to mind. In contrast the controller is an odd 
+
+Around the same time, architects at the fringe of the discipline took the idea of interactivity and sensationalized it. Architecture became loud, fun, hip, and constantly evolving. Buildings were thought of as venues for action and interaction, as dynamic scenes that could incite events and connections and evoke delight. The Generator Project, by the architect-provocateur Cedric Price, was a clear exemplar of this new attitude. An unbuilt concept for a retreat and activity center, the project consisted of a system of 150 prefabricated cubes, each twelve feet on a side, that could be shifted and reconfigured—much like the pods in the Nakagin Capsule Tower—but, crucially, would also interact in a dynamic way. A primitive digital software detected inactivity, and if the building remained static for too long, the software automatically executed “The Boredom Program” to reconfigure its own structure and incite (or perturb) users. The architecture itself took an active role as provocateur, with the aim of enhancing human experience. This was a system for dialogue and mutual reaction, beyond the Metabolists’ linear user-changes-building idea. In many ways, this work was an application of cybernetic ideas to 
+
+the field of architecture: it created systems that would dynamically self-organize in response to inputs and actions. 
+
+generate a new form of complexity: experiential complexity. A shift away from elaborate structures and toward architectural dynamics entails buildings that perform as (rather than appear to be) living organisms. 
+
+Computation will not be used only to define intricate shapes according to parameters but will also become an integral part of the building, interacting with users according to a program. This interface functionality points to embedded rather than generative technology. In addition to plans and sections, architects in the future will be free to specify a system of interrelated sensors, operations, and actions—loops that bring architecture to life based on a dynamic set of experiential and functional requirements. Grounded in communication and learning systems, sensor networks can transform buildings into intelligent agents with the capacity to learn from and coexist with their occupants. The dream of dynamic spaces can finally be fulfilled as buildings weave together humans, environment, infrastructure, and personal devices. 
+
+Just as mobility networks are taking advantage of ubiquitous sensors (as with crowdsourced maps or pothole detection), so too will buildings take advantage of the human flows running through them. We will shift from living  in  a home to living  with  a home. Architecture becomes a form of interface, playing an active role in the human environment, both digital and physical. “The goal is to facilitate as seamless a movement as possible from 
+
+fast to slow, virtual to physical, cerebral to sensual, automatic to manual, dynamic to static, mass to niche, global to local, organic to inorganic, and proprietary to common, to mention just a few extreme couplings.”11 Integrating digital elements will allow the built environment to become a connective tissue between the realities of bits and atoms—an interface that enables spatial cybernetics. 
+
+Just as smartphones are a portal to larger systems, architecture can function as a mediator between daily, human-scale functions and vast, humanity-scale networks. “For millennia architects have been concerned with the skin-bounded body and its immediate sensory environment . . . Now they must contemplate 
+
+electronically augmented, reconfigurable, virtual bodies that can sense and act at a distance but that also remain partially anchored in their immediate surroundings.”13 Pre-digital humans navigated their immediate physical surroundings, but today’s cyborg (with prosthetic smartphone) inhabits space in profoundly different ways. Scales and contexts are blurred as we slip elastically between them. At any given moment, we may be standing in a room with three other people, but now the digital-spatial network can also reveal two close friends in a restaurant next door or a potential love interest only a block away. People and physical space are still a central anchor, but the upper and lower bounds of human reality have exploded outward, and architecture must encompass this breadth of spaces—in all of their active dynamics— while still relating to humans. Picon sets forth the question. 
+
+Digital Water Pavilion by Carlo Ratti Associati 
+
+Digital technology can vibrantly animate architecture in a way that is not at all contorted or blobby. Real-time sensors, actuators, and “spatial software” can create dynamic architectural experiences. The Digital Water Pavilion, shown here, began with a simple challenge: to use water—the theme of the 2008 World Expo in Zaragoza, Spain—as an architectural element. The design teams at the MIT Senseable City Lab and Carlo Ratti Associati sought to create dynamic, responsive, flowing architecture. The pavilion is a flexible and multifunctional space, with walls composed of falling droplets, each 
+
+precisely controlled by digital nozzles to generate patterns, writing, or entrances. The result is a space that is interactive and reconfigurable. Using sensors, each wall responds when people approach, parting to become an entrance or an exit. Internal partitions can also shift depending on the number of people present. 
+
+How should the [designer] cope with an electronic and informational reality that seems to possess a dynamism and an expressive quality? . . . The advent of the digital represents an even greater challenge for design than what the early stages of mechanization had meant for modern architecture . . . For the first time perhaps, architecture has to confront itself with a deeply non-tectonic reality . . . Given these premises, how can the designer be in deep accordance with the invisible flows of 
+
+information that constitute the bones and flesh of the digital world?14 
+
+The very process of creating architecture could become an iterative chain rather than a directly linear process. Today, design, documentation, construction, and inhabitation are distinct phases in the life of a building, each carried out by a different specialist using different tools. As each step of the architectural production chain transitions to digital systems, the whole process will be unified. Integration will happen incrementally, by streamlining information, enabling the different phases to inform one another, structuring a codependent feedback system and, ultimately, a full merger. Initial steps have been taken in this direction—for example, with project-specific smartphone apps that organize the fabrication, 
+
+shipping, and installation of complex facades with tens of thousands of unique components. 
+
+Vertical Plotter by Carlo Ratti Associati 
+
+Embedded technology can transform a building into a giant user interface—a system for collecting user input, changing the architecture, and displaying information or images. The world’s largest plotter, debuted at the Milan World Expo in 2015, dynamically paints the facade of the Future Food District, a digital supermarket designed in partnership with the Coop Supermarket chain. The plotter is made of mechanical printer units that move along two axes and paint on the vertical surface with spray cans of different colors. The building’s facade is transformed into a dynamic data visualization that reflects visitors themselves. 
+
+The most important implication of radically integrating digital systems into architecture will be to refocus technology and the built environment on humans. A living, cybernetic program in spaces of dynamic interaction will make architecture more like an extension of the body—and it is cyborg “tools” that enable the environment to respond. Augmented or “living” architecture is the large-scale hardware that digital-physical cyborgs create, plug into, and interact with. Active buildings are at once an environmental life support, a social catalyst, and a dynamic set of experiences. While congenital digital systems integrate seamlessly with human biology, the same prosthetic devices interface with the digitally augmented environment through real-time information flows. The Internet of spaces and the Internet of Bodies enable and co-create each other—each is the interface to the other. Ultimately, technology recedes into the background, and interaction is brought to the fore. Buildings can be simple —rather than voluptuous and shocking—but even more integrally vibrant and living. 
+
+PART III SENSEABLE CITY 
+
+Forget the damned motor car and build the cities for lovers and friends. 
+
+Lewis Mumford, 1979 
+
+SEVEN 
+
+MOBILITY 
+
+New cities of the machine age were animated at the speed of cutting-edge contemporary transportation technology: the automobile. Henry Ford’s Model T, introduced in 1908, brought automobile ownership to the masses, and as adoption skyrocketed, cars had a profound impact on the fabric of cities. Convoluted networks of medieval or Victorian roads were eventually replaced by gleaming, organized superhighways designed for speeding car traffic. “The automobile is a new development with enormous consequences for the large city. The city is not 
+
+ready for it . . . I tell you straight: a city made for speed is made for success.”1 
+
+New transportation technology inspired radical visions of a new urban form, not only theoretical but also built. Brashia, a city designed by Oscar Niemeyer and Lucio Costa and built from scratch, is a striking example of automobile urbanism. Conceived as Brazil’s capital, the city was engineered to maximize speed and efficiency (and planned in the shape of an airplane, no less). Various urban elements—banking, hotels, embassies, and government buildings, for example—are kept separate, connected only by a network of highways. Most conspicuously, the city is without sidewalks or traffic lights; instead, intersections are enormous cloverleaf loops. Because there are (in theory) no pedestrians, there is no need for human-scale streets—people move through the city at the speed and scale of the automobile. 
+
+Brashia is a rare example of willful urban planning with a singular vision, but automobiles have transformed almost every city in the world—from brand-new, tabula rasa developments to historic city centers. Vehicle ownership increased rapidly in the early twentieth century, and cars quickly became an entrenched component of life and work. Urbanists saw the promise of enriched urban life and dove into a headlong rush to optimize cities for automobiles. In parallel, the increasingly popular car-based lifestyle exerted social, 
+
+Plan of Brashia by Oscar Niemeyer and Lucio Costa 
+
+Building a city entirely from scratch allows the planner to selectively use only the most advanced technology of the time. Recalling the long-standing race for urban 
+
+efficiency, the masterplanned city of Brashia was designed in 1956 by two Brazilian architects and planners, Oscar Niemeyer and Lucio Costa. The city is defined by state-of-the-art transportation technology—the automobile. (Seen from above, however, Brashia looks like an airplane.) Car culture dominates in a city composed almost entirely of highways. The original plan, shown here, contains no sidewalks or traffic lights, and different urban functions are separated into distant zones. The city is an important political and economic center, but it is almost without character or life, earning the city its nickname “ilha da fantasia,” or fantasy island, in Portuguese. 
+
+Schemes that targeted public transit exacerbated societal shifts toward personal mobility. What has come to be known as the “Great American Streetcar Conspiracy”—although the conspiracy remains unproven —choked public transit in cities across the United States during the 1940s and 1950s. A group of automobile companies, allegedly led by General Motors, implemented programs to purchase streetcar and electric train systems and subsequently dismantle them. The project was brought to the public spotlight by a whistleblower, Commander Edwin J. Quinby, in 1946, with accusations that there was a deliberate scheme to shift the United States toward automobile dependency. Although the companies were never legally prosecuted 
+
+under antitrust regulations, the affair unambiguously contributed to the same vicious cycle: cities became increasingly hostile to pedestrians, and cars became increasingly necessary.3 
+
+The automobile became a symbol of the American dream, embodying success, individualism, and empowerment. A personal vehicle could satisfy any whim or fancy—unfettered by train schedules or bus routes, cars promised mastery of space and time. The allure of the automobile, particularly in mid-century America, was nothing short of pure freedom. The same attitude rapidly permeated—to varying degrees—most of the industrially developed and emerging world. 
+
+In almost perfect synchrony with the rise of automobile glamor Los Angeles sprang up out of the Southern California desert. With seemingly limitless space and wealth to match, the city spread itself from the ocean in the west to the Inland Empire in the east, resulting in a distinctive and disaggregated urban form. The pattern was so characteristic that the urbanist and architectural critic Reyner Banham made a pilgrimage from the United Kingdom to define and study it. He sought to understand not the signature buildings of the city but the urban fabric and its genesis—and to do that, he took to the roads. “Like earlier generations of English intellectuals who taught themselves Italian in order to read Dante in the original,” said Banham in a colorful 
+
+increasing road capacity can make traffic congestion worse, in addition to stifling public transportation: 
+
+Almost before the first day’s tolls on these expressways have been counted, the new roads themselves are overcrowded. So a clamor arises to create other similar arterials and to provide more parking garages in the center of our metropolises; and the generous provision of these facilities expands the cycle of congestion, without any promise of relief until a terminal point when all the business and industry that originally gave rise to the congestion move out of the city, to escape strangulation, 
+
+leaving a waste of expressways and garages behind them.6 
+
+Automobiles nonetheless continued to define the twentieth-century urban development paradigm. With a goal of maximum traffic throughput, new highways cut through the built environment and fueled metropolitan sprawl. Consistent and passionate critics of suburbanizations, most vocally Lewis Mumford, held planners accountable, starting in the 1960s. Among Mumford’s less subtle arguments is the iconic phrase “Forget the damned motor car and build cities for lovers and friends.” 
+
+And yet, even today, urban spaces around the world continue to develop in the image of the American city. Urban planning is defined by car culture, and the resulting urban systems present few transportation alternatives. In some cases, the scale and severity of congestion are entirely unprecedented. In 2010, Beijing—a city notorious for its overcrowded ring roads—saw the longest recorded 
+
+traffic jam in history: a blockage not caused by accidents, closures, or natural disaster but by the sheer number of cars on the road. At one point the stoppage reportedly stretched for sixty-two miles and incapacitated the highway for more than twelve days. 
+
+Traffic congestion has implications beyond throughput and delay. As cars idle, they continue to emit pollutants, releasing a maximum level of toxic emissions when they accelerate from a standstill. Crowded roads can cause acute spikes in smog, a pattern that is further exacerbated by certain geographic and atmospheric conditions: valleys that collect air, stifling summer heat, deep canyons between skyscrapers, lack of wind. A 2014 report from the World Health Organization states: “Few risks have greater impact on global health today than air pollution: the evidence signals the need for concerted action to clean up the air we all breathe.” WHO estimates that every year poor air quality causes seven million premature deaths.7 
+
+The impact of automobiles resonates in a variety of less obvious ways as well—for example, parking. A high number of cars within city limits requires a proportional volume of parking infrastructure, and cities tend to naturally adjust the number of spots to satisfy peak demand. Parking availability escalates in much the same way as freeway capacity (demand rises to meet—and strain—supply). This situation has inspired compelling arguments against the unquestioned addition of parking 
+
+infrastructure. 
+
+Urban planners typically set minimum parking requirements to meet the peak demand for parking at each land use, without considering either the price motorists pay for parking or the cost of providing the required parking spaces. By reducing the market price of parking, minimum parking requirements provide subsidies that inflate parking demand, and this inflated demand is then used to set minimum parking requirements. When considered as an impact fee, minimum parking requirements can increase development costs by more than 10 times the impact fees for all other public purposes combined. Eliminating minimum parking requirements would reduce the cost of urban development, improve urban design, reduce automobile dependency, and restrain urban 
+
+o 
+
+sprawl. 
+
+The public health threat of pollution and the infrastructural burden of parking are reaching broader awareness, but automobiles also have a less quantifiable impact on urban form and quality of life. Despite the best intentions of early planners, automobile-centric transportation systems, particularly at their present scale, are insensitive to the subtleties of urban space and, at worst, destroy the fabric of the city. 
+
+The answer to urban expansion and diffusion—and the host of social consequences that they bring—may be to optimize, rather than increase, transportation infrastructure. A first wave of developments started at the turn of the millennium, drawing on digital and physical systems. Top-down systemic engineering has been proven effective for achieving efficiencies in several cases around 
+
+the world. Notably successful examples are electronic road pricing and flexible office hours. The first is similar to economic incentive programs that flatten peak energy loads by making power more expensive when it is in high demand: when roads are crowded with commuters, the system responds by charging them more, effectively mitigating peak congestion. Various forms of Electronic Road Pricing have been implemented by cities around the world, including London, Singapore, Stockholm, and Milan, improving traffic in their downtown road networks. With similar intent, many corporations have introduced offset working hours to shift commute times earlier or later without impacting the duration of the workday. 
+
+HubCab by the MIT Senseable City Laboratory 
+
+The sharing economy is making inroads in transportation. More and more systems allow people to share cars: some are publicly funded, such as BlueIndy in Indianapolis, and 
+
+others are based on private subscription services, such as Zipcar. Yet with pervasively networked platforms and real-time analytics, people may also be able to share individual rides. This simple hypothesis was the futurecraft scenario for a project called HubCab by the Senseable City Lab. A team of researchers created a mathematical model to determine the potential impact of ride sharing and applied it to a large dataset from New York City’s taxi network. Shown here is a visualization of that dataset—all the taxi pickups and dropoffs in the New York area over the course of a year. Mathematical analysis demonstrates that 95 percent of trips can be shared and that the entire city’s mobility demand could be satisfied by only 40 percent of the cabs in service today. The same numbers hold true for several different cities around the world and point to a near future in which innovative systems can cut travel time, costs, emissions, and traffic on our roads. 
+
+Such systems are dependent on local conditions, urban form, and social structures—for example, sharing systems would necessarily be very different in rural agrarian communities—but overarching trends are nonetheless evident. Even in sprawling suburban areas, real-time information can make public or shared transportation feasible, with algorithmically optimized mobility on demand. It would not be effective to plan a traditional bus route to a sparse community, but car or van sharing with 
+
+real-time synchronization could be a viable option. Digital platforms stand to reactivate suburban areas and stymie the problematic feedback loop between cars, urban form, and social norms. 
+
+A host of emerging technologies are adding momentum to this trend. One advance that draws on sharing networks, data analytics, and hardware developments is self-driving cars. Autonomous mobility may be the final nail in the coffin of the individualist mobility paradigm, bringing the death of car culture but a rebirth of the (new) car. 
+
+The imminent generation of self-driving vehicles could be programmed according to a variety of different criteria, for example, comfort, fuel efficiency, or shareability. Self-driving could have tremendous impact at the urban scale, where telemetry and big data analytics might optimize vehicular flows through the city. Autonomous vehicles may prompt another wave of innovation in urban systems, from smart intersection management to procedures for dynamically rebalancing the vehicle network according to demand. For example, cars could autonomously migrate toward business centers at the end of the workday, preempting an increase in trip requests. 
+
+As vehicles are increasingly shared, four out of five cars could be taken off the roads, and the remaining ones could be used in a more efficient way.12 
+
+The propagation of a new kind of urban infrastructure 
+
+—silicon rather than asphalt—is eroding the symbolism of empowerment and emancipation that personal automobiles once carried. Previous attempts to reorient urban planning away from automobiles failed—not for lack of effort or sophistication but because the car was still firmly entrenched in daily life and culture. 
+
+A sea change is occurring today: the car no longer represents liberation. Individuals are empowered instead by a broad “transportation portfolio,” a menu of options based on real-time information platforms that will ultimately enable a new regime of “ambient mobility.” Personal transportation options are increasing in availability and sophistication, with an emphasis on shareability. Many cities around the world have city-bike and city-car systems, allowing visitors or residents to use a vehicle for a short period of time. An ambient mobility portfolio could also be tied to a constellation of external factors, from ecological footprint to personal health, including walking, running, or biking. Smart electric hybrid motors transform the bicycling experience and bring it online, while personal activity trackers show miles run, walked, or biked. 
+
+The freedom to choose between bicycling, sharing a car, walking, taking an on-demand taxi, using the subway or train, and hitching a ride with friends is far more appealing than owning and maintaining a car: it puts agency back into the hands of individuals. The trend is already apparent in drivers’ license statistics—the 
+
+A broader mix of mobility options can also increase efficiency, as the plurality of options allows the system to naturally balance itself. When information is delivered in real time—for example, “The bus is crowded and running slowly, so why not try a bike?”—individuals can make informed decisions, with a net positive effect. Not only will this activate unused capacity in the transportation network, but additionally, it will empower the population to behave based on an understanding of the impact of each decision on overall urban function. 
+
+Copenhagen Wheel by the MIT Senseable City Laboratory and Superpedestrian 
+
+For decades, cars have ruled the city, but a new generation of smart, networked transportation devices is taking hold. In addition to satisfying the urban mobility demand, these technologies can stream real-time information about the city and its environment. The Copenhagen Wheel transforms any ordinary bicycle into a smart electric hybrid. The red casing contains a motor, batteries, sensors, wireless connectivity, and an embedded control system. The wheel senses and learns how you pedal and integrates seamlessly with your motion, multiplying your pedal power between three and ten times. An array of onboard environmental sensors constantly collects data such as air quality measures, noise level, and traffic and routing information. Pictured is a visualization of data from an initial deployment of the wheel in Copenhagen. 
+
+As ambient mobility platforms are widely adopted, public and private mobility paradigms will blur. What was formerly a clear (functional and social) delineation between shared and individual modes of transit will be erased. “Your” autonomous car can drive you to work and then drive someone else to school, rather than sitting idle in a parking lot all day. A single vehicle will go from one hour of use per day to twenty-four hours of use, as it is 
+
+shared among a nuclear family, friends in a social network, a neighborhood, or an entire city. 
+
+Just as a small group of people might share an apartment, they might also share a set of mobility options. Social connectivity will become a key component of transportation strategies, aligning the number of vehicles with the number of travelers. This new structure will be compounded with improved intermodality, with the use of real-time information to streamline the transfer from one transportation system to another. Ambient mobility offers will integrate seamlessly, to the point of omni-modality. Commuters may bike to the station just in time to catch a train, and alight to find an autonomous car waiting for them at the station, ready to drive the last mile. Welcome to the age of the transportation portfolio. 
+
+The fireside circle could no longer serve as social glue. The old social fabric—tied together by enforced commonalities of location and schedule—no longer coheres. 
+
+What shall replace it? 
+
+William J. Mitchell, 2000 
+
+EIGHT 
+
+ENERGY 
+
+The earliest form of habitation technology was the grotto —a natural feature that humans sought out for warmth, protection, and sociability—and there they built the primordial hearth. Nomadic hunter-gatherer culture transitioned to a stable society, coalescing around the fire pit’s climate control system. For both sociability and 
+
+efficiency, shelter developed according to a centralized model. The hearth was a focal point of social space—as the architect Frank Lloyd Wright famously noted, it is the “psychological center of the home.” 
+
+Yet as time progressed, architecture’s many dimensions became decentralized, following an outward trajectory of spatial liberation. What was once a circle of firelight fractured into a proliferation of light fixtures in every room; the village well, formerly a site of gathering and gossip, flowed out through pipes to each home; even entertainment crossed the threshold of the theater and was beamed to cathode-ray tubes and screens in every living room. Elements of habitation are now individually and instantaneously delivered. Life is unmoored. 
+
+Atomization, however, comes at the cost of efficiency 
+
+—particularly in the case of climate control. The hearth is no longer a shared resource that attracts people but a distributed system in which each user demands the right to comfort at all times. With central heating and a binary on-off system, there has come to be a dramatic asymmetry between human occupancy and energy use. Entire homes are heated during the day when residents are at work or school, and even when they are home, empty corners of the house are indiscriminately kept just as warm as those in active use. To ensure constant comfort, we heat every space we might possibly inhabit. 
+
+naked in a transparent “Environment Bubble” on either side of an air-conditioning unit. 
+
+Nest dynamically adjusts temperature over time, but the next step could be a similar degree of control over space—that is, synchronizing heat with residents’ physical location. In a future scenario of architecture that senses and responds, a dynamic system for  local warming  could enable fine-grained control over personal climates 
+
+while simultaneously improving energy efficiency.4 Using sophisticated motion tracking paired with dynamic heat emitters, an individual thermal “cloud” would follow each human throughout a building, ensuring constant comfort while minimizing overall heat requirements. “Man no longers seek heat . . . heat seeks man.” 
+
+Sensor networks integrated with fine-grained response systems are beginning to save energy across a broad spectrum of habitation systems, not only climate control systems. In addition to directing energy where and when it is needed, the trajectory toward sustainability is progressing in another way: mitigating peak loads. 
+
+Past and Future of the Thermostat: Examples from Nest and Honeywell Labs 
+
+The traditional thermostat, such as the iconic Honeywell dial depicted, maintains a constant temperature at the users’ discretion, but at the expense of efficiency. Entire 
+
+homes or offices are kept comfortable, even if they are entirely or partially empty. Yet digital integration is causing rapid transformations in climate control technology. Nest represents the next generation of home climate system, one that aligns heat with daily and seasonal rhythms. It self-adjusts and builds personalized schedules by integrating directly with smartphones—even warming up a home before its residents arrive if they decide to come home earlier than usual. A digital control system dynamically modulates temperature based on the patterns it learns from occupants, improving overall energy efficiency. 
+
+City dwellers tend to demand energy at the same time (for example, at 7 p.m.), so to ensure that lights illuminate when any person (or every person) flips a switch, power plants must constantly produce enough energy to satisfy the maximum possible demand. Pattern analysis and predictive models can help align supply to demand, but even so, it is difficult for plants to tailor production effectively. 
+
+Local Warming by the MIT Senseable City Laboratory 
+
+A staggering amount of energy is wasted on heating offices, homes, and partially occupied buildings. Energy is used to change the temperature of empty air, rather than the temperature of people themselves. Local Warming addresses this asymmetry by synchronizing climate control with humans. Responsive infrared heating elements, guided by sophisticated motion-tracking sensors, are mounted around a room. These emitters can transmit collimated heat to create a precise personal (and personalized) climate for each occupant. Individual thermal clouds follow people through space, ensuring 
+
+constant comfort while dramatically reducing overall energy use. Pictured is an early prototype of Local Warming. 
+
+I have summarized my discovery of the option of humanity to become omni-economically and sustainably successful on our planet while phasing out forever all use of fossil fuels and atomic energy generation other than the Sun. I have presented my plan for using our increasing technical ability to construct high-voltage, superconductive transmission lines and implement an around-the-world electrical energy grid integrating the daytime and nighttime hemispheres, thus swiftly increasing the operating capacity of the world’s electrical energy system and, concomitantly, living standard in an unprecedented feat of international cooperation. 
+
+In a very basic sense, the smart grid is simply an introduction of dynamic control systems for energy production, distribution, and consumption. The concept is rooted in an infrastructural framework of distributed (preferably renewable) energy production. With an integrated digital control system at the neighborhood or regional level, each house could generate energy and share surplus with others nearby or store it in local batteries. Today’s archaic energy-switching technology will transition to a digitally controlled system, allowing faster response to real-time conditions. 
+
+Smart devices for end users can dynamically configure their consumption patterns based on information from the grid—a refrigerator, for example, can cool when energy is inexpensive and cycle off during peak demand. But the system is not exclusively automated top-down control. It also enables bottom-up incentivized response. Networked smart meters stream real-time information, monitor local 
+
+and regional demand, and offer incentives directly to users. Surge pricing—that is, pricing that changes in response to demand—provides a financial incentive for users to conserve resources. Individuals are free to make decisions and can do so with the knowledge of overall energy demand. In more domestic terms: your refrigerator might automatically adjust its on-off cycles for efficiency, but running the dishwasher or charging a computer are still individual choices. Smart meters can inform real-time dynamic pricing so that people are free to use power however they want, but when demand is high, the cost will rise. By whatever means, the goal of the smart grid is to mitigate and level out peaks in demand and to reduce the amount of power generation required. 
+
+A truly functional smart grid is still quite far in the future, yet it is already possible to implement more efficient energy systems. The likely interim step will be a hybrid system situated between local and regional production, one that incorporates a wide array of urban infrastructures, from architectural batteries to systems for using cars as accumulators. Efficiency will be achieved by centralized distribution systems, optimized by responsive feedback loops, and incrementally supplemented with organically growing local production and consumption networks. If the two can balance dynamically, the marriage of complementary systems would allow for large centralized energy harvesting to fill in the gaps of local production grids. 
+
+This points to a future in which the overall energy infrastructure is dynamically managed, as each kilowatt-hour package is tagged and carries a variable price based on real-time supply and demand. Energy will be directed and delivered with intention, precisely where it is needed. In a near future, every device—and every vehicle and every building—will transfer energy in and out, constantly communicating with the broader network to balance overall system flows. Energy supply will respond to demand: the network itself will mitigate peaks and dips as it interacts with human dynamics. 
+
+The factory of the future -will focus on mass customisation—and may look more like those weavers  ’  cottages than Ford’s assembly line. 
+
+Paul Markillie, 2012 
+
+NINE 
+
+KNOWLEDGE 
+
+The first industrial revolution profoundly reconfigured society. Beginning with Britain’s iron and textile industries, innovations in factory procedures and powered machine technology sparked mass production. The shift from hand to machine fabrication brought about a profusion of factories, which, in turn, required an expanded laborer class. A host of unskilled workers 
+
+executed highly specific tasks in the long chain of fabrication while a small demographic of intelligentsia orchestrated the process, and an even smaller elite reaped the benefits of the system. 
+
+The significance of individuals and their talents diminished as humanity acquired value only in numbers. Lewis Mumford offered an incisive summary: “We have created an industrial order geared to automatism, where feeble-mindedness, native or acquired, is necessary for docile productivity in the factory; and where a pervasive neurosis is the final gift of the meaningless life that issues forth at the other end . . . By his very success in inventing labor-saving devices, modern man has manufactured an abyss of boredom that only the privileged classes in earlier civilizations have ever fathomed.”2 
+
+Not only did the industrial revolution reshape social structure, it also radically respatialized cities. Prior to the late eighteenth century, craft production took place in the residential workshops of fairly isolated villages. But as 
+
+society shifted its gears for maximum output, the formerly agrarian population flooded into cities, looking for work. A new urban typology emerged: cities expanded into distinct zones for production (factories) and habitation (mass housing). The influx of workers exceeded the rate of expansion, and in crowded centers such as London, Manchester, and Birmingham, conditions for the working class were dismal. 
+
+The challenge of spatial optimization for production and housing inspired some early experimentation with entirely new factory towns in the years preceding the industrial era. These were engineered as meticulously as the production lines they hosted, which were optimized for throughput. One of the archetypes of the master-planned city from the proto-industrial era was the French Royal Saltworks at Arc-et-Senans, by Claude Nicolas Ledoux. In both organization and decoration, the saltworks complex expressed the supremacy of human rationality: drawing on ideas about the natural structure of the universe and geometric mathematics, the Royal Saltworks were a crystallization of contemporary French society on the brink of industrialization. Architecture was at once physics and metaphysics, orchestrated for production. The plan, for example, is a hemisphere, representing geometric purity as well as providing optimal visual access to the overseer and maximizing the number of living units with direct access to work areas. Ledoux understood the facility as two interdependent 
+
+systems and two geometries: the administrative directorship, including the overseer and the tax agents, was organized linearly on the diameter of the hemisphere, and the workers’ housing was arrayed radially on the perimeter. 
+
+The project was followed by a host of similar production-cities. Urban form was a spatial expression of the output-oriented social structure. The epoch’s momentum continued, and “la ville fonctionelle” reached a pinnacle of spatial orchestration at the merger of architecture, labor, and society. State-of-the-art transportation systems were imagined to link single-use urban zones for labor, habitation, and leisure. These functional utopias were designed to raise the standard of living for each employee while maintaining maximum productivity. 
+
+Royal Saltworks at Arc-et-Senans by Claude Nicolas Ledoux, 1775-79 
+
+There is a long tradition of using spatial planning, at the architecture, campus, or urban scale, to promote mechanistic productivity. The French Royal Saltworks at Arc-et-Senans were master-planned in the 1770s as an expression of both social and functional ideals. The plan, shown here, reflects Enlightenment-era philosophy—the geometric position of humans in the cosmos and the relationship between overseers and employees—and the 
+
+emerging economic reality of the factory city. Different elements were arranged to optimize the workers’ daily tasks and reinforce the factory’s human hierarchy. The campus was an expression of contemporary French society: the triumph of rationality and an economy poised for industrialization. 
+
+This mechanistic approach to urban form was a continuation, even an expression, of the industrial-era labor mentality. As manufacturing technology became increasingly sophisticated, the pace and precision of fabrication processes rose ever higher. The entrepreneur and inventor Henry Ford—a key figure of the so-called second industrial revolution—orchestrated meticulous production lines for low-cost, high-output fabrication. The epochal Ford automobile facilities churned out cars at an unprecedented rate: one every three minutes. The new methods increased production eightfold, reducing the number of labor-hours per car from about 12.5 to 1.5. Le Corbusier visited the Detroit factory and was so impressed by its streamlined operations—by what was considered to be the future of fabrication, industry, and architecture—that he reportedly exclaimed, “I am immersed in a type of astonishment!”3 
+
+Despite advances in machine technology and procedural configurations, however, humans were still chained to the factory line. Throughput skyrocketed, 
+
+ushering in the era of mass production, yet working conditions were still defined by long hours, physical danger, low wages, and repetitive tasks. 
+
+human culture, the force that creates and animates society. If fabrication and production are outsourced to machines —and adequate equity measures govern access and control of technology—then play could be the last and greatest human activity. 
+
+Since the beginning, humans have had to occupy themselves with survival, but some theorists have imagined that the demands of time and effort could diminish and even vanish. This shift would have an even more transformative—and diametrically opposed—impact on society than the industrial revolution. The Dutch artist Constant Nieuwenhuys based New Babylon—a decades-long project for social, aesthetic, and urbanistic exploration—on this premise. “The opposite of utilitarian society is ludic society, where the human being, freed by automation from productive work, is at least in a position to develop his creativity . . . it is clear that a ludic society can only be a classless society. Social justice is no guarantee of freedom, or creativity, which is the realization of freedom. Freedom depends not only on the social structure, but also on productivity; and the increase in productivity depends on technology. ‘Ludic society’ is in this sense a new concept.”6 
+
+Though grounded in very real technological developments, Constant’s New Babylon and other such projects offered a speculative future that failed to materialize. Yet the widespread adoption of digital 
+
+fabrication technology is restructuring production in different ways—spatially, procedurally, and socially. These developments have been branded with an iconic label: the third industrial revolution.7 
+
+Three main transformations are taking place. First is the possibility of creating material forms through digitally controlled additive processes—that is, by laying precise deposits of material to build up a shape—using 3D printers. Not only does this allow for much more complex geometries than have ever been possible, but it also shatters the established laws of mass production and economies of scale. Industrial-era factories churned out large quantities of identical objects, reducing cost through repetition. According to that model, a bespoke item—say, a customized Rolls-Royce—was extremely expensive. 
+
+For 3D printing and digital fabrication, on the other hand, there is effectively no difference between creating identical versus unique objects. Items can be manufactured for about the same cost, whether by the thousands, by the hundreds, or for a single unit. This is a complete reversal of the Fordist factory lines that churned out identical products according to the mantra “You can have any color car, as long as it is black.” Digital fabrication will usher in an era defined by individual control. “The factory of the future will focus on mass customisation—and may look more like those weavers’ cottages than Ford’s assembly line.” 
