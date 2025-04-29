@@ -17,6 +17,7 @@ from PIL import ImageFont
 from .color import Color
 
 
+
 class Picture:
     """
     # Picture Class
@@ -547,7 +548,7 @@ class Picture:
         colors = self.get_main_colors(num_colors)
         color_pictures = []
         for color in colors:
-            color_pictures.append(Picture.from_PIL_image(Image.new('RGB', (100, 100), color.color)))
+            color_pictures.append(Picture.from_PIL_image(Image.new('RGB', (100, 100), color.rgb)))
         palette = create_grid_of_pictures(color_pictures, grid_size=(num_colors, 1), image_size=(100, 100))
         return palette
 
@@ -595,7 +596,7 @@ class Picture:
         # Open image and convert to grayscale
         self.convert_to_grayscale()
         width, height = self.size
-        halftone = Image.new('RGB', (width, height), background_color.color)
+        halftone = Image.new('RGB', (width, height), background_color.rgb)
         draw = ImageDraw.Draw(halftone)
 
         # Process image in a grid pattern
@@ -616,7 +617,7 @@ class Picture:
                 radius = (1 - brightness / 255) * dot_size / 2
 
                 if radius > 0:
-                    draw.ellipse((x - radius, y - radius, x + radius, y + radius), fill=dot_color.color)
+                    draw.ellipse((x - radius, y - radius, x + radius, y + radius), fill=dot_color.rgb)
 
         self.image = halftone
 
@@ -699,7 +700,7 @@ class Picture:
         for y in range(0, height, scale_factor):
             for x in range(0, width, scale_factor):
                 threshold = threshold_map[(y // scale_factor) % matrix_size, (x // scale_factor) % matrix_size]
-                color_pixels[y:y+scale_factor, x:x+scale_factor] = color.color if pixels[y, x] > threshold else background_color.color
+                color_pixels[y:y+scale_factor, x:x+scale_factor] = color.rgb if pixels[y, x] > threshold else background_color.rgb
 
         dithered_image = Image.fromarray(color_pixels, mode='RGB')
         self.image =  dithered_image
@@ -831,7 +832,7 @@ class Picture:
                 for y in range(self.image.height):
                     for x in range(self.image.width):
                         if pixels[x, y] == (0, 0, 0):
-                            pixels[x, y] = color.color
+                            pixels[x, y] = color.rgb
 
 
 
@@ -981,7 +982,7 @@ class Picture:
         Returns:
             None
         """
-        color_filter = Image.new("RGB", self.image.size, color.color)
+        color_filter = Image.new("RGB", self.image.size, color.rgb)
         self.image = ImageChops.multiply(self.image, color_filter)
 
 
@@ -1016,7 +1017,7 @@ class Picture:
         width = kwargs.get('width', 3)
 
         draw = ImageDraw.Draw(self.image)
-        draw.line([start, end], fill=color.color, width=width)
+        draw.line([start, end], fill=color.rgb, width=width)
 
 
 
@@ -1039,7 +1040,7 @@ class Picture:
         draw = ImageDraw.Draw(self.image)
         x, y = center
         bounding_box = [x - radius, y - radius, x + radius, y + radius]
-        draw.ellipse(bounding_box, width=5, fill=color.color)
+        draw.ellipse(bounding_box, width=5, fill=color.rgb)
 
 
 
@@ -1062,7 +1063,7 @@ class Picture:
         color = kwargs.get('color', Color.BLACK)
 
         draw = ImageDraw.Draw(self.image)
-        font_path = os.path.join(os.path.dirname(__file__), '..', 'fonts', 'Helvetica.ttf')
+        font_path = os.path.join(os.path.dirname(__file__), '..', 'fonts', 'font_test.ttf')
         font = ImageFont.truetype(font_path, font_size)
 
         # Measure text size
@@ -1075,7 +1076,7 @@ class Picture:
         x -= text_width // 2
         y -= text_height // 2
 
-        draw.text((x, y), text, fill=color.color, font=font)
+        draw.text((x, y), text, fill=color.rgb, font=font)
 
 
 
@@ -1087,7 +1088,7 @@ class Picture:
         draw = ImageDraw.Draw(self.image)
 
         # Draw the main shaft
-        draw.line([start, end], fill=color.color, width=width)
+        draw.line([start, end], fill=color.rgb, width=width)
 
         # Direction vector
         dx = end[0] - start[0]
@@ -1108,7 +1109,7 @@ class Picture:
         )
 
         # Draw filled triangle for arrowhead
-        draw.polygon([end, left_point, right_point], fill=color.color)
+        draw.polygon([end, left_point, right_point], fill=color.rgb)
 
 
 
@@ -1163,6 +1164,45 @@ def blend_images(image1: Picture, image2: Picture, **kwargs) -> Picture:
     alpha = kwargs.get('alpha', 0.5)
     pil_image = Image.blend(image1.image, image2.image, alpha)
     return Picture.from_PIL_image(pil_image)
+
+
+
+
+
+
+
+
+def screen_blend(pic1: Picture, pic2: Picture) -> Picture:
+    """
+    Blends two PIL images using the 'Screen' blend mode.
+    Both images must be RGB or RGBA and will be resized to match the size of image1 if needed.
+    """
+    # Convert images to same mode and size
+    pic1.convert_to_rgb()
+    pic2.convert_to_rgb()
+
+    # Convert to numpy arrays
+    arr1 = np.asarray(pic1.image).astype('float')
+    arr2 = np.asarray(pic2.image).astype('float')
+
+    # Apply screen blending formula
+    blended = 255 - ((255 - arr1) * (255 - arr2) / 255)
+
+    # Clip and convert back to uint8
+    blended = np.clip(blended, 0, 255).astype('uint8')
+
+    return Picture.from_PIL_image(Image.fromarray(blended))
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1277,10 +1317,10 @@ def superimpose_pictures(picture_1, picture_2):
 
 
 def get_blank_picture(width: int, height: int, color: Color, border_thickness=0, border_color=Color(0, 0, 0)) -> Picture:
-    image = Image.new("RGB", (width, height), color.color)
+    image = Image.new("RGB", (width, height), color.rgb)
 
     draw = ImageDraw.Draw(image)
-    draw.rectangle([0, 0, width - 1, height - 1], outline=border_color.color, width=border_thickness)
+    draw.rectangle([0, 0, width - 1, height - 1], outline=border_color.rgb, width=border_thickness)
 
     picture = Picture.from_PIL_image(image)
     return picture
@@ -1321,7 +1361,7 @@ def add_centered_text(picture: Picture, text: str, **kwargs) -> Picture:
 
 
     # Get the path to the .ttf font in the parent directory (relative path)
-    font_path = os.path.join(os.path.dirname(__file__), '..', 'fonts', 'Helvetica.ttf')
+    font_path = os.path.join(os.path.dirname(__file__), '..', 'fonts', 'InterVariable.ttf')
     font = ImageFont.truetype(font_path, font_size)
     #font = ImageFont.load_default()
 
@@ -1330,7 +1370,7 @@ def add_centered_text(picture: Picture, text: str, **kwargs) -> Picture:
     lines = wrap_text(draw, text, font, max_width)
 
 
-        # Calculate the total height of the text block
+    # Calculate the total height of the text block
     total_text_height = sum([draw.textbbox((0, 0), line, font=font)[3] for line in lines])
 
     # Calculate the starting position to center the text vertically
@@ -1344,7 +1384,7 @@ def add_centered_text(picture: Picture, text: str, **kwargs) -> Picture:
     for line in lines:
         line_width = draw.textbbox((0, 0), line, font=font)[2]  # Calculate the width of the current line
         x_start = (picture.width - line_width) // 2  # Center the line horizontally
-        draw.text((x_start, y), line, fill=text_color.color, font=font)
+        draw.text((x_start, y), line, fill=text_color.rgb, font=font)
         y += draw.textbbox((0, 0), line, font=font)[3]  # Move to the next line's position
 
 

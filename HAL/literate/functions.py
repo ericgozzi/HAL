@@ -3,9 +3,22 @@ import re
 
 import nltk
 from nltk.corpus import stopwords
-from nltk.tokenize import word_tokenize
 from nltk import pos_tag
 from nltk.stem import WordNetLemmatizer
+
+from nltk import word_tokenize, pos_tag, ne_chunk
+from nltk.tree import Tree
+
+
+
+
+from .database import PLACES
+
+from ..metrika import Rule
+
+
+
+
 
 def remove_stopwords(text: str) -> str:
 
@@ -27,6 +40,7 @@ def remove_stopwords(text: str) -> str:
 
 
 def remove_punctuation(text: str) -> str:
+    return re.sub(r"[^\w\s]", "", text)
     return text.translate(str.maketrans('', '', string.punctuation))
 
 
@@ -98,5 +112,33 @@ def lemmatize_text(text):
     
     # Return the result as a string
     return ' '.join(lemmatized_tokens)
+
+
+
+
+
+
+def filter_by_places(text):
+    words = re.findall(r'\b\w+(?:-\w+)?\b', text.lower())  # Extract words, including hyphenated
+    filtered = [word for word in words if word in PLACES]
+    return " ".join(filtered)
+
+
+
+
+def get_connection_of_word(text: str) -> Rule:
+    list_of_words = text.split()
+    connections = []
+    for i in range(len(list_of_words)-1):
+        connections.append((list_of_words[i], list_of_words[i+1]))
+    rules = Rule(connections)
+
+    return rules
+
+
+
+
+
+
 
 

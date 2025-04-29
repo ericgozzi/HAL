@@ -2,6 +2,8 @@ from .book import *
 from .theka import *
 from .functions import *
 
+from .database import *
+
 
 
 # NATURAL LANGUAGE TOOLKIT

@@ -14,23 +14,45 @@ class Graph:
 
     def __init__(self):
        self.graph = nx.DiGraph()
+       self.attributes = {}
 
 
 
     @property
     def edges(self):
         return self.graph.edges()
+    
+    @property
+    def nodes(self):
+        return self.graph.nodes()
+    
 
     @property
     def eigenvector_centrality(self) -> dict:
         return nx.eigenvector_centrality(self.graph)
+    
+    def add_node_attribute(self, node, key, value):
+        self.graph.nodes[node][key] = value
+
+    def get_node_attribute(self, node, key):
+        return self.graph.nodes[node][key]
+    
+
+    def add_edge_attribute(self, node1, node2, key, value):
+        self.graph[node1][node2][key] = value
+
+    def get_edge_attribute(self, node1, node2, key):
+        return self.graph[node1][node2][key]
 
 
     def draw(self, **kwargs) -> Picture:
 
         graph_type: str = kwargs.get('graph_type', 'KAMADA-KAWAI')
+        graph_dimension: int = kwargs.get('graph_dimension', 2)
 
-        show_node: bool = kwargs.get('show_node', True)
+        spectral_weight: float = kwargs.get('spectral_weight', None)
+
+        show_node: bool = kwargs.get('show_nodes', True)
         node_radius: int = kwargs.get('node_radius', 30)
         node_color: Color = kwargs.get('node_color', Color.WHITE)
 
@@ -50,7 +72,7 @@ class Graph:
 
         scale_factor = pic_size/2-pic_size/20
         pic = get_blank_picture(pic_size, pic_size, background_color)
-        pos = self.get_nodes_coordinate(graph_type)
+        pos = self.get_nodes_coordinate(graph_type, dimension=graph_dimension, spectral_weight=spectral_weight)
         edges = self.edges
         for edge in edges:
             p1x = (pos[edge[0]][0]) * scale_factor + pic_size/2
@@ -108,9 +130,11 @@ class Graph:
         """Add a node to the graph."""
         self.graph.add_node(node)
 
+
     def add_edge(self, node1: str, node2: str):
         """Add an edge between two nodes."""
         self.graph.add_edge(node1, node2)
+
 
     def build_graph_from_rules(self, rules: Rule) -> None:
         for item1, item2 in rules.rules:
@@ -124,20 +148,26 @@ class Graph:
 
 
 
-    def get_nodes_coordinate(self, method):
+    def get_nodes_coordinate(self, method, dimension=2, spectral_weight=None) -> dict:
         if method == 'SPRING':
-            positions = nx.spring_layout(self.graph)
+            positions = nx.spring_layout(self.graph, iterations=1000, weight=spectral_weight, dim=dimension, seed=1)
 
         elif method == 'KAMADA-KAWAI':
-            positions = nx.kamada_kawai_layout(self.graph)
+            positions = nx.kamada_kawai_layout(self.graph, dim = dimension)
 
         elif method == 'SPECTRAL':
-            positions = nx.spectral_layout(self.graph)
+            positions = nx.spectral_layout(self.graph, weight=spectral_weight)
 
         elif method == 'CIRCULAR':
             positions = nx.circular_layout(self.graph)
 
-        else:
+        elif method == 'RANDOM':
             positions = nx.random_layout(self.graph)
+        
+        elif method == 'SHELL':
+            positions = nx.shell_layout(self.graph)
+
+        else:
+            positions = nx.kamada_kawai_layout(self.graph)
 
         return positions

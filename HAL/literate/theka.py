@@ -3,7 +3,7 @@ from collections import defaultdict
 from .book import Book
 from .book import Quote
 
-from ..data import get_files_all_files_name
+from ..data import get_all_file_names_in_a_folder
 
 
 
@@ -48,7 +48,7 @@ class Library:
         Returns:
             Library
         """
-        json_books = get_files_all_files_name(library_folder)
+        json_books = get_all_file_names_in_a_folder(library_folder)
         books = []
         for json_book in json_books:
             book = Book.from_json_file(f'{library_folder}/{json_book}')
@@ -139,7 +139,7 @@ class Library:
 
 
 
-    def ask_theka(self, topic, question) -> list[list[str]]:
+    def ask(self, topic: str, question: str, **kwargs) -> list[list[str]]:
         """
         Ask theka about a certain topic and question. The order of books are by centrality of the topic inside that book. The quotes of the books come from the book chronology.
 
@@ -150,8 +150,23 @@ class Library:
         Returns:
             list[str] : the answers to the question. The first item of the list always show the author and the book from which the quotes come from. 
         """
+
+        print_answers = kwargs.get('print_answers', True)
+
+        topic = topic.lower()
+        question = question.lower()
+        question = question.split()
+
         self.sort_books_by_topic(topic)
         answers = self.get_quotes_to_question(question)
+
+        if print_answers:
+            print(f'Number of answers: {len(answers)} \n-------------\n\n')
+            for answer in answers: 
+                print(answer)
+                print(f'\n\n')
+
+
         return answers
     
 

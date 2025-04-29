@@ -1,0 +1,11 @@
+{
+    "extent_x": 19,
+    "extent_y": 19,
+    "function": "office",
+    "red_function": null,
+    "green_function": null,
+    "generations": 20,
+    "size_x": 10,
+    "size_y": 10,
+    "size_z": 5
+}

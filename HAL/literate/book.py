@@ -4,7 +4,7 @@ from collections import Counter
 
 
 
-from ..data import read_file
+from ..data import read_txt_file
 from ..data import export_json
 from ..data import read_json
 
@@ -217,7 +217,7 @@ class Book:
         Returns:
             None
         """
-        self.content = read_file(file_path)
+        self.content = read_txt_file(file_path)
 
 
     def curate_book(self):
@@ -486,7 +486,7 @@ class Quotebook:
         return len(self.quotes)
     
     def from_collection_of_quotes(file_path: str):
-        data = read_file(file_path)
+        data = read_txt_file(file_path)
         raw_quotes = data.split("---")
         quotes = []
         for rq in raw_quotes:
@@ -499,12 +499,11 @@ class Quotebook:
         return quotebook
     
 
-    def build_text_randomly(self, create_title=False, n=10):
+    def build_text(self, create_title=False, n=10):
         quotes = self.quotes.copy()
-        random.shuffle(quotes)
         text = ""
         footnotes = ""
-        for i in range(n):
+        for i in range(min(len(quotes), n)):
             text_snippet = quotes[i].quote
             text_snippet = text_snippet.replace('\n', ' ')
             
@@ -521,15 +520,10 @@ class Quotebook:
 
         title = None
         if create_title:
-            title = ''
-            # The index of the title
-            for i in range(3):
-                title += quotes[i].quote[i]
             words = get_most_popular_word(text)
             word_counts = Counter(words)
             most_common = word_counts.most_common(1)
-            title += f'_{most_common[0][0]}'
-
+            title = f'{most_common[0][0]}'
 
 
         return text, footnotes, title

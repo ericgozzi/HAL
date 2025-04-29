@@ -15,3 +15,10 @@ class Rule:
         string += '|>'
         return string
     
+
+
+    def merge(self, new_rules: 'Rule') -> None:
+        merged = self.rules + new_rules.rules
+        self.rules = merged
+
+    
