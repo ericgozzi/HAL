@@ -1,9 +1,0 @@
-LICENSE
-README.md
-pyproject.toml
-HAL/__init__.py
-HAL.egg-info/PKG-INFO
-HAL.egg-info/SOURCES.txt
-HAL.egg-info/dependency_links.txt
-HAL.egg-info/requires.txt
-HAL.egg-info/top_level.txt

@@ -59,8 +59,8 @@ class Book:
         """
 
         concatenation_of_words = self.get_concatenation_of_words()
-        graph = Graph()
-        graph.add_edges_from_connections(concatenation_of_words)
+        graph = Graph()        
+        graph.build_graph_from_rules(concatenation_of_words)
 
         data = {
             'author' : self.author,
@@ -76,6 +76,7 @@ class Book:
             'eigenvector' : graph.eigenvector_centrality
         }
         library_folder = f'{library_folder}/{self.author.upper()}_{self.title}.json'
+        
         export_json(data, library_folder)
         
         self.has_json = True

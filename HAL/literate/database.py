@@ -8,7 +8,7 @@ PLACES = [
     'fast-food', 'bank', 'atm', 'gas station', 'pharmacy', 'bookstore', 
     
     # Entertainment & Leisure
-    'theater', 'arcade', 'fitness center', 'fitness', 'center', 'spa', 'salon',
+    'theater', 'arcade', 'fitness', 'spa', 'salon',
 
     # Recreational Areas
     'park', 'playground', 'field', 'garden', 'greenhouse', 'orchard'
@@ -19,34 +19,33 @@ PLACES = [
 
     # City Area
     'skyscraper', 'street', 'river', 'lake', 'sea', 'waterfront', 'boulevard', 'alley', 
-    'plaza', 'square', 'park', 'city center', 'center', 'downtown', 'harbor', 'canal', 'bridge', 
+    'plaza', 'square', 'park', 'downtown', 'harbor', 'canal', 'bridge', 
     'tunnel', 'sidewalk', 'esplanade', 'promenade', 'crosswalk', 'lane', 'courtyard', 
     'pavement', 'underpass', 'overpass', 'roundabout', 'square', 'avenue', 'intersection', 
     'street', 'corner', 'waterway', 'marina', 'dock', 'pier', 'port', 'garden', 'lane', 'forest'
     
     # Educational & Institutional Areas
-    'school', 'college', 'library', 'research center', 'research' 'clinic', 'hospital', 'daycare', 
+    'school', 'college', 'library', 'research' 'clinic', 'hospital', 'daycare', 
     'court', 'police station', 'police', 'policestation', 'firestation', 'prison', 'office', 'voting station', 'voting' 
     
     # Transportation & Infrastructure
-    'road', 'highway', 'subway', 'station', 'airport', 'parking', 'garage', 'bridge', 
-    'stop', 'taxi', 'car rental', 'car', 'metro', 'tram', 'bus', 'bycicle', 'canal',
+    'road', 'highway', 'subway', 'station', 'airport', 'parking', 'garage', 'bridge', 'canal',
     
     # Religious & Spiritual Places
     'church', 'mosque', 'temple', 'synagogue', 'shrine', 'chapel', 'cemetery', 'monastery',
     'prayer', 
     
     # Government & Legal Buildings
-    'city hall', 'courthouse', 'embassy', 'consulate', 
+    'courthouse', 'embassy', 'consulate', 
     
     # Healthcare & Medical
-    'hospital', 'clinic', 'doctor', 'pharmacy', 'vet clinic', 'therapy center', 'veterinarian'
+    'hospital', 'clinic', 'doctor', 'pharmacy', 'vet clinic', 'veterinarian'
     
     # Financial Institutions
     'bank', 'atm', 'credit union', 'credit', 'investment firm', 'mortgage', 'insurance office', 'insurance' 
     
     # Public Services
-    'post office', 'post', 'recycling center', 'recycling', 'garbage dump', 'dump', 'garbage', 'sewage', 'treatment', 'plant', 'sewage treatment plant', 
+    'post office', 'post', 'recycling', 'garbage dump', 'dump', 'garbage', 'sewage', 'treatment', 'plant', 'sewage treatment plant', 
     'utility office', 
     
     # Industrial & Manufacturing Areas

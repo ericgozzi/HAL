@@ -34,7 +34,7 @@ class Library:
             Library
         """
         for book in books:
-            book.generate_library_data(library_name)
+            book.generate_book_data_for_library(library_name)
         return Library(books, library_name)
 
 

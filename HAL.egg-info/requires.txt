@@ -1,9 +1,0 @@
-numpy
-Pillow
-networkx
-nltk
-opencv-python
-reportlab
-requests
-beautifulsoup4
-sympy
