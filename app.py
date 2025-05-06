@@ -82,3 +82,4 @@ if st.button("Generate"):
     image = build_the_city(library, questions)
     st.image(image.np_array)
 
+
