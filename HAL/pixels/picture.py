@@ -16,6 +16,9 @@ from PIL import ImageFont
 
 from .color import Color
 
+WHITE = Color(255, 255, 255)
+BLACK = Color(0, 0, 0)
+
 
 
 class Picture:
@@ -588,8 +591,8 @@ class Picture:
 
         """
         # Kwargs
-        dot_color = kwargs.get('dot_color', Color.BLACK)
-        background_color = kwargs.get('background_color', Color.WHITE)
+        dot_color = kwargs.get('dot_color',BLACK)
+        background_color = kwargs.get('background_color', WHITE)
         dot_spacing = kwargs.get('dot_spacing', 12)
         dot_size = kwargs.get('dot_size', 8)
 
@@ -663,8 +666,8 @@ class Picture:
         # Kwargs
         matrix_size = kwargs.get('matrix_size', 8)
         scale_factor = kwargs.get('scale_factor', 5)
-        color = kwargs.get('color', Color.WHITE)
-        background_color = kwargs.get('background_color', Color.BLACK)
+        color = kwargs.get('color', WHITE)
+        background_color = kwargs.get('background_color', BLACK)
 
         # Bayer matrices of different sizes
         bayer_matrices = {
@@ -1007,13 +1010,13 @@ class Picture:
             end (tuple): The ending point of the line (x2, y2).
             width (int, optional): The width of the line. Defaults to 3.
             **kwargs: Optional keyword arguments for customization. 
-                    - 'color' (Color): The color of the line. Defaults to `Color.WHITE`.
+                    - 'color' (Color): The color of the line. Defaults to `WHITE`.
                     - 'width' (int): The width of the line. Defaults to 3.
         
         Returns:
             None
         """
-        color = kwargs.get('color', Color.WHITE)
+        color = kwargs.get('color', WHITE)
         width = kwargs.get('width', 3)
 
         draw = ImageDraw.Draw(self.image)
@@ -1030,12 +1033,12 @@ class Picture:
             center (tuple): The center point of the circle (x, y).
             radius (int): The radius of the circle.
             **kwargs: Optional keyword arguments for customization.
-                    - 'color': The color of the circle. Defaults to `Color.WHITE`.
+                    - 'color': The color of the circle. Defaults to `WHITE`.
         
         Returns:
             None
         """
-        color: Color = kwargs.get('color', Color.WHITE)
+        color: Color = kwargs.get('color', WHITE)
 
         draw = ImageDraw.Draw(self.image)
         x, y = center
@@ -1060,7 +1063,7 @@ class Picture:
         Returns:
             None
         """
-        color = kwargs.get('color', Color.BLACK)
+        color = kwargs.get('color', BLACK)
 
         draw = ImageDraw.Draw(self.image)
         font_path = os.path.join(os.path.dirname(__file__), '..', 'fonts', 'font_test.ttf')
@@ -1083,7 +1086,7 @@ class Picture:
 
 
     def draw_arrow(self, start: tuple, end: tuple, width=3, arrowhead_length=50, arrowhead_angle=30, **kwargs) -> None:
-        color = kwargs.get('color', Color.WHITE)
+        color = kwargs.get('color', WHITE)
 
         draw = ImageDraw.Draw(self.image)
 
